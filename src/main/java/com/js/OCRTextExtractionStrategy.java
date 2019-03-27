@@ -6,6 +6,7 @@ import com.itextpdf.kernel.pdf.canvas.parser.data.IEventData;
 import com.itextpdf.kernel.pdf.canvas.parser.data.ImageRenderInfo;
 import com.itextpdf.kernel.pdf.canvas.parser.data.TextRenderInfo;
 import com.itextpdf.kernel.pdf.canvas.parser.listener.ITextExtractionStrategy;
+import com.js.tesseract.TesseractOpticalCharacterRecognitionEngine;
 
 import java.awt.image.BufferedImage;
 import java.io.IOException;
@@ -59,6 +60,7 @@ public class OCRTextExtractionStrategy implements ITextExtractionStrategy {
             innerStrategy.eventOccurred(iEventData, eventType);
         }
     }
+
     public Set<EventType> getSupportedEvents() { return null; }
 
 }

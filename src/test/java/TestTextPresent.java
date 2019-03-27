@@ -15,7 +15,7 @@ public class TestTextPresent {
     public void testWhetherTextIsPresent() throws IOException {
 
         // initialize tesseract
-        TesseractOpticalCharacterRecognitionEngine ocrEngine = new TesseractOpticalCharacterRecognitionEngine(new File("C:\\Users\\joris\\Downloads\\tessdata_fast"), "nld");
+        TesseractOpticalCharacterRecognitionEngine ocrEngine = new TesseractOpticalCharacterRecognitionEngine(new File("C:\\Users\\joris\\Downloads\\tessdata"), "eng");
 
         // create document
         PdfDocument pdfDocument = new PdfDocument(new PdfReader(new File("C:\\Users\\joris\\Downloads\\ndas\\nda_starring_jane.pdf")));

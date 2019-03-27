@@ -21,6 +21,12 @@
     </build>
 
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.languagetool/languagetool-core -->
+        <dependency>
+            <groupId>org.languagetool</groupId>
+            <artifactId>languagetool-core</artifactId>
+            <version>4.5</version>
+        </dependency>
         <!-- https://mvnrepository.com/artifact/net.sourceforge.tess4j/tess4j -->
         <dependency>
             <groupId>net.sourceforge.tess4j</groupId>
