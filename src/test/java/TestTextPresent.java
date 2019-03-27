@@ -15,10 +15,10 @@ public class TestTextPresent {
     public void testWhetherTextIsPresent() throws IOException {
 
         // initialize tesseract
-        TesseractOpticalCharacterRecognitionEngine ocrEngine = new TesseractOpticalCharacterRecognitionEngine(new File("C:\\Users\\joris\\Downloads\\tessdata"), "eng");
+        TesseractOpticalCharacterRecognitionEngine ocrEngine = new TesseractOpticalCharacterRecognitionEngine(new File("tessdata"), "eng");
 
         // create document
-        PdfDocument pdfDocument = new PdfDocument(new PdfReader(new File("C:\\Users\\joris\\Downloads\\ndas\\nda_starring_jane.pdf")));
+        PdfDocument pdfDocument = new PdfDocument(new PdfReader(new File("scan_0001.pdf")));
 
         // extract text
         SimpleTextExtractionStrategy simpleTextExtractionStrategy = new SimpleTextExtractionStrategy();
