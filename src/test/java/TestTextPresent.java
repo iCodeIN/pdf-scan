@@ -18,7 +18,7 @@ public class TestTextPresent {
         TesseractOpticalCharacterRecognitionEngine ocrEngine = new TesseractOpticalCharacterRecognitionEngine(new File("C:\\Users\\joris\\Downloads\\tessdata_fast"), "nld");
 
         // create document
-        PdfDocument pdfDocument = new PdfDocument(new PdfReader(new File("C:\\Users\\joris\\Downloads\\nda_starring_jane.pdf")));
+        PdfDocument pdfDocument = new PdfDocument(new PdfReader(new File("C:\\Users\\joris\\Downloads\\ndas\\nda_starring_jane.pdf")));
 
         // extract text
         SimpleTextExtractionStrategy simpleTextExtractionStrategy = new SimpleTextExtractionStrategy();
