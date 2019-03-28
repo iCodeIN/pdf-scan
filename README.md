@@ -1,6 +1,8 @@
 # pdf-scan
 
-<img src="loupe.svg" width="100" height="100">
+<img src="loupe.svg" width="64px" height="64px">
+
+Finally, an iText add-on that handles scans! - *just about everyone, ever*
 
 ## about OCR
 Optical character recognition or optical character reader, often abbreviated as OCR, is the mechanical or electronic conversion of images of typed, handwritten or printed text into machine-encoded text, whether from a scanned document, a photo of a document, a scene-photo (for example the text on signs and billboards in a landscape photo) or from subtitle text superimposed on an image (for example from a television broadcast).
