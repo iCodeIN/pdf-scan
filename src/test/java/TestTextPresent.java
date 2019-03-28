@@ -1,8 +1,10 @@
 import com.itextpdf.kernel.pdf.PdfDocument;
 import com.itextpdf.kernel.pdf.PdfReader;
+import com.itextpdf.kernel.pdf.PdfWriter;
 import com.itextpdf.kernel.pdf.canvas.parser.PdfCanvasProcessor;
 import com.itextpdf.kernel.pdf.canvas.parser.listener.SimpleTextExtractionStrategy;
-import com.js.canvas.parser.listener.OCRTextExtractionStrategy;
+import com.js.canvas.parser.listener.OCREventModifier;
+import com.js.canvas.pdf.ScannedPdfDocument;
 import org.testng.annotations.Test;
 import com.js.tesseract.TesseractOpticalCharacterRecognitionEngine;
 
@@ -18,14 +20,16 @@ public class TestTextPresent {
         TesseractOpticalCharacterRecognitionEngine ocrEngine = new TesseractOpticalCharacterRecognitionEngine(new File("C:\\Users\\joris\\Downloads\\tessdata"), "eng");
 
         // create document
-        PdfDocument pdfDocument = new PdfDocument(new PdfReader(new File("C:\\Users\\joris\\Downloads\\nda_starring_jane.pdf")));
+        ScannedPdfDocument pdfDocument = new ScannedPdfDocument(
+                new PdfReader(new File("C:\\Users\\joris\\Downloads\\nda_starring_jane.pdf")),
+                new PdfWriter(new File("C:\\Users\\joris\\Downloads\\nda_starring_jane_out.pdf")),
+                ocrEngine
+        );
 
-        // extract text
-        SimpleTextExtractionStrategy simpleTextExtractionStrategy = new SimpleTextExtractionStrategy();
-        OCRTextExtractionStrategy ocrTextExtractionStrategy = new OCRTextExtractionStrategy(simpleTextExtractionStrategy, ocrEngine);
-        new PdfCanvasProcessor(ocrTextExtractionStrategy).processPageContent(pdfDocument.getPage(1));
+        // perform OCR
+        pdfDocument.doOCR(1);
 
-        // display
-        System.out.println(simpleTextExtractionStrategy.getResultantText());
+        // close
+        pdfDocument.close();
     }
 }

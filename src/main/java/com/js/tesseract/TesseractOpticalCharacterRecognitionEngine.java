@@ -1,6 +1,7 @@
 package com.js.tesseract;
 
-import com.js.IOpticalCharacterRecognitionEngine;
+import com.js.canvas.parser.ocr.OCRChunk;
+import com.js.canvas.parser.ocr.IOpticalCharacterRecognitionEngine;
 import com.sun.jna.Pointer;
 import net.sourceforge.tess4j.ITessAPI;
 import net.sourceforge.tess4j.TessAPI1;
@@ -12,7 +13,7 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.nio.ByteBuffer;
 import java.nio.IntBuffer;
-import java.util.ArrayList;
+import java.util.*;
 import java.util.List;
 
 public class TesseractOpticalCharacterRecognitionEngine implements IOpticalCharacterRecognitionEngine {
@@ -97,6 +98,7 @@ public class TesseractOpticalCharacterRecognitionEngine implements IOpticalChara
                     .setMonospaced(monospace)
                     .setFontSize(pointSize)
                     .setConfidence(confidence / 100.0);
+
             ocrChunkList.add(ocrChunk);
         } while (TessAPI1.TessPageIteratorNext(pi, TessAPI1.TessPageIteratorLevel.RIL_WORD) == TessAPI1.TRUE);
 

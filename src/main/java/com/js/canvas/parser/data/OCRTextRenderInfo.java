@@ -7,20 +7,21 @@ import com.itextpdf.kernel.geom.Vector;
 import com.itextpdf.kernel.pdf.PdfString;
 import com.itextpdf.kernel.pdf.canvas.CanvasTag;
 import com.itextpdf.kernel.pdf.canvas.parser.data.TextRenderInfo;
-import com.js.IOpticalCharacterRecognitionEngine;
+import com.js.canvas.parser.ocr.OCRChunk;
 import com.js.canvas.ModifiableGraphicsState;
+import com.js.canvas.parser.ocr.IOpticalCharacterRecognitionEngine;
 
 import java.io.IOException;
 import java.util.Stack;
 
 /**
- * This class provides a convenient way to convert {@link com.js.IOpticalCharacterRecognitionEngine.OCRChunk} objects into
+ * This class provides a convenient way to convert {@link IOpticalCharacterRecognitionEngine.OCRChunk} objects into
  * {@link TextRenderInfo} objects. To the outside world, it acts as {@link TextRenderInfo}, however it only keeps the state needed
  * to perform text extraction. Most of the other fields present in {@link TextRenderInfo} (such as GraphicsState) are filled with dummy data.
  */
 public class OCRTextRenderInfo extends TextRenderInfo {
 
-    private IOpticalCharacterRecognitionEngine.OCRChunk ocrChunk;
+    private OCRChunk ocrChunk;
     private static ModifiableGraphicsState gs;
 
     static{
@@ -29,9 +30,13 @@ public class OCRTextRenderInfo extends TextRenderInfo {
         try { gs.setFont(PdfFontFactory.createFont()); } catch (IOException e) { }
     }
 
-    public OCRTextRenderInfo(IOpticalCharacterRecognitionEngine.OCRChunk chunk){
+    public OCRTextRenderInfo(OCRChunk chunk){
         super(new PdfString(chunk.getText().replaceAll("\n","")), gs, new Matrix(), new Stack<CanvasTag>());
         this.ocrChunk = chunk;
+    }
+
+    public OCRChunk getOCRChunk(){
+        return ocrChunk;
     }
 
     @Override

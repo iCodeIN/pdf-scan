@@ -5,12 +5,15 @@ import com.itextpdf.kernel.pdf.canvas.parser.EventType;
 import com.itextpdf.kernel.pdf.canvas.parser.data.IEventData;
 import com.itextpdf.kernel.pdf.canvas.parser.data.ImageRenderInfo;
 import com.itextpdf.kernel.pdf.canvas.parser.data.TextRenderInfo;
+import com.itextpdf.kernel.pdf.canvas.parser.listener.IEventListener;
 import com.itextpdf.kernel.pdf.canvas.parser.listener.ITextExtractionStrategy;
-import com.js.IOpticalCharacterRecognitionEngine;
+import com.js.canvas.parser.ocr.OCRChunk;
+import com.js.canvas.parser.ocr.IOpticalCharacterRecognitionEngine;
 import com.js.canvas.parser.data.OCRTextRenderInfo;
 
 import java.awt.image.BufferedImage;
 import java.io.IOException;
+import java.util.List;
 import java.util.Set;
 import java.util.logging.Logger;
 
@@ -18,19 +21,15 @@ import java.util.logging.Logger;
  * This class converts images found in PDF documents to TextRender events.
  * This allows other {@link ITextExtractionStrategy} implementations to handle this text.
  */
-public class OCRTextExtractionStrategy implements ITextExtractionStrategy {
+public class OCREventModifier implements IEventListener {
 
-    private final ITextExtractionStrategy innerStrategy;
+    private final IEventListener innerStrategy;
     private final IOpticalCharacterRecognitionEngine opticalCharacterRecognitionEngine;
-    private final Logger logger = Logger.getLogger(OCRTextExtractionStrategy.class.getSimpleName());
+    private final Logger logger = Logger.getLogger(OCREventModifier.class.getSimpleName());
 
-    public OCRTextExtractionStrategy(ITextExtractionStrategy innerStrategy, IOpticalCharacterRecognitionEngine opticalCharacterRecognitionEngine){
+    public OCREventModifier(IEventListener innerStrategy, IOpticalCharacterRecognitionEngine opticalCharacterRecognitionEngine){
         this.innerStrategy = innerStrategy;
         this.opticalCharacterRecognitionEngine = opticalCharacterRecognitionEngine;
-    }
-
-    public String getResultantText() {
-        return innerStrategy.getResultantText();
     }
 
     public void eventOccurred(IEventData iEventData, EventType eventType) {
@@ -39,20 +38,40 @@ public class OCRTextExtractionStrategy implements ITextExtractionStrategy {
 
             // extract coordinates
             ImageRenderInfo imageRenderInfo  = (ImageRenderInfo) iEventData;
-            float x = imageRenderInfo.getImageCtm().get(Matrix.I11);
-            float y = imageRenderInfo.getImageCtm().get(Matrix.I22);
+            float x0 = imageRenderInfo.getImageCtm().get(Matrix.I31);
+            float y0 = imageRenderInfo.getImageCtm().get(Matrix.I32);
+            float w0 = imageRenderInfo.getImageCtm().get(Matrix.I11);
+            float h0 = imageRenderInfo.getImageCtm().get(Matrix.I22);
 
             // attempt to parse image
             try {
                 BufferedImage bufferedImage = imageRenderInfo.getImage().getBufferedImage();
-                for(IOpticalCharacterRecognitionEngine.OCRChunk chunk : opticalCharacterRecognitionEngine.doOCR(bufferedImage)){
+                float w1 = bufferedImage.getWidth();
+                float h1 = bufferedImage.getHeight();
+
+                List<OCRChunk> ocrChunkList = opticalCharacterRecognitionEngine.doOCR(bufferedImage);
+
+                for(OCRChunk chunk : ocrChunkList){
                     if(chunk.getText() != null && !chunk.getText().isEmpty()) {
-                        chunk.getLocation().translate((int) x, (int) y);
+
+                        float x1 = chunk.getLocation().x;
+                        float y1 = chunk.getLocation().y;
+
+                        float x = x1 * (w0 / w1);
+                        float y = y1 * (h0 / h1);
+                        float w = (float) chunk.getLocation().getWidth() * (w0 / w1);
+                        float h = (float) chunk.getLocation().getHeight() * (h0 / h1);
+
+                        chunk.getLocation().x = (int) (x + x0);
+                        chunk.getLocation().y = (int) (y0 + h0 - y - h);
+                        chunk.getLocation().width = (int) w;
+                        chunk.getLocation().height = (int) h;
+
                         TextRenderInfo textRenderInfo = new OCRTextRenderInfo(chunk);
-                        if(textRenderInfo !=  null)
-                            innerStrategy.eventOccurred( textRenderInfo, EventType.RENDER_TEXT);
+                        innerStrategy.eventOccurred( textRenderInfo, EventType.RENDER_TEXT);
                     }
                 }
+
             } catch (IOException e) { logger.severe(e.getLocalizedMessage()); }
 
         }

@@ -1,9 +1,9 @@
-package com.js;
+package com.js.canvas.parser.ocr;
 
 import java.awt.image.BufferedImage;
 import java.util.List;
 
 public interface IOpticalCharacterRecognitionEngine {
 
-    List<IOCRChunk> doOCR(BufferedImage bufferedImage);
+    List<OCRChunk> doOCR(BufferedImage bufferedImage);
 }

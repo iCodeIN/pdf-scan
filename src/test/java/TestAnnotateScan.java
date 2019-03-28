@@ -1,4 +1,6 @@
-import com.js.IOpticalCharacterRecognitionEngine;
+import com.js.canvas.parser.ocr.OCRChunk;
+import com.js.canvas.parser.ocr.IOpticalCharacterRecognitionEngine;
+import com.js.canvas.parser.ocr.ColorMatchingWrapper;
 import com.js.tesseract.TesseractOpticalCharacterRecognitionEngine;
 import org.testng.annotations.Test;
 
@@ -19,9 +21,10 @@ public class TestAnnotateScan {
 
         File dataDirectory = new File("C:\\Users\\joris\\Downloads\\tessdata");
         IOpticalCharacterRecognitionEngine opticalCharacterRecognitionEngine = new TesseractOpticalCharacterRecognitionEngine(dataDirectory, "eng");
+        opticalCharacterRecognitionEngine = new ColorMatchingWrapper(opticalCharacterRecognitionEngine);
 
         g2.setColor(Color.RED);
-        for(IOpticalCharacterRecognitionEngine.OCRChunk chunk : opticalCharacterRecognitionEngine.doOCR(bufferedImage)){
+        for(OCRChunk chunk : opticalCharacterRecognitionEngine.doOCR(bufferedImage)){
             g2.drawRect(chunk.getLocation().x, chunk.getLocation().y, chunk.getLocation().width, chunk.getLocation().height);
         }
 
