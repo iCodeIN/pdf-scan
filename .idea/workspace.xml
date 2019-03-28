@@ -2,7 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="561081a8-74cb-491b-ba7d-3e924f22b866" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/input_004.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_document.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/output_document.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/ColorModifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/ColorModifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/js/tesseract/TesseractOpticalCharacterRecognitionEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/js/tesseract/TesseractOpticalCharacterRecognitionEngine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ConvertScannedDocumentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ConvertScannedDocumentTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ExtractTextTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ExtractTextTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/input_document.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/js/canvas/ModifiableGraphicsState.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/js/canvas/ModifiableGraphicsState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/js/canvas/parser/data/OCRTextRenderInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/js/canvas/parser/data/OCRTextRenderInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/js/canvas/parser/listener/ColorModifier$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/js/canvas/parser/listener/ColorModifier$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/js/canvas/parser/listener/ColorModifier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/js/canvas/parser/listener/ColorModifier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/js/canvas/parser/listener/OCREventModifier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/js/canvas/parser/listener/OCREventModifier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/js/canvas/parser/ocr/OCRChunk.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/js/canvas/parser/ocr/OCRChunk.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/js/canvas/pdf/ScannedPdfDocument$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/js/canvas/pdf/ScannedPdfDocument$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/js/canvas/pdf/ScannedPdfDocument.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/js/canvas/pdf/ScannedPdfDocument.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/js/tesseract/TesseractOpticalCharacterRecognitionEngine.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/js/tesseract/TesseractOpticalCharacterRecognitionEngine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ConvertScannedDocumentTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ConvertScannedDocumentTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ExtractTextTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ExtractTextTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/input_document.pdf" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -59,23 +78,23 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="10759" />
-          <entry key="md" value="140" />
+          <entry key="java" value="10822" />
+          <entry key="md" value="171" />
           <entry key="svg" value="48" />
           <entry key="xml" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="10759" />
-          <entry key="Markdown" value="140" />
+          <entry key="JAVA" value="10822" />
+          <entry key="Markdown" value="171" />
           <entry key="SVG" value="48" />
           <entry key="XML" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="45" />
+          <entry key="java" value="54" />
           <entry key="md" value="3" />
           <entry key="svg" value="1" />
           <entry key="xml" value="2" />
@@ -83,7 +102,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="45" />
+          <entry key="JAVA" value="54" />
           <entry key="Markdown" value="3" />
           <entry key="SVG" value="1" />
           <entry key="XML" value="2" />
@@ -93,6 +112,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/ColorModifier.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="257">
+              <caret line="72" selection-start-line="72" selection-end-line="72" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3182#3183#0" expanded="true" />
+                <element signature="e#3209#3210#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/pdf/ScannedPdfDocument.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -122,8 +155,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/js/tesseract/TesseractOpticalCharacterRecognitionEngine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-94">
-              <caret line="33" column="49" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
+            <state relative-caret-position="-680">
+              <caret line="20" column="32" lean-forward="true" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -146,8 +179,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ExtractTextTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="38" column="141" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="38" selection-end-column="141" />
+            <state relative-caret-position="289">
+              <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -156,22 +189,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="34">
-                <caret line="2" column="27" lean-forward="true" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ConvertScannedDocumentTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
+            <state relative-caret-position="39">
+              <caret line="23" column="77" selection-start-line="23" selection-start-column="77" selection-end-line="23" selection-end-column="77" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -182,7 +203,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/ocr/OCRChunk.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1369">
+            <state relative-caret-position="17">
               <caret line="11" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -216,8 +237,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/OCREventModifier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="80" column="14" lean-forward="true" selection-start-line="80" selection-start-column="14" selection-end-line="80" selection-end-column="14" />
+            <state relative-caret-position="1062">
+              <caret line="80" column="14" selection-start-line="80" selection-start-column="14" selection-end-line="80" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3727#3728#0" expanded="true" />
@@ -290,16 +311,16 @@
         <option value="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/ocr/ColorModifier.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/ocr/BaseLineModifier.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/OCREventModifier.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/ColorModifier.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/BaseLineModifier.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/js/canvas/pdf/ScannedPdfDocument.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ConvertScannedDocumentTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/FlushableEventListener.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ExtractTextTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/ocr/OCRChunk.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/js/canvas/ModifiableGraphicsState.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/js/tesseract/TesseractOpticalCharacterRecognitionEngine.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/test/java/ExtractTextTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/ColorModifier.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/js/tesseract/TesseractOpticalCharacterRecognitionEngine.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ConvertScannedDocumentTest.java" />
       </list>
     </option>
   </component>
@@ -441,6 +462,13 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="pdf-scan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pdf-scan" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -450,7 +478,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="TextR&#9;FILE&#9;jar://C:/Users/joris/.m2/repository/com/itextpdf/kernel/7.1.5/kernel-7.1.5-sources.jar!/com/itextpdf/kernel/pdf/canvas/parser/data/TextRenderInfo.java&#10;textRender&#9;FILE&#9;jar://C:/Users/joris/.m2/repository/com/itextpdf/kernel/7.1.5/kernel-7.1.5-sources.jar!/com/itextpdf/kernel/pdf/canvas/parser/data/TextRenderInfo.java&#10;simpleT&#9;FILE&#9;jar://C:/Users/joris/.m2/repository/com/itextpdf/kernel/7.1.5/kernel-7.1.5.jar!/com/itextpdf/kernel/pdf/canvas/parser/listener/SimpleTextExtractionStrategy.class&#10;textChunkLo&#9;PSI&#9;JAVA://com.itextpdf.kernel.pdf.canvas.parser.listener.ITextChunkLocation" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553784206939" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553787826776" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../placid-platypus" />
   </component>
   <component name="RecentsManager">
@@ -470,7 +498,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.ExtractTextTest.extractText">
+  <component name="RunManager" selected="TestNG.ConvertScannedDocumentTest.readConvertedDocument">
     <configuration name="ConvertScannedDocumentTest.convert" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="lighthouse" />
       <option name="PACKAGE_NAME" value="" />
@@ -527,9 +555,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.ExtractTextTest.extractText" />
-        <item itemvalue="TestNG.ConvertScannedDocumentTest.convert" />
         <item itemvalue="TestNG.ConvertScannedDocumentTest.readConvertedDocument" />
+        <item itemvalue="TestNG.ConvertScannedDocumentTest.convert" />
+        <item itemvalue="TestNG.ExtractTextTest.extractText" />
         <item itemvalue="TestNG.TestAnnotateScan.annotateScan" />
       </list>
     </recent_temporary>
@@ -548,27 +576,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ConvertScannedDocumentTest_convert - 2019.03.28 at 13h 43m 09s.xml">
-      <configuration name="ConvertScannedDocumentTest.convert" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ConvertScannedDocumentTest_convert - 2019.03.28 at 13h 59m 26s.xml">
-      <configuration name="ConvertScannedDocumentTest.convert" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ConvertScannedDocumentTest_convert - 2019.03.28 at 14h 00m 09s.xml">
-      <configuration name="ConvertScannedDocumentTest.convert" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ExtractTextTest_extractText - 2019.03.28 at 14h 04m 55s.xml">
-      <configuration name="ExtractTextTest.extractText" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ConvertScannedDocumentTest_readConvertedDocument - 2019.03.28 at 14h 12m 05s.xml">
-      <configuration name="ConvertScannedDocumentTest.readConvertedDocument" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ConvertScannedDocumentTest_convert - 2019.03.28 at 15h 14m 39s.xml">
-      <configuration name="ConvertScannedDocumentTest.convert" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ConvertScannedDocumentTest_convert - 2019.03.28 at 15h 15m 30s.xml">
-      <configuration name="ConvertScannedDocumentTest.convert" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="ExtractTextTest_extractText - 2019.03.28 at 15h 19m 08s.xml">
       <configuration name="ExtractTextTest.extractText" configurationId="TestNG" />
     </history-entry>
@@ -577,6 +584,27 @@
     </history-entry>
     <history-entry file="ExtractTextTest_extractText - 2019.03.28 at 15h 21m 09s.xml">
       <configuration name="ExtractTextTest.extractText" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ExtractTextTest_extractText - 2019.03.28 at 16h 20m 12s.xml">
+      <configuration name="ExtractTextTest.extractText" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ExtractTextTest_extractText - 2019.03.28 at 16h 20m 41s.xml">
+      <configuration name="ExtractTextTest.extractText" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ConvertScannedDocumentTest_convert - 2019.03.28 at 16h 21m 09s.xml">
+      <configuration name="ConvertScannedDocumentTest.convert" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ConvertScannedDocumentTest_convert - 2019.03.28 at 16h 24m 43s.xml">
+      <configuration name="ConvertScannedDocumentTest.convert" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ConvertScannedDocumentTest_convert - 2019.03.28 at 16h 27m 54s.xml">
+      <configuration name="ConvertScannedDocumentTest.convert" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ConvertScannedDocumentTest_convert - 2019.03.28 at 16h 31m 51s.xml">
+      <configuration name="ConvertScannedDocumentTest.convert" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ConvertScannedDocumentTest_convert - 2019.03.28 at 16h 35m 28s.xml">
+      <configuration name="ConvertScannedDocumentTest.convert" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -592,14 +620,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32981783" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32981783" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32981783" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39980826" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="SonarLint" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.29146692" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.29146692" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32981783" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -620,7 +648,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/js/tesseract/TesseractOpticalCharacterRecognitionEngine.java</url>
-          <line>52</line>
+          <line>51</line>
           <properties />
           <option name="timeStamp" value="41" />
         </line-breakpoint>
@@ -905,30 +933,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="128">
+            <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/BaseLineModifier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-238">
+        <state relative-caret-position="-298">
           <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#633#634#0" expanded="true" />
             <element signature="e#683#684#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/ColorModifier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-706">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#533#534#0" expanded="true" />
-            <element signature="e#583#584#0" expanded="true" />
-            <element signature="e#2265#2512#0" expanded="true" />
-            <element signature="e#2511#2512#0" expanded="true" />
-            <element signature="e#1263#1264#0" expanded="true" />
-            <element signature="e#1290#1291#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -942,8 +964,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/OCREventModifier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="80" column="14" lean-forward="true" selection-start-line="80" selection-start-column="14" selection-end-line="80" selection-end-column="14" />
+        <state relative-caret-position="1062">
+          <caret line="80" column="14" selection-start-line="80" selection-start-column="14" selection-end-line="80" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#3727#3728#0" expanded="true" />
@@ -964,7 +986,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/ocr/OCRChunk.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1369">
+        <state relative-caret-position="17">
           <caret line="11" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -994,22 +1016,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ConvertScannedDocumentTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/pdf/ScannedPdfDocument.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
+        <state relative-caret-position="518">
+          <caret line="104" column="19" selection-start-line="104" selection-start-column="19" selection-end-line="104" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/tesseract/TesseractOpticalCharacterRecognitionEngine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-94">
-          <caret line="33" column="49" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#2620#2621#0" expanded="true" />
+            <element signature="e#2663#2664#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1024,35 +1038,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/pdf/ScannedPdfDocument.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="104" column="19" selection-start-line="104" selection-start-column="19" selection-end-line="104" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2620#2621#0" expanded="true" />
-            <element signature="e#2663#2664#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ExtractTextTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="38" column="141" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="38" selection-end-column="141" />
+        <state relative-caret-position="289">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="34">
-            <caret line="2" column="27" lean-forward="true" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/ColorModifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="72" selection-start-line="72" selection-end-line="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3182#3183#0" expanded="true" />
+            <element signature="e#3209#3210#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/tesseract/TesseractOpticalCharacterRecognitionEngine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-680">
+          <caret line="20" column="32" lean-forward="true" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ConvertScannedDocumentTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="23" column="77" selection-start-line="23" selection-start-column="77" selection-end-line="23" selection-end-column="77" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

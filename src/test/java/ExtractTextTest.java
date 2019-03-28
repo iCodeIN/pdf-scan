@@ -22,7 +22,7 @@ public class ExtractTextTest {
 
         // create document
         PdfDocument pdfDocument = new PdfDocument(
-                new PdfReader(getClass().getClassLoader().getResourceAsStream("input_document.pdf")));
+                new PdfReader(getClass().getClassLoader().getResourceAsStream("input_001.pdf")));
 
         SimpleTextExtractionStrategy strategyA = new SimpleTextExtractionStrategy();
         IEventListener strategyB = new BaseLineModifier(strategyA);

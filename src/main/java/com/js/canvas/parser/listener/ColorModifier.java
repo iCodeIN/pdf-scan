@@ -58,16 +58,18 @@ public class ColorModifier implements FlushableEventListener {
             }
         });
 
-        Color backgroundColor = entryList.get(entryList.size() - 1).getKey();
-        if (distance(backgroundColor, Color.WHITE) < 0.05)
-            backgroundColor = Color.WHITE;
+        if(entryList.size() >= 2) {
+            Color backgroundColor = entryList.get(entryList.size() - 1).getKey();
+            if (distance(backgroundColor, Color.WHITE) < 0.05)
+                backgroundColor = Color.WHITE;
 
-        Color textColor = entryList.get(entryList.size() - 2).getKey();
-        if (distance(textColor, Color.BLACK) < 0.05)
-            textColor = Color.BLACK;
+            Color textColor = entryList.get(entryList.size() - 2).getKey();
+            if (distance(textColor, Color.BLACK) < 0.05)
+                textColor = Color.BLACK;
 
-        chunk.setBackgroundColor(backgroundColor);
-        chunk.setTextColor(textColor);
+            chunk.setBackgroundColor(backgroundColor);
+            chunk.setTextColor(textColor);
+        }
 
         // delegate
         innerListener.eventOccurred(data, EventType.RENDER_TEXT);

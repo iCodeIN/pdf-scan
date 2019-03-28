@@ -5,7 +5,6 @@ import com.js.canvas.parser.ocr.OCRChunk;
 import com.sun.jna.Pointer;
 import net.sourceforge.tess4j.ITessAPI;
 import net.sourceforge.tess4j.TessAPI1;
-import net.sourceforge.tess4j.Tesseract;
 import net.sourceforge.tess4j.util.ImageIOHelper;
 
 import java.awt.*;
@@ -88,6 +87,9 @@ public class TesseractOpticalCharacterRecognitionEngine implements IOpticalChara
 
             int w = java.lang.Math.abs(left - right);
             int h = java.lang.Math.abs(top - bottom);
+            if(w == 0 || h == 0)
+                continue;
+
             BufferedImage chunkImage = new BufferedImage(w, h, BufferedImage.TYPE_INT_RGB);
             for (int i = 0; i < w; i++) {
                 for (int j = 0; j < h; j++) {
