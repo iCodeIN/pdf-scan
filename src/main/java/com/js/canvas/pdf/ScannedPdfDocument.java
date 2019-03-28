@@ -50,6 +50,13 @@ public class ScannedPdfDocument extends PdfDocument {
 
     /**
      * Perform OCR on a specific page
+     *
+     *   ----------------------------
+     *  |                            |
+     *  | PDF -->  OCR -->  Colored  | -->   Baseline     --> output
+     *  |                  OCRChunk  |     modification
+     *  |                            |
+     *   ----------------------------
      * @param pageNr the page number on which to perform OCR
      */
     public void doOCR(final int pageNr){

@@ -19,5 +19,11 @@ Asrc/main/java/com/js/canvas/parser/listener/OCREventModifier.java,5\c\5cc9535e
 -src/test/java/ConvertScannedDocumentTest.java,f\b\fb15197377fc8da71f6d217550747825c3afca61
 g
 7src/main/java/com/js/canvas/pdf/ScannedPdfDocument.java,4\7\47cd35c6025cbdb27d1b4554db254778919fcaf6
-p
-@src/main/java/com/js/canvas/parser/ocr/ColorMatchingWrapper.java,1\d\1d0b5c3cf569983dae28e1deda2aae675a460351
+R
+"src/test/java/ExtractTextTest.java,f\f\ff5e760db3e8e16e14f86f4c8084dfa4478c9ab9
+i
+9src/main/java/com/js/canvas/parser/ocr/ColorModifier.java,8\7\875b88df7fff07a60df9ac8665bcba9ee002781b
+w
+Gsrc/main/java/com/js/canvas/parser/listener/FlushableEventListener.java,5\c\5c5685195064a87b2ab5f1737915506282d8c92d
+q
+Asrc/main/java/com/js/canvas/parser/listener/BaseLineModifier.java,0\e\0e5f4050a23d52b1ac60e5716612feae32d6d763
