@@ -1,6 +1,6 @@
 # pdf-scan
 
-![pdf-scan logo](loupe.svg)
+<img src="loupe.svg" width="100" height="100">
 
 ## about OCR
 Optical character recognition or optical character reader, often abbreviated as OCR, is the mechanical or electronic conversion of images of typed, handwritten or printed text into machine-encoded text, whether from a scanned document, a photo of a document, a scene-photo (for example the text on signs and billboards in a landscape photo) or from subtitle text superimposed on an image (for example from a television broadcast).
@@ -13,16 +13,22 @@ iText was written by Bruno Lowagie. The source code was initially distributed as
 ## example code
 
     // initialize tesseract
-    TesseractOpticalCharacterRecognitionEngine ocrEngine = new TesseractOpticalCharacterRecognitionEngine(new File("tessdata"), "eng");
+    TesseractOpticalCharacterRecognitionEngine ocrEngine = new TesseractOpticalCharacterRecognitionEngine(new File("C:\\Users\\joris\\Downloads\\tessdata"), "eng");
 
-    // create document
-    PdfDocument pdfDocument = new PdfDocument(new PdfReader(new File("scan_0001.pdf")));
+     // create document
+     PdfDocument pdfDocument = new PdfDocument(new PdfReader(getClass().getClassLoader().getResourceAsStream("input_document.pdf")));
 
-    // extract text
-    SimpleTextExtractionStrategy simpleTextExtractionStrategy = new SimpleTextExtractionStrategy();
-    OCRTextExtractionStrategy ocrTextExtractionStrategy = new OCRTextExtractionStrategy(simpleTextExtractionStrategy, ocrEngine);
-    new PdfCanvasProcessor(ocrTextExtractionStrategy).processPageContent(pdfDocument.getPage(1));
+     SimpleTextExtractionStrategy strategyA = new SimpleTextExtractionStrategy();
+     IEventListener strategyB = new BaseLineModifier(strategyA);
+     FlushableEventListener strategyC = new OCREventModifier(strategyB, ocrEngine);
 
-    // display
-    System.out.println(simpleTextExtractionStrategy.getResultantText());
+     new PdfCanvasProcessor(strategyC).processPageContent(pdfDocument.getPage(1));
+     strategyC.flush();
+
+     String text = strategyA.getResultantText();
+
+     Assert.assertTrue(text.contains("2. Without granting any right or license, the Disclosing Party agrees that the foregoing shall not apply with respect to\n" +
+                "any information after five years following the disclosure thereof or any information that the Receiving Party can\n" +
+                "document (i) is or becomes (through no improper action or inaction by the Receiving Party or any affiliate, agent,\n" +
+                "consultant or employee) generally available to the public, or (ii) was in its possession or known by it prior to receipt"));
 
