@@ -27,8 +27,8 @@ public class OCREventModifier implements IEventListener {
     private final IOpticalCharacterRecognitionEngine opticalCharacterRecognitionEngine;
     private final Logger logger = Logger.getLogger(OCREventModifier.class.getSimpleName());
 
-    public OCREventModifier(IEventListener innerStrategy, IOpticalCharacterRecognitionEngine opticalCharacterRecognitionEngine){
-        this.innerStrategy = innerStrategy;
+    public OCREventModifier(IEventListener innerListener, IOpticalCharacterRecognitionEngine opticalCharacterRecognitionEngine){
+        this.innerStrategy = innerListener;
         this.opticalCharacterRecognitionEngine = opticalCharacterRecognitionEngine;
     }
 

@@ -12,8 +12,9 @@ import com.itextpdf.kernel.pdf.canvas.parser.PdfCanvasProcessor;
 import com.itextpdf.kernel.pdf.canvas.parser.data.IEventData;
 import com.itextpdf.kernel.pdf.canvas.parser.listener.IEventListener;
 import com.js.canvas.parser.data.OCRTextRenderInfo;
+import com.js.canvas.parser.listener.FlushableEventListener;
 import com.js.canvas.parser.listener.OCREventModifier;
-import com.js.canvas.parser.ocr.BaseLineModifier;
+import com.js.canvas.parser.listener.BaseLineModifier;
 import com.js.canvas.parser.ocr.ColorModifier;
 import com.js.canvas.parser.ocr.IOpticalCharacterRecognitionEngine;
 import com.js.canvas.parser.ocr.OCRChunk;
@@ -52,19 +53,24 @@ public class ScannedPdfDocument extends PdfDocument {
      * @param pageNr the page number on which to perform OCR
      */
     public void doOCR(final int pageNr){
-        IEventListener listener = new OCREventModifier(new IEventListener(){
+        IEventListener anonymousListener = new IEventListener() {
             @Override
             public void eventOccurred(IEventData data, EventType type) {
-                if(data instanceof OCRTextRenderInfo) {
+                if (data instanceof OCRTextRenderInfo) {
                     writeString((OCRTextRenderInfo) data, pageNr);
                 }
             }
             @Override
             public Set<EventType> getSupportedEvents() { return null; }
-        },new BaseLineModifier(new ColorModifier(opticalCharacterRecognitionEngine)));
+        };
+        FlushableEventListener baselineModifier = new BaseLineModifier(anonymousListener);
+        IEventListener listener = new OCREventModifier(baselineModifier, new ColorModifier(opticalCharacterRecognitionEngine));
 
         // process canvas
         new PdfCanvasProcessor(listener).processPageContent(getPage(pageNr));
+
+        // flush
+        baselineModifier.flush();
     }
 
     private void writeString(OCRTextRenderInfo data, int pageNr) {
