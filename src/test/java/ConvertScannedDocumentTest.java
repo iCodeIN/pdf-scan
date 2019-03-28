@@ -27,7 +27,7 @@ public class ConvertScannedDocumentTest {
         );
 
         // perform OCR
-        pdfDocument.doOCR(1);
+        pdfDocument.doOCR();
 
         // close
         pdfDocument.close();

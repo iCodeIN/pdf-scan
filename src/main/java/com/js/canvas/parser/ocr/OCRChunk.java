@@ -1,11 +1,14 @@
 package com.js.canvas.parser.ocr;
 
 import java.awt.*;
+import java.awt.image.BufferedImage;
 
 public class OCRChunk {
 
         private Rectangle location;
         private String text;
+
+        private BufferedImage image;
 
         private int fontSize;
         private boolean italic;
@@ -22,6 +25,9 @@ public class OCRChunk {
             this.location = rectangle;
             this.text = text;
         }
+
+        public BufferedImage getImage(){ return image;}
+        public OCRChunk setImage(BufferedImage bufferedImage){this.image = bufferedImage; return this;}
 
         public String getText(){ return text; }
         public OCRChunk setText(String text){this.text=text; return this;}

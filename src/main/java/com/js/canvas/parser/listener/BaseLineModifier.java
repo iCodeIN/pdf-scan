@@ -28,6 +28,7 @@ public class BaseLineModifier implements FlushableEventListener {
         }
     }
 
+    @Override
     public void flush(){
         // baseline correction
         correctBaseLines();

@@ -21,14 +21,14 @@ import java.util.logging.Logger;
  * This class converts images found in PDF documents to TextRender events.
  * This allows other {@link ITextExtractionStrategy} implementations to handle this text.
  */
-public class OCREventModifier implements IEventListener {
+public class OCREventModifier implements FlushableEventListener {
 
-    private final IEventListener innerStrategy;
+    private final IEventListener innerListener;
     private final IOpticalCharacterRecognitionEngine opticalCharacterRecognitionEngine;
     private final Logger logger = Logger.getLogger(OCREventModifier.class.getSimpleName());
 
     public OCREventModifier(IEventListener innerListener, IOpticalCharacterRecognitionEngine opticalCharacterRecognitionEngine){
-        this.innerStrategy = innerListener;
+        this.innerListener = innerListener;
         this.opticalCharacterRecognitionEngine = opticalCharacterRecognitionEngine;
     }
 
@@ -68,7 +68,7 @@ public class OCREventModifier implements IEventListener {
                         chunk.getLocation().height = (int) h;
 
                         TextRenderInfo textRenderInfo = new OCRTextRenderInfo(chunk);
-                        innerStrategy.eventOccurred( textRenderInfo, EventType.RENDER_TEXT);
+                        innerListener.eventOccurred( textRenderInfo, EventType.RENDER_TEXT);
                     }
                 }
 
@@ -77,10 +77,15 @@ public class OCREventModifier implements IEventListener {
         }
         // handle anything else
         else {
-            innerStrategy.eventOccurred(iEventData, eventType);
+            innerListener.eventOccurred(iEventData, eventType);
         }
     }
 
     public Set<EventType> getSupportedEvents() { return null; }
 
+    @Override
+    public void flush() {
+        if(innerListener instanceof FlushableEventListener)
+            ((FlushableEventListener) innerListener).flush();
+    }
 }

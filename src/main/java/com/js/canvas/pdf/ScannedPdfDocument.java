@@ -15,7 +15,7 @@ import com.js.canvas.parser.data.OCRTextRenderInfo;
 import com.js.canvas.parser.listener.FlushableEventListener;
 import com.js.canvas.parser.listener.OCREventModifier;
 import com.js.canvas.parser.listener.BaseLineModifier;
-import com.js.canvas.parser.ocr.ColorModifier;
+import com.js.canvas.parser.listener.ColorModifier;
 import com.js.canvas.parser.ocr.IOpticalCharacterRecognitionEngine;
 import com.js.canvas.parser.ocr.OCRChunk;
 
@@ -51,12 +51,8 @@ public class ScannedPdfDocument extends PdfDocument {
     /**
      * Perform OCR on a specific page
      *
-     *   ----------------------------
-     *  |                            |
-     *  | PDF -->  OCR -->  Colored  | -->   Baseline     --> output
-     *  |                  OCRChunk  |     modification
-     *  |                            |
-     *   ----------------------------
+     *  scanned  -->  tesseract  -->     color     -->    baseline
+     *    pdf                         information       information
      * @param pageNr the page number on which to perform OCR
      */
     public void doOCR(final int pageNr){
@@ -70,14 +66,15 @@ public class ScannedPdfDocument extends PdfDocument {
             @Override
             public Set<EventType> getSupportedEvents() { return null; }
         };
-        FlushableEventListener baselineModifier = new BaseLineModifier(anonymousListener);
-        IEventListener listener = new OCREventModifier(baselineModifier, new ColorModifier(opticalCharacterRecognitionEngine));
+        IEventListener baselineModifier = new BaseLineModifier(anonymousListener);
+        IEventListener colorModifier = new ColorModifier(baselineModifier);
+        FlushableEventListener listener = new OCREventModifier(colorModifier, opticalCharacterRecognitionEngine);
 
         // process canvas
         new PdfCanvasProcessor(listener).processPageContent(getPage(pageNr));
 
         // flush
-        baselineModifier.flush();
+        listener.flush();
     }
 
     private void writeString(OCRTextRenderInfo data, int pageNr) {
