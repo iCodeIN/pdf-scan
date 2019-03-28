@@ -7,8 +7,8 @@ import com.itextpdf.kernel.geom.Vector;
 import com.itextpdf.kernel.pdf.PdfString;
 import com.itextpdf.kernel.pdf.canvas.CanvasTag;
 import com.itextpdf.kernel.pdf.canvas.parser.data.TextRenderInfo;
-import com.js.canvas.parser.ocr.OCRChunk;
 import com.js.canvas.ModifiableGraphicsState;
+import com.js.canvas.parser.ocr.OCRChunk;
 
 import java.io.IOException;
 import java.util.Stack;
@@ -20,34 +20,40 @@ import java.util.Stack;
  */
 public class OCRTextRenderInfo extends TextRenderInfo {
 
-    private OCRChunk ocrChunk;
     private static ModifiableGraphicsState gs;
 
-    static{
+    static {
         gs = new ModifiableGraphicsState();
         gs.setCtm(new Matrix());
-        try { gs.setFont(PdfFontFactory.createFont()); } catch (IOException e) { }
+        try {
+            gs.setFont(PdfFontFactory.createFont());
+        } catch (IOException e) {
+        }
     }
+
+    private OCRChunk ocrChunk;
 
     /**
      * Construct a new {@link OCRTextRenderInfo} based on an {@link OCRChunk}
+     *
      * @param chunk
      */
-    public OCRTextRenderInfo(OCRChunk chunk){
-        super(new PdfString(chunk.getText().replaceAll("\n","")), gs, new Matrix(), new Stack<CanvasTag>());
+    public OCRTextRenderInfo(OCRChunk chunk) {
+        super(new PdfString(chunk.getText().replaceAll("\n", "")), gs, new Matrix(), new Stack<CanvasTag>());
         this.ocrChunk = chunk;
     }
 
     /**
      * Get the {@link OCRChunk}
+     *
      * @return
      */
-    public OCRChunk getOCRChunk(){
+    public OCRChunk getOCRChunk() {
         return ocrChunk;
     }
 
     @Override
-    public LineSegment getBaseline(){
+    public LineSegment getBaseline() {
         float x = ocrChunk.getLocation().x;
         float y = ocrChunk.getLocation().y;
         float w = (float) ocrChunk.getLocation().getWidth();

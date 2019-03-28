@@ -1,7 +1,7 @@
 package com.js.tesseract;
 
-import com.js.canvas.parser.ocr.OCRChunk;
 import com.js.canvas.parser.ocr.IOpticalCharacterRecognitionEngine;
+import com.js.canvas.parser.ocr.OCRChunk;
 import com.sun.jna.Pointer;
 import net.sourceforge.tess4j.ITessAPI;
 import net.sourceforge.tess4j.TessAPI1;
@@ -13,34 +13,29 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.nio.ByteBuffer;
 import java.nio.IntBuffer;
-import java.util.*;
+import java.util.ArrayList;
 import java.util.List;
 
 public class TesseractOpticalCharacterRecognitionEngine implements IOpticalCharacterRecognitionEngine {
-
-    private Tesseract tesseract;
 
     private ITessAPI.TessBaseAPI handle = TessAPI1.TessBaseAPICreate();
     private String languageCode;
     private File tesseractDataDirectory;
 
-    public TesseractOpticalCharacterRecognitionEngine(File tesseractDataDirectory, String languageCode){
-        tesseract = new Tesseract();
+    public TesseractOpticalCharacterRecognitionEngine(File tesseractDataDirectory, String languageCode) {
 
         // set data path
-        if(!tesseractDataDirectory.exists())
+        if (!tesseractDataDirectory.exists())
             throw new IllegalArgumentException();
-        tesseract.setDatapath(tesseractDataDirectory.getAbsolutePath());
         this.tesseractDataDirectory = tesseractDataDirectory;
 
         // set language code
-        if(!new File(tesseractDataDirectory, languageCode + ".traineddata").exists())
+        if (!new File(tesseractDataDirectory, languageCode + ".traineddata").exists())
             throw new IllegalArgumentException();
-        tesseract.setLanguage(languageCode);
         this.languageCode = languageCode;
     }
 
-    public  List<OCRChunk> doOCR(BufferedImage image){
+    public List<OCRChunk> doOCR(BufferedImage image) {
         List<OCRChunk> ocrChunkList = new ArrayList<>();
 
         ByteBuffer buf = ImageIOHelper.convertImageData(image);
@@ -57,7 +52,7 @@ public class TesseractOpticalCharacterRecognitionEngine implements IOpticalChara
 
         do {
             Pointer ptr = TessAPI1.TessResultIteratorGetUTF8Text(ri, TessAPI1.TessPageIteratorLevel.RIL_WORD);
-            if(ptr == null)
+            if (ptr == null)
                 continue;
             String word = ptr.getString(0);
             TessAPI1.TessDeleteText(ptr);
@@ -92,15 +87,15 @@ public class TesseractOpticalCharacterRecognitionEngine implements IOpticalChara
             int fontId = fontIdB.get();
 
             int w = java.lang.Math.abs(left - right);
-            int h = java.lang.Math.abs(top-bottom);
+            int h = java.lang.Math.abs(top - bottom);
             BufferedImage chunkImage = new BufferedImage(w, h, BufferedImage.TYPE_INT_RGB);
             for (int i = 0; i < w; i++) {
                 for (int j = 0; j < h; j++) {
-                    chunkImage.setRGB(i,j, image.getRGB(left + i,top + j));
+                    chunkImage.setRGB(i, j, image.getRGB(left + i, top + j));
                 }
             }
 
-            OCRChunk ocrChunk = new OCRChunk(new Rectangle(left, top, java.lang.Math.abs(left-right), java.lang.Math.abs(top-bottom)), word)
+            OCRChunk ocrChunk = new OCRChunk(new Rectangle(left, top, java.lang.Math.abs(left - right), java.lang.Math.abs(top - bottom)), word)
                     .setBold(bold)
                     .setItalic(italic)
                     .setUnderlined(underlined)

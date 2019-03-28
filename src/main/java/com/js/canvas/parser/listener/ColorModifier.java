@@ -28,9 +28,9 @@ public class ColorModifier implements FlushableEventListener {
 
     @Override
     public void eventOccurred(IEventData data, EventType type) {
-        if(data instanceof OCRTextRenderInfo){
+        if (data instanceof OCRTextRenderInfo) {
             processOCRTextRenderInfo((OCRTextRenderInfo) data);
-        }else{
+        } else {
             innerListener.eventOccurred(data, type);
         }
     }
@@ -39,12 +39,12 @@ public class ColorModifier implements FlushableEventListener {
         OCRChunk chunk = data.getOCRChunk();
         Map<Color, Integer> colorHistogram = new HashMap<>();
         for (int i = 0; i < chunk.getImage().getWidth(); i++) {
-            for (int j = 0; j < chunk.getImage().getHeight() ; j++) {
+            for (int j = 0; j < chunk.getImage().getHeight(); j++) {
                 Color color = new Color(chunk.getImage().getRGB(i, j));
                 color = new Color(color.getRed() - color.getRed() % (256 / COLOR_REDUCTION_FACTOR),
                         color.getGreen() - color.getGreen() % (256 / COLOR_REDUCTION_FACTOR),
                         color.getBlue() - color.getBlue() % (256 / COLOR_REDUCTION_FACTOR));
-                if(colorHistogram.containsKey(color))
+                if (colorHistogram.containsKey(color))
                     colorHistogram.put(color, colorHistogram.get(color) + 1);
                 else
                     colorHistogram.put(color, 1);
@@ -53,15 +53,17 @@ public class ColorModifier implements FlushableEventListener {
         List<Map.Entry<Color, Integer>> entryList = new ArrayList<>(colorHistogram.entrySet());
         java.util.Collections.sort(entryList, new Comparator<Map.Entry<Color, Integer>>() {
             @Override
-            public int compare(Map.Entry<Color, Integer> o1, Map.Entry<Color, Integer> o2) { return o1.getValue().compareTo(o2.getValue()); }
+            public int compare(Map.Entry<Color, Integer> o1, Map.Entry<Color, Integer> o2) {
+                return o1.getValue().compareTo(o2.getValue());
+            }
         });
 
-        Color backgroundColor = entryList.get(entryList.size() -1).getKey();
-        if(distance(backgroundColor, Color.WHITE) < 0.05)
+        Color backgroundColor = entryList.get(entryList.size() - 1).getKey();
+        if (distance(backgroundColor, Color.WHITE) < 0.05)
             backgroundColor = Color.WHITE;
 
         Color textColor = entryList.get(entryList.size() - 2).getKey();
-        if(distance(textColor, Color.BLACK) < 0.05)
+        if (distance(textColor, Color.BLACK) < 0.05)
             textColor = Color.BLACK;
 
         chunk.setBackgroundColor(backgroundColor);
@@ -78,7 +80,7 @@ public class ColorModifier implements FlushableEventListener {
 
     @Override
     public void flush() {
-        if(innerListener instanceof FlushableEventListener)
+        if (innerListener instanceof FlushableEventListener)
             ((FlushableEventListener) innerListener).flush();
     }
 }

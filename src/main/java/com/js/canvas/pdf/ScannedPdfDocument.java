@@ -12,10 +12,10 @@ import com.itextpdf.kernel.pdf.canvas.parser.PdfCanvasProcessor;
 import com.itextpdf.kernel.pdf.canvas.parser.data.IEventData;
 import com.itextpdf.kernel.pdf.canvas.parser.listener.IEventListener;
 import com.js.canvas.parser.data.OCRTextRenderInfo;
-import com.js.canvas.parser.listener.FlushableEventListener;
-import com.js.canvas.parser.listener.OCREventModifier;
 import com.js.canvas.parser.listener.BaseLineModifier;
 import com.js.canvas.parser.listener.ColorModifier;
+import com.js.canvas.parser.listener.FlushableEventListener;
+import com.js.canvas.parser.listener.OCREventModifier;
 import com.js.canvas.parser.ocr.IOpticalCharacterRecognitionEngine;
 import com.js.canvas.parser.ocr.OCRChunk;
 
@@ -33,29 +33,33 @@ public class ScannedPdfDocument extends PdfDocument {
 
     private IOpticalCharacterRecognitionEngine opticalCharacterRecognitionEngine;
 
-    public ScannedPdfDocument(PdfReader reader, PdfWriter writer, IOpticalCharacterRecognitionEngine opticalCharacterRecognitionEngine){
+    public ScannedPdfDocument(PdfReader reader, PdfWriter writer, IOpticalCharacterRecognitionEngine opticalCharacterRecognitionEngine) {
         super(reader, writer);
         this.opticalCharacterRecognitionEngine = opticalCharacterRecognitionEngine;
-        try { FONT = PdfFontFactory.createFont(); } catch (IOException e) { }
+        try {
+            FONT = PdfFontFactory.createFont();
+        } catch (IOException e) {
+        }
     }
 
     /**
      * Perform OCR on all pages
      */
-    public void doOCR(){
-        for (int i = 1; i <= getNumberOfPages() ; i++) {
+    public void doOCR() {
+        for (int i = 1; i <= getNumberOfPages(); i++) {
             doOCR(i);
         }
     }
 
     /**
      * Perform OCR on a specific page
+     * <p>
+     * scanned  -->  tesseract  -->     color     -->    baseline
+     * pdf                         information       information
      *
-     *  scanned  -->  tesseract  -->     color     -->    baseline
-     *    pdf                         information       information
      * @param pageNr the page number on which to perform OCR
      */
-    public void doOCR(final int pageNr){
+    public void doOCR(final int pageNr) {
         IEventListener anonymousListener = new IEventListener() {
             @Override
             public void eventOccurred(IEventData data, EventType type) {
@@ -63,8 +67,11 @@ public class ScannedPdfDocument extends PdfDocument {
                     writeString((OCRTextRenderInfo) data, pageNr);
                 }
             }
+
             @Override
-            public Set<EventType> getSupportedEvents() { return null; }
+            public Set<EventType> getSupportedEvents() {
+                return null;
+            }
         };
         IEventListener baselineModifier = new BaseLineModifier(anonymousListener);
         IEventListener colorModifier = new ColorModifier(baselineModifier);

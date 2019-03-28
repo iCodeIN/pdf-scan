@@ -7,9 +7,9 @@ import com.itextpdf.kernel.pdf.canvas.parser.data.ImageRenderInfo;
 import com.itextpdf.kernel.pdf.canvas.parser.data.TextRenderInfo;
 import com.itextpdf.kernel.pdf.canvas.parser.listener.IEventListener;
 import com.itextpdf.kernel.pdf.canvas.parser.listener.ITextExtractionStrategy;
-import com.js.canvas.parser.ocr.OCRChunk;
-import com.js.canvas.parser.ocr.IOpticalCharacterRecognitionEngine;
 import com.js.canvas.parser.data.OCRTextRenderInfo;
+import com.js.canvas.parser.ocr.IOpticalCharacterRecognitionEngine;
+import com.js.canvas.parser.ocr.OCRChunk;
 
 import java.awt.image.BufferedImage;
 import java.io.IOException;
@@ -27,17 +27,17 @@ public class OCREventModifier implements FlushableEventListener {
     private final IOpticalCharacterRecognitionEngine opticalCharacterRecognitionEngine;
     private final Logger logger = Logger.getLogger(OCREventModifier.class.getSimpleName());
 
-    public OCREventModifier(IEventListener innerListener, IOpticalCharacterRecognitionEngine opticalCharacterRecognitionEngine){
+    public OCREventModifier(IEventListener innerListener, IOpticalCharacterRecognitionEngine opticalCharacterRecognitionEngine) {
         this.innerListener = innerListener;
         this.opticalCharacterRecognitionEngine = opticalCharacterRecognitionEngine;
     }
 
     public void eventOccurred(IEventData iEventData, EventType eventType) {
         // handle images
-        if(eventType == EventType.RENDER_IMAGE){
+        if (eventType == EventType.RENDER_IMAGE) {
 
             // extract coordinates
-            ImageRenderInfo imageRenderInfo  = (ImageRenderInfo) iEventData;
+            ImageRenderInfo imageRenderInfo = (ImageRenderInfo) iEventData;
             float x0 = imageRenderInfo.getImageCtm().get(Matrix.I31);
             float y0 = imageRenderInfo.getImageCtm().get(Matrix.I32);
             float w0 = imageRenderInfo.getImageCtm().get(Matrix.I11);
@@ -51,8 +51,8 @@ public class OCREventModifier implements FlushableEventListener {
 
                 List<OCRChunk> ocrChunkList = opticalCharacterRecognitionEngine.doOCR(bufferedImage);
 
-                for(OCRChunk chunk : ocrChunkList){
-                    if(chunk.getText() != null && !chunk.getText().isEmpty()) {
+                for (OCRChunk chunk : ocrChunkList) {
+                    if (chunk.getText() != null && !chunk.getText().isEmpty()) {
 
                         float x1 = chunk.getLocation().x;
                         float y1 = chunk.getLocation().y;
@@ -68,11 +68,13 @@ public class OCREventModifier implements FlushableEventListener {
                         chunk.getLocation().height = (int) h;
 
                         TextRenderInfo textRenderInfo = new OCRTextRenderInfo(chunk);
-                        innerListener.eventOccurred( textRenderInfo, EventType.RENDER_TEXT);
+                        innerListener.eventOccurred(textRenderInfo, EventType.RENDER_TEXT);
                     }
                 }
 
-            } catch (IOException e) { logger.severe(e.getLocalizedMessage()); }
+            } catch (IOException e) {
+                logger.severe(e.getLocalizedMessage());
+            }
 
         }
         // handle anything else
@@ -81,11 +83,13 @@ public class OCREventModifier implements FlushableEventListener {
         }
     }
 
-    public Set<EventType> getSupportedEvents() { return null; }
+    public Set<EventType> getSupportedEvents() {
+        return null;
+    }
 
     @Override
     public void flush() {
-        if(innerListener instanceof FlushableEventListener)
+        if (innerListener instanceof FlushableEventListener)
             ((FlushableEventListener) innerListener).flush();
     }
 }

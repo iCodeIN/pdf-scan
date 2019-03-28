@@ -4,9 +4,9 @@ import com.itextpdf.kernel.pdf.PdfWriter;
 import com.itextpdf.kernel.pdf.canvas.parser.PdfCanvasProcessor;
 import com.itextpdf.kernel.pdf.canvas.parser.listener.SimpleTextExtractionStrategy;
 import com.js.canvas.pdf.ScannedPdfDocument;
+import com.js.tesseract.TesseractOpticalCharacterRecognitionEngine;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import com.js.tesseract.TesseractOpticalCharacterRecognitionEngine;
 
 import java.io.File;
 import java.io.IOException;
