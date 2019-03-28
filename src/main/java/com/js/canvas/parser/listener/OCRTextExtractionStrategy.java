@@ -1,4 +1,4 @@
-package com.js;
+package com.js.canvas.parser.listener;
 
 import com.itextpdf.kernel.geom.Matrix;
 import com.itextpdf.kernel.pdf.canvas.parser.EventType;
@@ -6,7 +6,8 @@ import com.itextpdf.kernel.pdf.canvas.parser.data.IEventData;
 import com.itextpdf.kernel.pdf.canvas.parser.data.ImageRenderInfo;
 import com.itextpdf.kernel.pdf.canvas.parser.data.TextRenderInfo;
 import com.itextpdf.kernel.pdf.canvas.parser.listener.ITextExtractionStrategy;
-import com.js.tesseract.TesseractOpticalCharacterRecognitionEngine;
+import com.js.IOpticalCharacterRecognitionEngine;
+import com.js.canvas.parser.data.OCRTextRenderInfo;
 
 import java.awt.image.BufferedImage;
 import java.io.IOException;

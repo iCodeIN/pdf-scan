@@ -90,7 +90,7 @@ public class TesseractOpticalCharacterRecognitionEngine implements IOpticalChara
             int pointSize = pointSizeB.get();
             int fontId = fontIdB.get();
 
-            OCRChunk ocrChunk = new OCRChunk(new Rectangle(left, bottom, java.lang.Math.abs(left-right), java.lang.Math.abs(top-bottom)), word)
+            OCRChunk ocrChunk = new OCRChunk(new Rectangle(left, top, java.lang.Math.abs(left-right), java.lang.Math.abs(top-bottom)), word)
                     .setBold(bold)
                     .setItalic(italic)
                     .setUnderlined(underlined)

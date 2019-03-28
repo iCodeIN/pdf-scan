@@ -2,7 +2,7 @@ import com.itextpdf.kernel.pdf.PdfDocument;
 import com.itextpdf.kernel.pdf.PdfReader;
 import com.itextpdf.kernel.pdf.canvas.parser.PdfCanvasProcessor;
 import com.itextpdf.kernel.pdf.canvas.parser.listener.SimpleTextExtractionStrategy;
-import com.js.OCRTextExtractionStrategy;
+import com.js.canvas.parser.listener.OCRTextExtractionStrategy;
 import org.testng.annotations.Test;
 import com.js.tesseract.TesseractOpticalCharacterRecognitionEngine;
 
@@ -15,10 +15,10 @@ public class TestTextPresent {
     public void testWhetherTextIsPresent() throws IOException {
 
         // initialize tesseract
-        TesseractOpticalCharacterRecognitionEngine ocrEngine = new TesseractOpticalCharacterRecognitionEngine(new File("tessdata"), "eng");
+        TesseractOpticalCharacterRecognitionEngine ocrEngine = new TesseractOpticalCharacterRecognitionEngine(new File("C:\\Users\\joris\\Downloads\\tessdata"), "eng");
 
         // create document
-        PdfDocument pdfDocument = new PdfDocument(new PdfReader(new File("scan_0001.pdf")));
+        PdfDocument pdfDocument = new PdfDocument(new PdfReader(new File("C:\\Users\\joris\\Downloads\\nda_starring_jane.pdf")));
 
         // extract text
         SimpleTextExtractionStrategy simpleTextExtractionStrategy = new SimpleTextExtractionStrategy();

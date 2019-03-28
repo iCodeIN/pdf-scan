@@ -1,8 +1,13 @@
-package com.js;
+package com.js.canvas;
 
 import com.itextpdf.kernel.geom.Matrix;
 import com.itextpdf.kernel.pdf.canvas.CanvasGraphicsState;
 
+/**
+ * This class provides a modifiable {@link CanvasGraphicsState} implementation.
+ * A lot of the fields in {@link CanvasGraphicsState} were not modifiable (probably for good reason).
+ * This class provides setters for those fields that need to be editable for the OCR-flow.
+ */
 public class ModifiableGraphicsState extends CanvasGraphicsState {
 
     private Matrix ctm;
