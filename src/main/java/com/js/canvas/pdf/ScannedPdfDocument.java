@@ -13,13 +13,18 @@ import com.itextpdf.kernel.pdf.canvas.parser.data.IEventData;
 import com.itextpdf.kernel.pdf.canvas.parser.listener.IEventListener;
 import com.js.canvas.parser.data.OCRTextRenderInfo;
 import com.js.canvas.parser.listener.OCREventModifier;
-import com.js.canvas.parser.ocr.ColorMatchingWrapper;
+import com.js.canvas.parser.ocr.BaseLineModifier;
+import com.js.canvas.parser.ocr.ColorModifier;
 import com.js.canvas.parser.ocr.IOpticalCharacterRecognitionEngine;
 import com.js.canvas.parser.ocr.OCRChunk;
 
 import java.io.IOException;
 import java.util.Set;
 
+/**
+ * This class acts as a wrapper around {@link PdfDocument}
+ * It allows users to seamlessly integrate OCR capabilities in their iText flow.
+ */
 public class ScannedPdfDocument extends PdfDocument {
 
     private static int MARGIN = 1;
@@ -33,12 +38,19 @@ public class ScannedPdfDocument extends PdfDocument {
         try { FONT = PdfFontFactory.createFont(); } catch (IOException e) { }
     }
 
+    /**
+     * Perform OCR on all pages
+     */
     public void doOCR(){
         for (int i = 1; i <= getNumberOfPages() ; i++) {
             doOCR(i);
         }
     }
 
+    /**
+     * Perform OCR on a specific page
+     * @param pageNr the page number on which to perform OCR
+     */
     public void doOCR(final int pageNr){
         IEventListener listener = new OCREventModifier(new IEventListener(){
             @Override
@@ -49,7 +61,7 @@ public class ScannedPdfDocument extends PdfDocument {
             }
             @Override
             public Set<EventType> getSupportedEvents() { return null; }
-        },new ColorMatchingWrapper(opticalCharacterRecognitionEngine));
+        },new BaseLineModifier(new ColorModifier(opticalCharacterRecognitionEngine)));
 
         // process canvas
         new PdfCanvasProcessor(listener).processPageContent(getPage(pageNr));

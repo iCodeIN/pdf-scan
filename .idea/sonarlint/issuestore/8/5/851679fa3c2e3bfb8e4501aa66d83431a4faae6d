@@ -1,10 +1,10 @@
 
-Lsquid:S1191"5Use classes from the Java API instead of Sun classes.(屧
-Csquid:S1481R"-Remove this unused "fontName" local variable.(瀪
-@squid:S1481X"*Remove this unused "serif" local variable.(珖隞
-Esquid:S1481Y".Remove this unused "smallcaps" local variable.(浤梢
-Bsquid:S1481["+Remove this unused "fontId" local variable.(愥较
-Qsquid:S1854[":Remove this useless assignment to local variable "fontId".(愥较
-Tsquid:S1854Y"=Remove this useless assignment to local variable "smallcaps".(浤梢
-Osquid:S1854X"9Remove this useless assignment to local variable "serif".(珖隞
-Rsquid:S1854R"<Remove this useless assignment to local variable "fontName".(瀪
+Qsquid:S1854\":Remove this useless assignment to local variable "fontId".(愥较
+Tsquid:S1854Z"=Remove this useless assignment to local variable "smallcaps".(浤梢
+Csquid:S1481S"-Remove this unused "fontName" local variable.(瀪
+Esquid:S1481Z".Remove this unused "smallcaps" local variable.(浤梢
+Bsquid:S1481\"+Remove this unused "fontId" local variable.(愥较
+Osquid:S1854Y"9Remove this useless assignment to local variable "serif".(珖隞
+Lsquid:S1191"5Use classes from the Java API instead of Sun classes.(屧
+@squid:S1481Y"*Remove this unused "serif" local variable.(珖隞
+Rsquid:S1854S"<Remove this useless assignment to local variable "fontName".(瀪

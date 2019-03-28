@@ -5,12 +5,12 @@ import java.awt.image.BufferedImage;
 import java.util.*;
 import java.util.List;
 
-public class ColorMatchingWrapper implements IOpticalCharacterRecognitionEngine {
+public class ColorModifier implements IOpticalCharacterRecognitionEngine {
 
-    private static final int COLOR_REDUCTION_FACTOR = 32;
+    private static final int COLOR_REDUCTION_FACTOR = 64;
     private IOpticalCharacterRecognitionEngine opticalCharacterRecognitionEngine;
 
-    public ColorMatchingWrapper(IOpticalCharacterRecognitionEngine innerEngine){
+    public ColorModifier(IOpticalCharacterRecognitionEngine innerEngine){
         this.opticalCharacterRecognitionEngine = innerEngine;
     }
 
