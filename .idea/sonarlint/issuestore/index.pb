@@ -21,8 +21,6 @@ g
 7src/main/java/com/js/canvas/pdf/ScannedPdfDocument.java,4\7\47cd35c6025cbdb27d1b4554db254778919fcaf6
 R
 "src/test/java/ExtractTextTest.java,f\f\ff5e760db3e8e16e14f86f4c8084dfa4478c9ab9
-i
-9src/main/java/com/js/canvas/parser/ocr/ColorModifier.java,8\7\875b88df7fff07a60df9ac8665bcba9ee002781b
 w
 Gsrc/main/java/com/js/canvas/parser/listener/FlushableEventListener.java,5\c\5c5685195064a87b2ab5f1737915506282d8c92d
 q

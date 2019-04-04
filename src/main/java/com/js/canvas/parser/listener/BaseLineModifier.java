@@ -7,6 +7,7 @@ import com.js.canvas.parser.data.OCRTextRenderInfo;
 import com.js.canvas.parser.ocr.OCRChunk;
 
 import java.awt.*;
+import java.awt.image.BufferedImage;
 import java.util.*;
 import java.util.List;
 
@@ -58,7 +59,7 @@ public class BaseLineModifier implements FlushableEventListener {
             OCRTextRenderInfo chunkWithoutDescender = null;
             float avgBaseline = 0f;
             for (OCRTextRenderInfo c : l) {
-                if (!containsDescender(c.getOCRChunk().getText())) {
+                if (isRepresentativeBaseLine(c.getOCRChunk().getText())) {
                     chunkWithoutDescender = c;
                     break;
                 }
@@ -75,12 +76,44 @@ public class BaseLineModifier implements FlushableEventListener {
         }
     }
 
-    private boolean containsDescender(String text) {
-        return text.matches(".*[gjpqy]+.*");
+    private boolean isRepresentativeBaseLine(String text) {
+        if(!text.matches("[a-zA-Z0-9]+"))
+            return false;
+        return !text.matches(".*[gjpqy]+.*");
     }
 
     @Override
     public Set<EventType> getSupportedEvents() {
         return null;
+    }
+
+    private float getBaseLine(OCRTextRenderInfo ocrTextRenderInfo){
+        BufferedImage img = ocrTextRenderInfo.getOCRChunk().getImage();
+        int h = img.getHeight();
+        int w = img.getWidth();
+        for (int i = 0; i < h; i++) {
+            double blackPercentage = 0;
+            for (int j = 0; j < w; j++) {
+                Color c = new Color(img.getRGB(j, h - 1 - i));
+                blackPercentage += isCloserToDark(c) ? 1 : 0;
+            }
+            blackPercentage /= w;
+            if(blackPercentage > 0.2)
+                return w;
+        }
+        return (float) ocrTextRenderInfo.getOCRChunk().getLocation().getY();
+    }
+
+    public boolean isCloserToDark(Color c){
+        double dW = distance(c, Color.WHITE);
+        double dB = distance(c, Color.BLACK);
+        return dB < dW;
+    }
+
+    private double distance(Color c0, Color c1) {
+        double r = c0.getRed() - c1.getRed();
+        double g = c0.getGreen() - c1.getGreen();
+        double b = c0.getBlue() - c1.getBlue();
+        return java.lang.Math.sqrt(r * r + g * g + b * b) / java.lang.Math.sqrt(196608);
     }
 }

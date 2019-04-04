@@ -12,13 +12,11 @@ import com.itextpdf.kernel.pdf.canvas.parser.PdfCanvasProcessor;
 import com.itextpdf.kernel.pdf.canvas.parser.data.IEventData;
 import com.itextpdf.kernel.pdf.canvas.parser.listener.IEventListener;
 import com.js.canvas.parser.data.OCRTextRenderInfo;
-import com.js.canvas.parser.listener.BaseLineModifier;
-import com.js.canvas.parser.listener.ColorModifier;
-import com.js.canvas.parser.listener.FlushableEventListener;
-import com.js.canvas.parser.listener.OCREventModifier;
+import com.js.canvas.parser.listener.*;
 import com.js.canvas.parser.ocr.IOpticalCharacterRecognitionEngine;
 import com.js.canvas.parser.ocr.OCRChunk;
 
+import java.awt.*;
 import java.io.IOException;
 import java.util.Set;
 
@@ -75,7 +73,10 @@ public class ScannedPdfDocument extends PdfDocument {
         };
         IEventListener baselineModifier = new BaseLineModifier(anonymousListener);
         IEventListener colorModifier = new ColorModifier(baselineModifier);
-        FlushableEventListener listener = new OCREventModifier(colorModifier, opticalCharacterRecognitionEngine);
+        IEventListener fontSizeModifier = new FontSizeModifier(colorModifier);
+        IEventListener textModifier = new IgnoreEmptyText(fontSizeModifier);
+        IEventListener smallAreaModifier = new IgnoreSmallAreasListener(textModifier);
+        FlushableEventListener listener = new OCREventModifier(smallAreaModifier, opticalCharacterRecognitionEngine);
 
         // process canvas
         new PdfCanvasProcessor(listener).processPageContent(getPage(pageNr));
@@ -90,7 +91,7 @@ public class ScannedPdfDocument extends PdfDocument {
         PdfCanvas canvas = new PdfCanvas(getPage(pageNr));
 
         // background
-        canvas.setColor(new DeviceRgb(chunk.getBackgroundColor()), true);
+        canvas.setColor(new DeviceRgb(data.getOCRChunk().getBackgroundColor()), true);
         canvas.rectangle(chunk.getLocation().x - MARGIN,
                 chunk.getLocation().y - MARGIN,
                 chunk.getLocation().width + 2 * MARGIN,
@@ -100,7 +101,7 @@ public class ScannedPdfDocument extends PdfDocument {
         // text
         canvas.beginText();
         canvas.setColor(new DeviceRgb(chunk.getTextColor()), true);
-        canvas.setFontAndSize(FONT, chunk.getFontSize());
+        canvas.setFontAndSize(FONT, data.getOCRChunk().getFontSize());
         canvas.moveText(chunk.getLocation().x, chunk.getLocation().y);
         canvas.showText(chunk.getText());
         canvas.endText();
