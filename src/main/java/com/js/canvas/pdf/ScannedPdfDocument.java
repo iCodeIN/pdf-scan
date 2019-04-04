@@ -13,6 +13,7 @@ import com.itextpdf.kernel.pdf.canvas.parser.data.IEventData;
 import com.itextpdf.kernel.pdf.canvas.parser.listener.IEventListener;
 import com.js.canvas.parser.data.OCRTextRenderInfo;
 import com.js.canvas.parser.listener.*;
+import com.js.canvas.parser.listener.spellcheck.SpellCheckModifier;
 import com.js.canvas.parser.ocr.IOpticalCharacterRecognitionEngine;
 import com.js.canvas.parser.ocr.OCRChunk;
 
@@ -26,7 +27,7 @@ import java.util.Set;
  */
 public class ScannedPdfDocument extends PdfDocument {
 
-    private static int MARGIN = 1;
+    private static int MARGIN = 2;
     private static PdfFont FONT;
 
     private IOpticalCharacterRecognitionEngine opticalCharacterRecognitionEngine;
@@ -74,8 +75,9 @@ public class ScannedPdfDocument extends PdfDocument {
         IEventListener baselineModifier = new BaseLineModifier(anonymousListener);
         IEventListener colorModifier = new ColorModifier(baselineModifier);
         IEventListener fontSizeModifier = new FontSizeModifier(colorModifier);
-        IEventListener textModifier = new IgnoreEmptyText(fontSizeModifier);
-        IEventListener smallAreaModifier = new IgnoreSmallAreasListener(textModifier);
+        IEventListener textModifier02 = new SpellCheckModifier(fontSizeModifier, getClass().getClassLoader().getResourceAsStream("dict_en.txt"));
+        IEventListener textModifier01 = new IgnoreEmptyText(textModifier02);
+        IEventListener smallAreaModifier = new IgnoreSmallAreasListener(textModifier01);
         FlushableEventListener listener = new OCREventModifier(smallAreaModifier, opticalCharacterRecognitionEngine);
 
         // process canvas

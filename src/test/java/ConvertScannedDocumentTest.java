@@ -21,7 +21,7 @@ public class ConvertScannedDocumentTest {
 
         // create document
         ScannedPdfDocument pdfDocument = new ScannedPdfDocument(
-                new PdfReader(getClass().getClassLoader().getResourceAsStream("input_001.pdf")),
+                new PdfReader(getClass().getClassLoader().getResourceAsStream("input_003.pdf")),
                 new PdfWriter(new File("output_document.pdf")),
                 ocrEngine
         );

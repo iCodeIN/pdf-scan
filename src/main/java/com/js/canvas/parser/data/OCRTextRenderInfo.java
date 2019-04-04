@@ -53,6 +53,9 @@ public class OCRTextRenderInfo extends TextRenderInfo {
     }
 
     @Override
+    public String getText(){ return ocrChunk.getText(); }
+
+    @Override
     public LineSegment getBaseline() {
         float x = ocrChunk.getLocation().x;
         float y = ocrChunk.getLocation().y;
