@@ -6,7 +6,7 @@ import com.js.canvas.parser.data.OCRTextRenderInfo;
 import com.js.canvas.parser.listener.ChainableEventListener;
 
 /**
- * This class is explictly made ot handle the narrow strips Tesseract
+ * This class is explicitly made to handle the narrow strips Tesseract
  * sometimes 'recognizes' as text.
  */
 public class DropNarrowStripsModifier extends ChainableEventListener {
