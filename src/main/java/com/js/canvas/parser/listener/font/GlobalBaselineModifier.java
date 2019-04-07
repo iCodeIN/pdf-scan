@@ -11,6 +11,18 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+/**
+ * This class modifies {@link OCRTextRenderInfo} objects by setting the baseline.
+ * It does so by performing a 'scan' of all {@link OCRTextRenderInfo} objects that appear in the same band.
+ *
+ *   ---------        ---------        ---------
+ *  | chunk A |      | chunk B |      | chunk C |
+ *   ---------       |         |       ---------
+ *                    ---------
+ *  In this example, a scan for chunk A (using the same bottom and top coordinates) would reveal B and C as well.
+ *  For all chunks in the same band, a representative chunk is found. Preferably this is a chunk without a decender.
+ */
+
 public class GlobalBaselineModifier extends ChainableEventListener {
 
     private List<OCRTextRenderInfo> ocrTextRenderInfoList = new ArrayList<>();

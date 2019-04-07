@@ -9,6 +9,11 @@ import com.js.canvas.parser.listener.ChainableEventListener;
 
 import java.io.IOException;
 
+/**
+ * This class modifies the baseline of a {@link OCRTextRenderInfo} object.
+ * It does so by calculating the ratio height / decender for the text in each {@link OCRTextRenderInfo}
+ * in the {@link PdfFont} Helvetica.
+ */
 public class LocalBaselineModifier extends ChainableEventListener {
 
     @Override

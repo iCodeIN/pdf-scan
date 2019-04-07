@@ -9,6 +9,11 @@ import com.js.canvas.parser.listener.ChainableEventListener;
 
 import java.io.IOException;
 
+/**
+ * This class modifies the font size of each {@link OCRTextRenderInfo} object.
+ * It does so by checking what the largest font size is (in {@link PdfFont} Helvetica) that
+ * would still fit in the inscribed rectangle of the {@link com.js.canvas.parser.ocr.OCRChunk}.
+ */
 public class LocalFontSizeModifier extends ChainableEventListener {
 
     @Override

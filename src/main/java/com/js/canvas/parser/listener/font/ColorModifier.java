@@ -10,8 +10,18 @@ import java.awt.*;
 import java.util.List;
 import java.util.*;
 
+/**
+ * This class determines the background and font-color for a given {@link OCRTextRenderInfo}
+ * It does so by scanning the image underlying the {@link OCRTextRenderInfo}
+ */
 public class ColorModifier extends ChainableEventListener {
 
+    /**
+     * Not every color is taken into account.
+     * We do not want this algorithm to render part of the {@link OCRTextRenderInfo} objects
+     * in dark grey, and others in black.
+     * So we limit the number of available colors.
+     */
     private static final int COLOR_REDUCTION_FACTOR = 64;
 
     private double distance(Color c0, Color c1) {

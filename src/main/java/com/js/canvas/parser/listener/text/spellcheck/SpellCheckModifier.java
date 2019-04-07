@@ -10,6 +10,14 @@ import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
 
+/**
+ * This class corrects words using a dictionary.
+ * The underlying datastructure is a {@link BKTree} with a {@link Levenshtein} metric.
+ * Every {@link OCRTextRenderInfo} object goes through this class, and the text is
+ * compared against the dictionary.
+ * If the word exists in the dictionary, the {@link OCRTextRenderInfo} is passed untouched.
+ * Otherwise a better suited match is found, and the text gets replaced.
+ */
 public class SpellCheckModifier extends ChainableEventListener {
 
     private BKTree<String> dictionary = new BKTree<>(new BKTree.Metric<String>() {

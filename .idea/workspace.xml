@@ -2,58 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="561081a8-74cb-491b-ba7d-3e924f22b866" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/ChainableEventListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/font/GlobalBaselineModifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/font/GlobalFontSizeModifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/font/LocalBaselineModifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/geometry/DropNarrowStripsModifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/text/GlobalUselessTextModifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/text/LocalUselessTextModifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/text/Sort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/text/spellcheck/CaseType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/text/spellcheck/SpellCheckModifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/DownloadPdfs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/ground_truth_001.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/ground_truth_002.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loupe.svg" beforeDir="false" afterPath="$PROJECT_DIR$/loupe.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output_document.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/data/OCRTextRenderInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/data/OCRTextRenderInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/BaseLineModifier.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/ColorModifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/font/ColorModifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/FlushableEventListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/FontSizeModifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/font/LocalFontSizeModifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/IgnoreEmptyText.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/IgnoreSmallAreasListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/geometry/DropOutOfBoundsAreasModifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/OCREventModifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/ocr/OCREventModifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/spellcheck/BKTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/text/spellcheck/BKTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/spellcheck/Levenshtein.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/text/spellcheck/Levenshtein.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/spellcheck/SpellCheckModifier.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/js/canvas/pdf/ScannedPdfDocument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/js/canvas/pdf/ScannedPdfDocument.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/js/tesseract/TesseractOpticalCharacterRecognitionEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/js/tesseract/TesseractOpticalCharacterRecognitionEngine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ConvertScannedDocumentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ConvertScannedDocumentTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ExtractTextTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ExtractTextTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/js/canvas/parser/data/OCRTextRenderInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/js/canvas/parser/data/OCRTextRenderInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/js/canvas/parser/listener/BaseLineModifier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/js/canvas/parser/listener/ColorModifier$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/js/canvas/parser/listener/ColorModifier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/js/canvas/parser/listener/FlushableEventListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/js/canvas/parser/listener/FontSizeModifier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/js/canvas/parser/listener/IgnoreEmptyText.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/js/canvas/parser/listener/IgnoreSmallAreasListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/js/canvas/parser/listener/OCREventModifier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/js/canvas/parser/listener/spellcheck/BKTree$Metric.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/js/canvas/parser/listener/spellcheck/BKTree$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/js/canvas/parser/listener/spellcheck/BKTree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/js/canvas/parser/listener/spellcheck/Levenshtein.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/js/canvas/parser/listener/spellcheck/SpellCheckModifier$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/js/canvas/parser/listener/spellcheck/SpellCheckModifier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/js/canvas/pdf/ScannedPdfDocument$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/js/canvas/pdf/ScannedPdfDocument$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/js/canvas/pdf/ScannedPdfDocument.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/js/canvas/pdf/ScannedPdfDocument.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ConvertScannedDocumentTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ConvertScannedDocumentTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ExtractTextTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ExtractTextTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/font/ColorModifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/font/ColorModifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/font/GlobalBaselineModifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/font/GlobalBaselineModifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/font/GlobalFontSizeModifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/font/GlobalFontSizeModifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/font/LocalBaselineModifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/font/LocalBaselineModifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/font/LocalFontSizeModifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/font/LocalFontSizeModifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/geometry/DropNarrowStripsModifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/geometry/DropNarrowStripsModifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/geometry/DropOutOfBoundsAreasModifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/geometry/DropOutOfBoundsAreasModifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/text/spellcheck/CaseType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/text/spellcheck/CaseType.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -71,8 +27,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/font/LocalBaselineModifier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+            <state relative-caret-position="526">
+              <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -83,8 +39,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/font/LocalFontSizeModifier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="49" column="25" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="25" />
+            <state relative-caret-position="210">
+              <caret line="14" column="95" selection-start-line="14" selection-start-column="95" selection-end-line="14" selection-end-column="95" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -95,8 +51,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/geometry/DropNarrowStripsModifier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="135">
+              <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -107,10 +63,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/geometry/DropOutOfBoundsAreasModifier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="15">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -118,49 +72,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/ocr/OCREventModifier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+            <state relative-caret-position="315">
+              <caret line="35" column="34" lean-forward="true" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/text/spellcheck/BKTree.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="466">
+              <caret line="258" column="1" lean-forward="true" selection-start-line="258" selection-start-column="1" selection-end-line="258" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/text/Sort.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/text/spellcheck/CaseType.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="31" column="58" lean-forward="true" selection-start-line="31" selection-start-column="58" selection-end-line="31" selection-end-column="58" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#910#1113#0" expanded="true" />
-                <element signature="e#1112#1113#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/text/LocalUselessTextModifier.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/pdf/ScannedPdfDocument.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="118" selection-start-line="118" selection-end-line="118" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="75">
+              <caret line="5" column="52" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -168,8 +102,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/font/ColorModifier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="51" column="16" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
+            <state relative-caret-position="185">
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2306#2553#0" expanded="true" />
+                <element signature="e#2552#2553#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/font/GlobalBaselineModifier.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="185">
+              <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -178,10 +126,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/text/GlobalUselessTextModifier.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/font/GlobalFontSizeModifier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            <state relative-caret-position="240">
+              <caret line="16" column="60" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -220,8 +168,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/js/canvas/pdf/RewriteScannedChunksEventListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/ocr/IOpticalCharacterRecognitionEngine.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/OCRTextExtractionStrategy.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestTextPresent.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/ocr/ColorMatchingWrapper.java" />
@@ -248,29 +194,31 @@
         <option value="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/spellcheck/SpellCheckModifier.java" />
         <option value="$PROJECT_DIR$/src/test/java/ExtractTextTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/ChainableEventListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/font/ColorModifier.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/IsolatedCharacterModifier.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/font/FontColorSmallLetterModifier.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/font/LinebuildingBaselineModifier.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/js/tesseract/TesseractOpticalCharacterRecognitionEngine.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/font/BaseLineModifier2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/font/LocalBaselineModifier.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/font/BaseLineModifier.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/IgnoreSmallAreasListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/DropOutOfBoundsAreasModifier.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/geometry/DropNarrowStripsModifier.java" />
         <option value="$PROJECT_DIR$/src/test/java/ConvertScannedDocumentTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/data/OCRTextRenderInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/font/GlobalFontSizeModifier.java" />
         <option value="$PROJECT_DIR$/src/test/resources/ground_truth_001.txt" />
         <option value="$PROJECT_DIR$/src/test/resources/ground_truth_002.txt" />
         <option value="$PROJECT_DIR$/src/test/java/DownloadPdfs.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/font/GlobalBaselineModifier.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/text/IgnoreEmptyText.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/text/LocalUselessTextModifier.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/js/canvas/pdf/ScannedPdfDocument.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/geometry/DropOutOfBoundsAreasModifier.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/text/Sort.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/font/ColorModifier.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/font/GlobalBaselineModifier.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/font/GlobalFontSizeModifier.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/font/LocalBaselineModifier.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/font/LocalFontSizeModifier.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/geometry/DropNarrowStripsModifier.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/geometry/DropOutOfBoundsAreasModifier.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/text/spellcheck/CaseType.java" />
       </list>
     </option>
   </component>
@@ -293,8 +241,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -403,7 +351,32 @@
               <item name="canvas" type="462c0819:PsiDirectoryNode" />
               <item name="parser" type="462c0819:PsiDirectoryNode" />
               <item name="listener" type="462c0819:PsiDirectoryNode" />
+              <item name="ocr" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pdf-scan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pdf-scan" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="canvas" type="462c0819:PsiDirectoryNode" />
+              <item name="parser" type="462c0819:PsiDirectoryNode" />
+              <item name="listener" type="462c0819:PsiDirectoryNode" />
               <item name="text" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pdf-scan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pdf-scan" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="canvas" type="462c0819:PsiDirectoryNode" />
+              <item name="parser" type="462c0819:PsiDirectoryNode" />
+              <item name="listener" type="462c0819:PsiDirectoryNode" />
+              <item name="text" type="462c0819:PsiDirectoryNode" />
+              <item name="spellcheck" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pdf-scan" type="b2602c69:ProjectViewProjectNode" />
@@ -610,8 +583,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="990" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28175026" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28495198" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -627,7 +601,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="SonarLint" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.29036003" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.29036003" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32868758" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -671,13 +645,13 @@
         <line-breakpoint enabled="true" type="java-line">
           <condition expression="s0.toUpperCase().startsWith(&quot;MOBI&quot;)" language="JAVA" />
           <url>file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/font/LocalBaselineModifier.java</url>
-          <line>33</line>
+          <line>38</line>
           <properties />
           <option name="timeStamp" value="71" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/font/GlobalFontSizeModifier.java</url>
-          <line>65</line>
+          <line>70</line>
           <properties />
           <option name="timeStamp" value="75" />
         </line-breakpoint>
@@ -928,20 +902,6 @@ for(OCRTextRenderInfo i2 : line){
     <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/FlushableListenerChain.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/DefaultChainableEventListener.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/FlushableEventListener.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/text/spellcheck/BKTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/text/spellcheck/CaseType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/text/spellcheck/Levenshtein.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -982,16 +942,6 @@ for(OCRTextRenderInfo i2 : line){
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/font/FontColorSmallLetterModifier.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/font/LinebuildingBaselineModifier.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/ocr/IOpticalCharacterRecognitionEngine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/js/tesseract/TesseractOpticalCharacterRecognitionEngine.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
@@ -1042,71 +992,20 @@ for(OCRTextRenderInfo i2 : line){
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/data/OCRTextRenderInfo.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/pdf/ScannedPdfDocument.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1635#1636#0" expanded="true" />
-            <element signature="e#1666#1667#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/font/GlobalBaselineModifier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="49" column="11" selection-start-line="49" selection-start-column="11" selection-end-line="49" selection-end-column="11" />
+        <state relative-caret-position="1410">
+          <caret line="118" selection-start-line="118" selection-end-line="118" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/font/GlobalFontSizeModifier.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/text/Sort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="41" column="27" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/font/LocalBaselineModifier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/font/LocalFontSizeModifier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="49" column="25" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/geometry/DropNarrowStripsModifier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/text/GlobalUselessTextModifier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        <state relative-caret-position="196">
+          <caret line="31" column="58" selection-start-line="31" selection-start-column="58" selection-end-line="31" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1123,20 +1022,94 @@ for(OCRTextRenderInfo i2 : line){
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/ocr/OCREventModifier.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/text/GlobalUselessTextModifier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        <state relative-caret-position="150">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/pdf/ScannedPdfDocument.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/ocr/IOpticalCharacterRecognitionEngine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="118" selection-start-line="118" selection-end-line="118" />
+        <state relative-caret-position="75">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/data/OCRTextRenderInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1635#1636#0" expanded="true" />
+            <element signature="e#1666#1667#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/font/ColorModifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2306#2553#0" expanded="true" />
+            <element signature="e#2552#2553#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/font/GlobalBaselineModifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/font/GlobalFontSizeModifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="60" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/font/LocalBaselineModifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/font/LocalFontSizeModifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="95" selection-start-line="14" selection-start-column="95" selection-end-line="14" selection-end-column="95" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/geometry/DropNarrowStripsModifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1145,32 +1118,32 @@ for(OCRTextRenderInfo i2 : line){
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/geometry/DropOutOfBoundsAreasModifier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="15">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/ocr/OCREventModifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="35" column="34" lean-forward="true" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/font/ColorModifier.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/text/spellcheck/BKTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="51" column="16" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="466">
+          <caret line="258" column="1" lean-forward="true" selection-start-line="258" selection-start-column="1" selection-end-line="258" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/text/Sort.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/text/spellcheck/CaseType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="31" column="58" lean-forward="true" selection-start-line="31" selection-start-column="58" selection-end-line="31" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#910#1113#0" expanded="true" />
-            <element signature="e#1112#1113#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="75">
+          <caret line="5" column="52" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
         </state>
       </provider>
     </entry>

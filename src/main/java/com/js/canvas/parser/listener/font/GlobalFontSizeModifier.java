@@ -11,6 +11,11 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+/**
+ * This class modifies the font size of a {@link OCRTextRenderInfo} object.
+ * It performs a band-scan, similar to what happens in {@link GlobalBaselineModifier}.
+ * All chunks on the same line are given the same font size.
+ */
 public class GlobalFontSizeModifier extends ChainableEventListener {
 
     private List<OCRTextRenderInfo> ocrTextRenderInfoList = new ArrayList<>();

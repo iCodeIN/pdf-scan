@@ -1,5 +1,10 @@
 package com.js.canvas.parser.listener.text.spellcheck;
 
+/**
+ * This enum represents the case-forms a word can take.
+ * It's useful to have this to 'restore' the case after
+ * a word has been replaced by its dictionary match.
+ */
 public enum CaseType {
 
     ALL_LOWERCASE,

@@ -8,6 +8,11 @@ import com.js.canvas.parser.listener.ChainableEventListener;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * This class handles all images (or parts thereof) that contain enough
+ * noise to be categorized as 'random text', but do not fit with the
+ * general font-size of the underlying document.
+ */
 public class DropOutOfBoundsAreasModifier extends ChainableEventListener {
 
     private List<IEventData> eventDataList = new ArrayList<>();
