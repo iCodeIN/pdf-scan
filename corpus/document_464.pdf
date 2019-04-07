@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html class="no-js lt-ie9">
+<![endif]-->
+<!--[if IE 9]>
+<html class="no-js ie9">
+<![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js">
+<!--<![endif]-->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="robots" content="noindex" />
+        <title>Request blocked</title>
+        <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <link href="//static.acv-online.be/Desktop/Content/reset.css" rel="stylesheet" />
+        <link href="//static.acv-online.be/Desktop/Content/main.new.css" rel="stylesheet" />
+        <link href="//static.acv-online.be/Desktop/Content/component.css" rel="stylesheet" />
+        <style>
+            .application>.content>.cta>.middle { width:325px; }
+        </style>
+    </head>
+    <body>
+        <div class="page errorpage main_wrapper">
+            <div class="main_wrapper_border">
+            </div>
+            <div class="main">
+                <div class="content">
+                    <div class="title">
+                        <h2>Oeps... Oops...</h2>
+                    </div>
+                    <div class="component application detail error first">
+                        <div class="content">
+                            <h4>De opgevraagde URL heeft een probleem veroorzaakt</h4>
+                            <div class="cta">
+                                <div class="top">
+                                    <span class="tr">&nbsp;</span>
+                                </div>
+                                <div class="middle">
+                                    <a href="/"><span>Ga naar de startpagina</span></a>
+                                    <a href="javascript:history.back();"><span>Terug naar de vorige pagina</span></a>
+                                </div>
+                                <div class="bottom">
+                                    <span class="bl">&nbsp;</span>
+                                    <span class="br">&nbsp;</span>
+                                </div>
+                            </div>
+
+                            <div>
+                                Mogelijk probeert u ons te bereiken via een verouderde link/bookmark.
+                                <br/>
+                                Probeer opnieuw door terug te keren naar de vorige pagina, of ga naar de startpagina.
+                                <br/>
+                                Als het probleem zich blijft voordoen, <a href="https://www.acv-online.be/acv-online/Systeem/contact.html" target="_blank">contacteer ons</a>.
+                                <br/>
+                                Gelieve in uw communicatie onderstaande code te vermelden. Zo kunnen wij het probleem snel oplossen.
+                                <br/>
+                                Onze excuses voor dit ongemak.
+                                <br/><br/>
+                                Support code: 4249717719634141690
+                            </div>
+                        </div>
+                    </div>
+                    <div class="component application detail error last">
+                        <div class="content">
+                            <h4>Le lien URL demandé a rencontré un problème</h4>
+                            <div class="cta">
+                                <div class="top">
+                                    <span class="tr">&nbsp;</span>
+                                </div>
+                                <div class="middle">
+                                    <a href="/"><span>Voir la page d'accueil</span></a>
+                                    <a href="javascript:history.back();"><span>Retourner à la page précédente</span></a>
+                                </div>
+                                <div class="bottom">
+                                    <span class="bl">&nbsp;</span>
+                                    <span class="br">&nbsp;</span>
+                                </div>
+                            </div>
+                            <div>
+                                Il est possible que vous tentiez de nous joindre via un ancien lien/bookmark.
+                                <br/>
+                                Veuillez réessayer en retournant à la page précédente, ou vous rendre sur la page d’accueil.
+                                <br/>
+                                Si le problème persiste, <a href="https://www.csc-en-ligne.be/csc-en-ligne/systeme/Contact.html" target="_blank">contactez-nous</a>.
+                                <br/>
+                                Merci de bien vouloir mentionner le code ci-dessous dans votre communication, ainsi nous pourrons rapidement résoudre votre problème.
+                                <br/>
+                                Nous vous prions de nous excuser pour ce désagrément.
+                                <br/><br/>
+                                Support code: 4249717719634141690
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main_wrapper_border">
+            </div>
+            <div class="pagecomponent footer">
+                <div class="ft_part ft_part2">
+                    <div class="content">
+                        <div>
+                            <ul class="copyright">
+                                <li>&copy; ACV-CSC</li>
+                                <li>/</li>
+                                <li>2015</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

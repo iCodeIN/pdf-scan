@@ -1,0 +1,59 @@
+<html>
+	<head>
+		<title>Shibboleth Authentication Request</title>
+	</head>
+	<body onload="document.forms[0].submit()">
+
+		<h1>Shibboleth Authentication Request</h1>
+		
+		<script type="text/javascript">
+		<!--	
+		document.write("<p>You are automatically being redirected to the authentication service. ");
+		document.write("If the browser appears to be hung up after 15-20 seconds, try reloading ");
+		document.write("the page before contacting the technical support staff in charge of the ");
+		document.write("authentication service you are trying to access.</p>");
+		document.write("<h2>Redirecting...</h2>");
+		// -->
+		</script>
+		
+		<noscript>
+		<p>
+		<strong>Note:</strong> Since your browser does not support JavaScript, you must press the
+		Continue button once to proceed to the authentication service.
+		</p>
+		</noscript>
+	
+		<form method="POST" action="https&#58;//idp.kuleuven.be/idp/profile/SAML2/POST/SSO">
+		
+		
+			<input type="hidden" name="RelayState" value="ss&#58;mem&#58;544264c9210601f5677de94035bdac724215d3fb95309a62e031a6b5288c096a"/>
+		
+		
+			<input type="hidden" name="SAMLRequest" value="PHNhbWxwOkF1dGhuUmVxdWVzdCB4bWxuczpzYW1scD0idXJuOm9hc2lzOm5h
+bWVzOnRjOlNBTUw6Mi4wOnByb3RvY29sIiBBc3NlcnRpb25Db25zdW1lclNl
+cnZpY2VVUkw9Imh0dHBzOi8vd3d3LmFydHMua3VsZXV2ZW4uYmUvd2ViY21z
+L1NoaWJib2xldGguc3NvL1NBTUwyL1BPU1QiIERlc3RpbmF0aW9uPSJodHRw
+czovL2lkcC5rdWxldXZlbi5iZS9pZHAvcHJvZmlsZS9TQU1MMi9QT1NUL1NT
+TyIgSUQ9Il83MTQ5MjZmZmRiMDAzY2UzZjBiNDZiOGNkNWY2ODg0NCIgSXNz
+dWVJbnN0YW50PSIyMDE5LTA0LTA2VDEzOjU4OjMzWiIgUHJvdG9jb2xCaW5k
+aW5nPSJ1cm46b2FzaXM6bmFtZXM6dGM6U0FNTDoyLjA6YmluZGluZ3M6SFRU
+UC1QT1NUIiBWZXJzaW9uPSIyLjAiPjxzYW1sOklzc3VlciB4bWxuczpzYW1s
+PSJ1cm46b2FzaXM6bmFtZXM6dGM6U0FNTDoyLjA6YXNzZXJ0aW9uIj5odHRw
+czovL2FydHMua3VsZXV2ZW4uYmUvd2ViY21zPC9zYW1sOklzc3Vlcj48c2Ft
+bHA6TmFtZUlEUG9saWN5IEFsbG93Q3JlYXRlPSIxIi8+PC9zYW1scDpBdXRo
+blJlcXVlc3Q+
+"/>
+		
+		
+		
+		
+		
+        
+		<noscript>
+		<div>
+		<input type="submit" value="Continue"/>
+		</div>
+		</noscript>
+		</form>
+	</body>
+</html>

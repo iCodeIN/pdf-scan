@@ -12,14 +12,19 @@ import com.itextpdf.kernel.pdf.canvas.parser.PdfCanvasProcessor;
 import com.itextpdf.kernel.pdf.canvas.parser.data.IEventData;
 import com.itextpdf.kernel.pdf.canvas.parser.listener.IEventListener;
 import com.js.canvas.parser.data.OCRTextRenderInfo;
-import com.js.canvas.parser.listener.*;
-import com.js.canvas.parser.listener.spellcheck.SpellCheckModifier;
+import com.js.canvas.parser.listener.ChainableEventListener;
+import com.js.canvas.parser.listener.ocr.OCREventModifier;
+import com.js.canvas.parser.listener.font.*;
+import com.js.canvas.parser.listener.geometry.DropNarrowStripsModifier;
+import com.js.canvas.parser.listener.geometry.DropOutOfBoundsAreasModifier;
+import com.js.canvas.parser.listener.text.Sort;
+import com.js.canvas.parser.listener.text.spellcheck.SpellCheckModifier;
 import com.js.canvas.parser.ocr.IOpticalCharacterRecognitionEngine;
 import com.js.canvas.parser.ocr.OCRChunk;
 
 import java.awt.*;
 import java.io.IOException;
-import java.util.Set;
+import java.util.ArrayList;
 
 /**
  * This class acts as a wrapper around {@link PdfDocument}
@@ -27,7 +32,7 @@ import java.util.Set;
  */
 public class ScannedPdfDocument extends PdfDocument {
 
-    private static int MARGIN = 2;
+    private static int MARGIN = 5;
     private static PdfFont FONT;
 
     private IOpticalCharacterRecognitionEngine opticalCharacterRecognitionEngine;
@@ -59,26 +64,51 @@ public class ScannedPdfDocument extends PdfDocument {
      * @param pageNr the page number on which to perform OCR
      */
     public void doOCR(final int pageNr) {
-        IEventListener anonymousListener = new IEventListener() {
+        IEventListener anonymousListener = new ChainableEventListener() {
+            java.util.List<OCRTextRenderInfo> ocrTextRenderInfoList = new ArrayList<>();
+
             @Override
             public void eventOccurred(IEventData data, EventType type) {
                 if (data instanceof OCRTextRenderInfo) {
-                    writeString((OCRTextRenderInfo) data, pageNr);
+                    ocrTextRenderInfoList.add((OCRTextRenderInfo) data);
                 }
             }
 
             @Override
-            public Set<EventType> getSupportedEvents() {
-                return null;
+            public void flush() {
+                for (OCRTextRenderInfo i : ocrTextRenderInfoList)
+                    blankOut(i, pageNr);
+                for (OCRTextRenderInfo i : ocrTextRenderInfoList)
+                    writeString(i, pageNr);
             }
         };
-        IEventListener baselineModifier = new BaseLineModifier(anonymousListener);
-        IEventListener colorModifier = new ColorModifier(baselineModifier);
-        IEventListener fontSizeModifier = new FontSizeModifier(colorModifier);
-        IEventListener textModifier02 = new SpellCheckModifier(fontSizeModifier, getClass().getClassLoader().getResourceAsStream("dict_en.txt"));
-        IEventListener textModifier01 = new IgnoreEmptyText(textModifier02);
-        IEventListener smallAreaModifier = new IgnoreSmallAreasListener(textModifier01);
-        FlushableEventListener listener = new OCREventModifier(smallAreaModifier, opticalCharacterRecognitionEngine);
+
+        ChainableEventListener listener = new OCREventModifier(opticalCharacterRecognitionEngine);
+        listener
+                // cleaning up tesseract mess
+                .setNext(new DropNarrowStripsModifier())
+                .setNext(new DropOutOfBoundsAreasModifier())
+                .setNext(new DropOutOfBoundsAreasModifier())
+
+                // base line correction
+                .setNext(new LocalBaselineModifier())
+                .setNext(new GlobalBaselineModifier())
+
+                // font size information
+                .setNext(new LocalFontSizeModifier())
+                .setNext(new GlobalFontSizeModifier())
+
+                // font color information
+                .setNext(new ColorModifier())
+
+                // spelling
+                .setNext(new SpellCheckModifier(getClass().getClassLoader().getResourceAsStream("dict_en.txt")))
+
+                // sort (used for older PDF viewers)
+                .setNext(new Sort())
+
+                // final push
+                .setNext(anonymousListener);
 
         // process canvas
         new PdfCanvasProcessor(listener).processPageContent(getPage(pageNr));
@@ -87,18 +117,22 @@ public class ScannedPdfDocument extends PdfDocument {
         listener.flush();
     }
 
-    private void writeString(OCRTextRenderInfo data, int pageNr) {
+    private void blankOut(OCRTextRenderInfo data, int pageNr) {
         OCRChunk chunk = data.getOCRChunk();
-
         PdfCanvas canvas = new PdfCanvas(getPage(pageNr));
 
         // background
-        canvas.setColor(new DeviceRgb(data.getOCRChunk().getBackgroundColor()), true);
+        canvas.setColor(new DeviceRgb(Color.WHITE), true);
         canvas.rectangle(chunk.getLocation().x - MARGIN,
                 chunk.getLocation().y - MARGIN,
                 chunk.getLocation().width + 2 * MARGIN,
                 chunk.getLocation().height + 2 * MARGIN);
         canvas.fill();
+    }
+
+    private void writeString(OCRTextRenderInfo data, int pageNr) {
+        OCRChunk chunk = data.getOCRChunk();
+        PdfCanvas canvas = new PdfCanvas(getPage(pageNr));
 
         // text
         canvas.beginText();

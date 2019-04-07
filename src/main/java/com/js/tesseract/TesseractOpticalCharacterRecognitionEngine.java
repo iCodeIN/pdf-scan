@@ -87,7 +87,7 @@ public class TesseractOpticalCharacterRecognitionEngine implements IOpticalChara
 
             int w = java.lang.Math.abs(left - right);
             int h = java.lang.Math.abs(top - bottom);
-            if(w == 0 || h == 0)
+            if (w == 0 || h == 0)
                 continue;
 
             BufferedImage chunkImage = new BufferedImage(w, h, BufferedImage.TYPE_INT_RGB);

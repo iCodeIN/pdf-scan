@@ -1,14 +1,13 @@
 import com.itextpdf.kernel.pdf.PdfDocument;
 import com.itextpdf.kernel.pdf.PdfReader;
 import com.itextpdf.kernel.pdf.canvas.parser.PdfCanvasProcessor;
-import com.itextpdf.kernel.pdf.canvas.parser.listener.IEventListener;
 import com.itextpdf.kernel.pdf.canvas.parser.listener.SimpleTextExtractionStrategy;
-import com.js.canvas.parser.listener.BaseLineModifier;
-import com.js.canvas.parser.listener.FlushableEventListener;
-import com.js.canvas.parser.listener.OCREventModifier;
+import com.js.canvas.parser.listener.ChainableEventListener;
+import com.js.canvas.parser.listener.ocr.OCREventModifier;
+import com.js.canvas.parser.listener.font.GlobalBaselineModifier;
 import com.js.tesseract.TesseractOpticalCharacterRecognitionEngine;
-import org.testng.Assert;
-import org.testng.annotations.Test;
+import org.junit.Assert;
+import org.junit.Test;
 
 import java.io.File;
 import java.io.IOException;
@@ -25,8 +24,10 @@ public class ExtractTextTest {
                 new PdfReader(getClass().getClassLoader().getResourceAsStream("input_001.pdf")));
 
         SimpleTextExtractionStrategy strategyA = new SimpleTextExtractionStrategy();
-        IEventListener strategyB = new BaseLineModifier(strategyA);
-        FlushableEventListener strategyC = new OCREventModifier(strategyB, ocrEngine);
+
+        ChainableEventListener strategyC = new OCREventModifier(ocrEngine)
+                .setNext(new GlobalBaselineModifier())
+                .setNext(strategyA);
 
         new PdfCanvasProcessor(strategyC).processPageContent(pdfDocument.getPage(1));
         strategyC.flush();

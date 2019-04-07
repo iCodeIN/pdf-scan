@@ -1,0 +1,1144 @@
+<!DOCTYPE HTML>
+<html lang="en-gb" class="no-js">
+    <head>
+        <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=2.5,user-scalable=yes">
+    <meta name="citation_publisher" content="Springer Berlin Heidelberg"/>
+    <meta name="citation_title" content="Polar-Cartesian Hybrid Transforms: A novel 2D range scan registration algorithm"/>
+    <meta name="citation_doi" content="10.1007/s12555-012-0172-4"/>
+    <meta name="citation_language" content="en"/>
+    <meta name="citation_abstract_html_url" content="https://link.springer.com/article/10.1007/s12555-012-0172-4"/>
+    <meta name="citation_fulltext_html_url" content="https://link.springer.com/article/10.1007/s12555-012-0172-4"/>
+    <meta name="citation_pdf_url" content="https://link.springer.com/content/pdf/10.1007%2Fs12555-012-0172-4.pdf"/>
+    <meta name="citation_springer_api_url" content="http://api.springer.com/metadata/pam?q=doi:10.1007/s12555-012-0172-4&amp;api_key="/>
+    <meta name="citation_firstpage" content="1001"/>
+    <meta name="citation_lastpage" content="1008"/>
+    <meta name="citation_author" content="Lei Zhang"/>
+    <meta name="citation_author_institution" content="Samsung Electronics Co."/>
+    <meta name="citation_author" content="Sung-In Choi"/>
+    <meta name="citation_author_institution" content="Kyungpook National University"/>
+    <meta name="citation_author" content="Soon-Yong Park"/>
+    <meta name="citation_author_institution" content="Kyungpook National University"/>
+    <meta name="citation_author_email" content="sypark@knu.ac.kr"/>
+    <meta name="dc.identifier" content="10.1007/s12555-012-0172-4"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" content="Registration of range scans is commonly required in many localization and mapping algorithms. In this paper, we introduce a novel approach called Polar-Cartesian Hybrid Transforms for pair-wise..."/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="Polar-Cartesian Hybrid Transforms: A novel 2D range scan registration "/>
+    <meta name="twitter:image" content="https://static-content.springer.com/cover/journal/12555/11/5.jpg"/>
+    <meta name="twitter:image:alt" content="Content cover image"/>
+    <meta name="twitter:site" content="SpringerLink"/>
+    <meta name="twitter:description" content="Registration of range scans is commonly required in many localization and mapping algorithms. In this paper, we introduce a novel approach called Polar-Cartesian Hybrid Transforms for pair-wise..."/>
+    <meta name="citation_journal_title" content="International Journal of Control, Automation and Systems"/>
+    <meta name="citation_journal_abbrev" content="Int. J. Control Autom. Syst."/>
+    <meta name="citation_volume" content="11"/>
+    <meta name="citation_issue" content="5"/>
+    <meta name="citation_issn" content="1598-6446"/>
+    <meta name="citation_issn" content="2005-4092"/>
+    <meta name="citation_online_date" content="2013/10/09"/>
+    <meta name="citation_cover_date" content="2013/10/01"/>
+    <meta name="citation_article_type" content="Regular Paper"/>
+    <meta property="og:title" content="Polar-Cartesian Hybrid Transforms: A novel 2D range scan registration algorithm"/>
+    <meta property="og:type" content="Article"/>
+    <meta property="og:url" content="https://link.springer.com/article/10.1007/s12555-012-0172-4"/>
+    <meta property="og:image" content="https://static-content.springer.com/cover/journal/12555/11/5.jpg"/>
+    <meta property="og:site_name" content="SpringerLink"/>
+    <meta property="og:description" content="Registration of range scans is commonly required in many localization and mapping algorithms. In this paper, we introduce a novel approach called Polar-Cartesian Hybrid Transforms for pair-wise..."/>
+
+        <title>Polar-Cartesian Hybrid Transforms: A novel 2D range scan registration algorithm | SpringerLink</title>
+        <link rel="canonical" href="https://link.springer.com/article/10.1007/s12555-012-0172-4"/>
+        <link rel="shortcut icon" href="/springerlink-static/1421424694/images/favicon/favicon.ico">
+<link rel="icon" sizes="16x16 32x32 48x48" href="/springerlink-static/1421424694/images/favicon/favicon.ico">
+<link rel="icon" sizes="16x16" type="image/png" href="/springerlink-static/1421424694/images/favicon/favicon-16x16.png">
+<link rel="icon" sizes="32x32" type="image/png" href="/springerlink-static/1421424694/images/favicon/favicon-32x32.png">
+<link rel="icon" sizes="48x48" type="image/png" href="/springerlink-static/1421424694/images/favicon/favicon-48x48.png">
+<link rel="apple-touch-icon" href="/springerlink-static/1421424694/images/favicon/app-icon-iphone@3x.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/springerlink-static/1421424694/images/favicon/ic_launcher_hdpi.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/springerlink-static/1421424694/images/favicon/app-icon-ipad.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/springerlink-static/1421424694/images/favicon/app-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/springerlink-static/1421424694/images/favicon/app-icon-iphone@2x.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/springerlink-static/1421424694/images/favicon/ic_launcher_xxhdpi.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/springerlink-static/1421424694/images/favicon/app-icon-ipad@2x.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/springerlink-static/1421424694/images/favicon/app-icon-iphone@3x.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/springerlink-static/1421424694/images/favicon/ic_launcher_xxhdpi.png">
+        <link rel="dns-prefetch" href="//fonts.gstatic.com">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//google-analytics.com">
+<link rel="dns-prefetch" href="//www.google-analytics.com">
+<link rel="dns-prefetch" href="//www.googletagservices.com">
+<link rel="dns-prefetch" href="//www.googletagmanager.com">
+<link rel="dns-prefetch" href="//static-content.springer.com">
+        <link rel="stylesheet" href="/springerlink-static/1421424694/css/basic.css" media="screen">
+<link rel="stylesheet" href="/springerlink-static/1421424694/css/styles.css" class="js-ctm" media="only screen and (-webkit-min-device-pixel-ratio:0) and (min-color-index:0), (-ms-high-contrast: none), only all and (min--moz-device-pixel-ratio:0) and (min-resolution: 3e1dpcm)">
+<link rel="stylesheet" href="/springerlink-static/1421424694/css/print.css" media="print">
+
+
+            <script type="text/javascript">
+        window.Krux||((Krux=function(){Krux.q.push(arguments);}).q=[]);
+        var dataLayer = [{
+                'GA Key':"UA-26408784-1",
+                'Features':["leaderboardadverts","eventtracker"],
+                'Event Category':"Article",
+                'Open Access':"N",
+                'Labs':"Y",
+                'DOI':"10.1007/s12555-012-0172-4",
+                'VG Wort Identifier':"pw-vgzm.415900-10.1007-s12555-012-0172-4",
+                'hasAccess':"N",
+                'Full HTML':"N",
+                'Has Body':"N",
+                'Static Hash':"1421424694",
+                'Has Preview':"Y",
+                'user':{"license":{"businessPartnerID":[],"businessPartnerIDString":""}},
+                'content':{"serial":{"eissn":"2005-4092","pissn":"1598-6446"},"type":"Article","category":{"pmc":{"primarySubject":"Engineering","primarySubjectCode":"T","secondarySubjects":{"1":"Control, Robotics, Mechatronics"},"secondarySubjectCodes":{"1":"T19000"}},"sucode":"SC8"}},
+                'Access Type':"noaccess",
+                'Page':"article",
+                'Bpids':"",
+                'Bpnames':"",
+                'SubjectCodes':"SCT, SCT19000",
+                'session':{"authentication":{"loginStatus":"N"},"attributes":{"edition":"academic"}},
+                'eventTrackerBaseUrl':"https://event-tracker.springernature.com",
+                'Keywords':"ICP, range finder, robot localization, scan registration, SLAM",
+                'Country':"BE",
+                'Journal Id':"12555",
+                'Journal Title':"International Journal of Control, Automation and Systems",
+
+                    'doi': "10.1007-s12555-012-0172-4",
+                    'kwrd': ["ICP","range_finder","robot_localization","scan_registration","SLAM"],
+                    'pmc': ["T","T19000"],
+                    'BPID': ["1"],
+                    'ksg': Krux.segments,
+                    'kuid': Krux.uid,
+
+        }];
+    </script>
+
+<script type="text/javascript" src="/springerlink-static/1421424694/js/jquery-3.3.1.min.js"></script>
+
+        <script type="text/javascript" src="https://cdn.cookielaw.org/consent/6b2ec9cd-5ace-4387-96d2-963e596401c6.js" charset="UTF-8"></script>
+
+<script type="text/javascript">
+    function OptanonWrapper() {
+        dataLayer.push({
+            'event' : 'onetrustActive'
+        });
+    }
+</script>
+
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WCF9Z9');</script>
+
+    </head>
+    <body>
+        <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WCF9Z9"
+                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <div class="skip-to">
+    <a class="skip-to__link pseudo-focus" href="#main-content">Skip to main content</a>
+</div>
+        <div class="page-wrapper">
+            <noscript>
+    <div class="nojs-banner u-interface">
+        <p>This service is more advanced with JavaScript available, learn more at <a
+                href="http://activatejavascript.org" target="_blank" rel="noopener">http://activatejavascript.org</a>
+        </p>
+    </div>
+</noscript>
+                    <div id="leaderboard" class="leaderboard u-hide" data-component="SpringerLink.GoogleAds" data-namespace="leaderboard">
+            <div class="leaderboard__wrapper">
+                <p class="leaderboard__label">Advertisement</p>
+                <button class="leaderboard__hide" title="Hide this advertisement"  data-track="click" data-track-action="Hide advertisement" data-track-label="">Hide</button>
+                <div id="doubleclick-leaderboard-ad" class="leaderboard__ad u-pt-24"></div>
+            </div>
+        </div>
+
+                <header id="header" class="header u-interface">
+        <div class="header__content">
+            <div class="header__menu-container">
+                    <a id="logo" class="site-logo" href="/" title="Go to homepage">
+                <div class="u-screenreader-only">SpringerLink</div>
+    <svg class="site-logo__springer" width="148" height="30" role="img" focusable="false" aria-hidden="true">
+        <image width="148" height="30" alt="" src="/springerlink-static/1421424694/images/png/springerlink.png" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/springerlink-static/1421424694/images/svg/springerlink.svg"></image>
+    </svg>
+
+    </a>
+
+
+                    <nav id="search-container" class="u-inline-block">
+                        <div class="search">
+                            <div class="search__content">
+                                <form class="u-form-single-input" action="/search" method="get" role="search">
+    <label for="search-springerlink">Search SpringerLink</label>
+    <div class="u-relative">
+        <input id="search-springerlink" name="query" type="text" autocomplete="off" value="">
+        <input class="u-hide-text" type="submit" value="Submit" title="Submit">
+        <svg class="u-vertical-align-absolute" width="13" height="13" viewBox="222 151 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true" role="presentation">
+            <path d="M227 159C228.7 159 230 157.7 230 156 230 154.3 228.7 153 227 153 225.3 153 224 154.3 224 156 224 157.7 225.3 159 227 159L227 159 227 159 227 159ZM230 160.1L231.1 159 233.9 161.7C234.2 162.1 234.2 162.6 233.9 162.9 233.6 163.2 233.1 163.2 232.7 162.9L230 160.1 230 160.1 230 160.1 230 160.1ZM227 161L227 161C224.2 161 222 158.8 222 156 222 153.2 224.2 151 227 151 229.8 151 232 153.2 232 156 232 158.8 229.8 161 227 161L227 161 227 161 227 161 227 161Z" stroke="none" fill-rule="evenodd"/>
+        </svg>
+    </div>
+</form>
+                            </div>
+                        </div>
+                    </nav>
+
+                    <nav class="nav-container u-interface">
+    <div class="global-nav__wrapper">
+        <div class="search-button">
+            <a class="search-button__label" href="#search-container">
+                <span class="search-button__title">Search</span><svg width="12" height="12" viewBox="222 151 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true" role="presentation">
+                    <path d="M227 159C228.7 159 230 157.7 230 156 230 154.3 228.7 153 227 153 225.3 153 224 154.3 224 156 224 157.7 225.3 159 227 159L227 159 227 159 227 159ZM230 160.1L231.1 159 233.9 161.7C234.2 162.1 234.2 162.6 233.9 162.9 233.6 163.2 233.1 163.2 232.7 162.9L230 160.1 230 160.1 230 160.1 230 160.1ZM227 161L227 161C224.2 161 222 158.8 222 156 222 153.2 224.2 151 227 151 229.8 151 232 153.2 232 156 232 158.8 229.8 161 227 161L227 161 227 161 227 161 227 161Z" stroke="none" fill-rule="evenodd"></path>
+                </svg>
+            </a>
+        </div>
+
+        <ul class="global-nav" data-component="SV.Menu" data-title="Navigation menu" data-text="Menu">
+            <li>
+                <a href="/">
+                    <span class="u-overflow-ellipsis">Home</span>
+                </a>
+            </li>
+
+                <li class="global-nav__logged-out">
+                    <a class="test-login-link" href="//link.springer.com/signup-login?previousUrl=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%252Fs12555-012-0172-4">
+                        <span class="u-overflow-ellipsis">Log in</span>
+                    </a>
+                </li>
+
+        </ul>
+    </div> 
+</nav> 
+            </div>
+
+        </div>
+    </header>
+
+            
+            <main id="main-content" class="main-wrapper" tabindex="-1">
+                <div class="main-container uptodate-recommendations-off">
+                    <aside class="main-sidebar-left">
+                        <div class="main-sidebar-left__content">
+                            <div class="cover-image test-cover" itemscope>
+                                    <a class="test-cover-link" href="/journal/12555">
+        <span class="u-screenreader-only">International Journal of Control, Automation and Systems</span>
+        <img class="test-cover-image" src="https://media.springernature.com/w306/springer-static/cover/journal/12555/11/5.jpg" itemprop="image" alt=""/>
+    </a>
+
+
+                            </div>
+                        </div>
+                    </aside>
+                    <div class="main-body" data-role="NavigationContainer">
+                        
+
+
+                        <article class="main-body__content">
+                            <div xmlns="http://www.w3.org/1999/xhtml" class="FulltextWrapper"><div class="ArticleHeader main-context"><div id="enumeration" class="enumeration"><p><a href="/journal/12555" title="International Journal of Control, Automation and Systems" data-track="click" data-track-action="Journal title" data-track-label=""><span class="JournalTitle">International Journal of Control, Automation and Systems</span></a></p><p class="icon--meta-keyline"><span class="ArticleCitation_Year"><time datetime="2013-10">October 2013</time>, </span><span class="ArticleCitation_Volume">Volume 11, </span><a class="ArticleCitation_Issue" href="/journal/12555/11/5/page/1" data-track="click" data-track-action="Article issue" data-track-label="">Issue 5</a>,
+                       <span class="ArticleCitation_Pages"> pp 1001–1008</span><span class="u-inline-block u-ml-4"> | <a href="#citeas" data-track="click" data-track-action="Cite as link" data-track-label="Enumeration section">Cite as</a></span></p></div><div class="MainTitleSection"><h1 class="ArticleTitle" lang="en">Polar-Cartesian Hybrid Transforms: A novel 2D range scan registration algorithm</h1></div><div class="authors u-clearfix" data-component="SpringerLink.Authors"><ul class="u-interface u-inline-list authors__title" data-role="AuthorsNavigation"><li><span>Authors</span></li><li><a href="#authorsandaffiliations" data-track="click" data-track-action="Authors and affiliations tab" data-track-label="">Authors and affiliations</a></li></ul><div class="authors__list" data-role="AuthorsList"><ul class="test-contributor-names"><li itemscope="" itemtype="http://schema.org/Person" class="u-mb-2 u-pt-4 u-pb-4"><span itemprop="name" class="authors__name">Lei Zhang</span></li><li itemscope="" itemtype="http://schema.org/Person" class="u-mb-2 u-pt-4 u-pb-4"><span itemprop="name" class="authors__name">Sung-In Choi</span></li><li itemscope="" itemtype="http://schema.org/Person" class="u-mb-2 u-pt-4 u-pb-4"><span itemprop="name" class="authors__name">Soon-Yong Park</span><span class="author-information"><span class="authors__contact"><a href="mailto:sypark@knu.ac.kr" title="sypark@knu.ac.kr" itemprop="email" data-track="click" data-track-action="Email author" data-track-label=""><img src="/springerlink-static/images/svg/email.svg" height="24" width="24" alt="Email author" /></a></span></span></li></ul></div></div><div class="main-context__container" data-component="SpringerLink.ArticleMetrics"><div class="main-context__column"><span><span class="test-render-category">Regular Paper Robotics and Automation</span></span><div class="article-dates"><span class="article-dates__label">First Online: </span><span class="article-dates__first-online"><time datetime="2013-10-09">09 October 2013</time></span></div></div><div class="main-context__column">    <ul id="book-metrics" class="article-metrics u-sansSerif">
+            <li class="article-metrics__item">
+                     <span class="article-metrics__views">183</span>
+                     <span class="article-metrics__label">Downloads</span>
+            </li>
+            <li class="article-metrics__item">
+                    <a class="article-metrics__link gtm-citations-count" href="https://citations.springer.com/item?doi&#x3D;10.1007/s12555-012-0172-4" target="_blank" rel="noopener"
+                       title="Visit Springer Citations for full citation details" id="citations-link">
+                            <span id="citations-count-number" class="test-metric-count c-button-circle gtm-citations-count">3</span>
+                       <span class="test-metric-name article-metrics__label gtm-citations-count">Citations</span>
+                    </a>
+            </li>
+    </ul>
+</div></div></div><section class="Abstract" id="Abs1" tabindex="-1" lang="en"><h2 class="Heading">Abstract</h2><p class="Para">Registration of range scans is commonly required in many localization and mapping algorithms. In this paper, we introduce a novel approach called Polar-Cartesian Hybrid Transforms for pair-wise registration of range scans. The proposed algorithm iteratively establishes correspondences by searching the points with closest polar angles in the polar coordinate frame. An angular look-up table is constructed based on the properties of the laser range finder to accelerate the searching procedure. In order to speed up the convergence, we compute the difference of polar range of every matched point pair to select the most contributing correspondences. After the correspondences are determined, the transformation is computed in Cartesian coordinate frame using a point-to-line metric. Combining the advantages of the polar and Cartesian coordinate frames, both robustness and efficiency are greatly improved compared with an up-to-date ICP algorithm.</p></section><div class="KeywordGroup" lang="en"><h2 class="Heading">Keywords</h2><span class="Keyword">ICP </span><span class="Keyword">range finder </span><span class="Keyword">robot localization </span><span class="Keyword">scan registration </span><span class="Keyword">SLAM </span></div><div class="HeaderArticleNotes"><aside class="ArticleNote ArticleNoteMisc"><p class="SimplePara">Recommended by Editorial Board member Yuan Fang Zheng under the direction of Editor Hyungbo Shim.</p></aside><aside class="ArticleNote ArticleNoteMisc"><p class="SimplePara">This work was supported in part from UTRC(Unmanned Technology Research Center) at KAIST, originally funded by DAPA, ADD, and in part by the MSIP(Ministry of Science, ICT &amp; Future Planning), Korea, under the C-ITRC support program (NIPA-2013-H0401-13-1005) supervised by the NIPA(National IT Industry Promotion Agency).</p></aside><aside class="ArticleNote ArticleNoteMisc"><p class="SimplePara"> <strong class="EmphasisTypeBold ">Lei Zhang</strong> is an assistant engineer at Samsung Electronics Co. He obtained his B.S. degree from the Department of Computer Engineering at Kyungpook National University in 2010 and his M.S. degree in Electrical Engineering and Computer Science from Kyungpook National University in 2012. His research interests include 3D scan matching, 3D computer vision, robot localization.</p></aside><aside class="ArticleNote ArticleNoteMisc"><p class="SimplePara"> <strong class="EmphasisTypeBold ">Sung-In Choi</strong> is a Ph.D. candidate in the School of Computer Science and Engineering at Kyungpook National University, Korea. He obtained his B.S. degree in Computer Engineering from Kumoh National Institute of Technology, Korea, in 2007. He received his M.S. degree in Electrical Engineering and Computer Science from Kyungpook National University in 2010. His research interests include 3D computer vision, real-time image processing.</p></aside><aside class="ArticleNote ArticleNoteMisc"><p class="SimplePara"> <strong class="EmphasisTypeBold ">Soon-Yong Park</strong> received his B.S. and M.S. degrees in Electronics Engineering from Kyungpook National University, Daegu, Korea, in 1991 and 1999, and his Ph.D. degree in Electrical and Computer Engineering from State University of New York at Stony Brook in 2003. From 1993 to 1999, he was a senior research staff at KAERI, Korea. He is currently an associate professor in the School of Computer Science and Engineering, Kyungpook National University. His research interests include 3-D sensing and modeling, Multi-view 3D data processing.</p></aside></div><div class="note test-pdf-link" id="cobranding-and-download-availability-text"><div id="article_no_access_banner">This is a preview of subscription content, <a id="test-login-banner-link" href="/signup-login?previousUrl=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%252Fs12555-012-0172-4" data-track="click" data-track-action="Preview banner - Log in" data-track-label="">log in</a> to check access.</div></div><div class="article-actions--inline" id="article-actions--inline" data-component="article-actions--inline"></div><section id="Sample" class="pdf-preview"><h2 class="Heading">Preview</h2><object id="test-pdf-preview" class="pdf-preview__embed pdf-preview__embed--height" data="//page-one.springer.com/pdf/preview/10.1007/s12555-012-0172-4" type="application/pdf" width="100%" data-component="SpringerLink.PdfPreview"><p class="u-interface" data-fallback-text="true">Unable to display preview.&nbsp;<a href="//page-one.springer.com/pdf/preview/10.1007/s12555-012-0172-4" target="_blank" rel="noopener">Download preview PDF.</a></p></object><p class="pdf-preview__info u-interface">Unable to display preview.&nbsp;<a href="//page-one.springer.com/pdf/preview/10.1007/s12555-012-0172-4" target="_blank" rel="noopener">Download preview PDF.</a></p></section><section class="Section1 RenderAsSection1" id="Bib1" tabindex="-1"><h2 class="Heading">References</h2><div class="content"><ol class="BibliographyWrapper"><li class="Citation"><div class="CitationNumber">[1]</div><div class="CitationContent" id="CR1">S. Rusinkiewicz and M. Levoy, “Efficient variants of the ICP algorithm,” <em class="EmphasisTypeItalic ">Proc. of the International Conference on 3-D Digital Imaging and Modeling</em>, pp. 145–152, 2001.<span class="Occurrences"><span class="Occurrence OccurrenceDOI"><a class="gtm-reference" data-reference-type="CrossRef" target="_blank" rel="noopener" href="https://doi.org/10.1109/IM.2001.924423"><span><span>CrossRef</span></span></a></span><span class="Occurrence OccurrenceGS"><a target="_blank" rel="noopener" class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="http://scholar.google.com/scholar_lookup?title=Efficient%20variants%20of%20the%20ICP%20algorithm&amp;author=S.%20Rusinkiewicz&amp;author=M.%20Levoy&amp;pages=145-152&amp;publication_year=2001"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationNumber">[2]</div><div class="CitationContent" id="CR2">L. Zhang, S. I. Choi, and S.-Y. Park, “Robust ICP registration using biunique correspondence,” <em class="EmphasisTypeItalic ">Proc. of the International Conference on 3D Imaging, Modeling, Processing, Visualization and Transmission</em>, pp. 80–85, 2011.<span class="Occurrences"><span class="Occurrence OccurrenceDOI"><a class="gtm-reference" data-reference-type="CrossRef" target="_blank" rel="noopener" href="https://doi.org/10.1109/3DIMPVT.2011.18"><span><span>CrossRef</span></span></a></span><span class="Occurrence OccurrenceGS"><a target="_blank" rel="noopener" class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="http://scholar.google.com/scholar_lookup?title=Robust%20ICP%20registration%20using%20biunique%20correspondence&amp;author=L.%20Zhang&amp;author=S%20I.%20Choi&amp;author=S-Y.%20Park&amp;pages=80-85&amp;publication_year=2011"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationNumber">[3]</div><div class="CitationContent" id="CR3">K. S. Arun, T. S. Huang, and S. D. Blostein, “Least square fitting of two 3-D point sets,” <em class="EmphasisTypeItalic ">IEEE Trans. on Pattern Analysis and Machine Intelligence</em>, vol. 9, no. 5, pp. 698–700, 1987.<span class="Occurrences"><span class="Occurrence OccurrenceDOI"><a class="gtm-reference" data-reference-type="CrossRef" target="_blank" rel="noopener" href="https://doi.org/10.1109/TPAMI.1987.4767965"><span><span>CrossRef</span></span></a></span><span class="Occurrence OccurrenceGS"><a target="_blank" rel="noopener" class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="http://scholar.google.com/scholar_lookup?title=Least%20square%20fitting%20of%20two%203-D%20point%20sets&amp;author=K%20S.%20Arun&amp;author=T%20S.%20Huang&amp;author=S%20D.%20Blostein&amp;journal=IEEE%20Trans.%20on%20Pattern%20Analysis%20and%20Machine%20Intelligence&amp;volume=9&amp;issue=5&amp;pages=698-700&amp;publication_year=1987"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationNumber">[4]</div><div class="CitationContent" id="CR4">A. Censi, “An ICP variant using a point-to-line metric,” <em class="EmphasisTypeItalic ">Proc. of IEEE International Conference on Robotics and Automation</em>, pp. 19–25, 2008.<span class="Occurrences"><span class="Occurrence OccurrenceGS"><a target="_blank" rel="noopener" class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="http://scholar.google.com/scholar_lookup?title=An%20ICP%20variant%20using%20a%20point-to-line%20metric&amp;author=A.%20Censi&amp;pages=19-25&amp;publication_year=2008"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationNumber">[5]</div><div class="CitationContent" id="CR5">M. Bosse and R. Zlot, “Map matching and data association for large-scale two-dimensional laser scan-based slam,” <em class="EmphasisTypeItalic ">International Journal of Robotics Research</em>, vol. 27, no. 6, pp. 667–691, 2008.<span class="Occurrences"><span class="Occurrence OccurrenceDOI"><a class="gtm-reference" data-reference-type="CrossRef" target="_blank" rel="noopener" href="https://doi.org/10.1177/0278364908091366"><span><span>CrossRef</span></span></a></span><span class="Occurrence OccurrenceGS"><a target="_blank" rel="noopener" class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="http://scholar.google.com/scholar_lookup?title=Map%20matching%20and%20data%20association%20for%20large-scale%20two-dimensional%20laser%20scan-based%20slam&amp;author=M.%20Bosse&amp;author=R.%20Zlot&amp;journal=International%20Journal%20of%20Robotics%20Research&amp;volume=27&amp;issue=6&amp;pages=667-691&amp;publication_year=2008"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationNumber">[6]</div><div class="CitationContent" id="CR6">P. Besl and N. McKay, “A method for registration of 3-D shapes,” <em class="EmphasisTypeItalic ">IEEE Trans. on Pattern Analysis and Machine Intelligence</em>, vol. 14, no. 2, pp. 239–256, 1992.<span class="Occurrences"><span class="Occurrence OccurrenceDOI"><a class="gtm-reference" data-reference-type="CrossRef" target="_blank" rel="noopener" href="https://doi.org/10.1109/34.121791"><span><span>CrossRef</span></span></a></span><span class="Occurrence OccurrenceGS"><a target="_blank" rel="noopener" class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="http://scholar.google.com/scholar_lookup?title=A%20method%20for%20registration%20of%203-D%20shapes&amp;author=P.%20Besl&amp;author=N.%20McKay&amp;journal=IEEE%20Trans.%20on%20Pattern%20Analysis%20and%20Machine%20Intelligence&amp;volume=14&amp;issue=2&amp;pages=239-256&amp;publication_year=1992"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationNumber">[7]</div><div class="CitationContent" id="CR7">S.-Y. Park, S.-I. Choi, J. Moon, J. Kim, and Y. W. Park, “Localization of an Unmanned Ground Vehicle based on Hybrid 3D Registration of 360 degree Range Data and DSM,” <em class="EmphasisTypeItalic ">International Journal of Control, Automation, and Systems</em>, vol. 9, no. 5, pp. 875–887, 2011.<span class="Occurrences"><span class="Occurrence OccurrenceDOI"><a class="gtm-reference" data-reference-type="CrossRef" target="_blank" rel="noopener" href="https://doi.org/10.1007/s12555-011-0508-5"><span><span>CrossRef</span></span></a></span><span class="Occurrence OccurrenceGS"><a target="_blank" rel="noopener" class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="http://scholar.google.com/scholar_lookup?title=Localization%20of%20an%20Unmanned%20Ground%20Vehicle%20based%20on%20Hybrid%203D%20Registration%20of%20360%20degree%20Range%20Data%20and%20DSM&amp;author=S-Y.%20Park&amp;author=S-I.%20Choi&amp;author=J.%20Moon&amp;author=J.%20Kim&amp;author=Y%20W.%20Park&amp;journal=International%20Journal%20of%20Control%2C%20Automation%2C%20and%20Systems&amp;volume=9&amp;issue=5&amp;pages=875-887&amp;publication_year=2011"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationNumber">[8]</div><div class="CitationContent" id="CR8">S. Hong, H. Ko, and J. Kim, “VICP: velocity updating iterative closest point algorithm,” <em class="EmphasisTypeItalic ">Proc. of IEEE International Conference on Robotics and Automation</em>, pp. 1893–1898, 2010.<span class="Occurrences"><span class="Occurrence OccurrenceGS"><a target="_blank" rel="noopener" class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="http://scholar.google.com/scholar_lookup?title=VICP%3A%20velocity%20updating%20iterative%20closest%20point%20algorithm&amp;author=S.%20Hong&amp;author=H.%20Ko&amp;author=J.%20Kim&amp;pages=1893-1898&amp;publication_year=2010"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationNumber">[9]</div><div class="CitationContent" id="CR9">D. Holz and S. Behnke, “Sancta simplicitas — on the efficiency and achievable results of SLAM using ICP-based Incremental Registration,” <em class="EmphasisTypeItalic ">Proc. of IEEE International Conference on Robotics and Automation</em>, pp. 1380–1387, 2010.<span class="Occurrences"><span class="Occurrence OccurrenceGS"><a target="_blank" rel="noopener" class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="http://scholar.google.com/scholar_lookup?title=Sancta%20simplicitas%20%E2%80%94%20on%20the%20efficiency%20and%20achievable%20results%20of%20SLAM%20using%20ICP-based%20Incremental%20Registration&amp;author=D.%20Holz&amp;author=S.%20Behnke&amp;pages=1380-1387&amp;publication_year=2010"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationNumber">[10]</div><div class="CitationContent" id="CR10">A. Diosi and L. Kleeman, “Laser scan matching in polar coordinates with application to slam,” <em class="EmphasisTypeItalic ">Proc. of IEEE/RSJ International Conference on Intelligent Robots and Systems</em>, pp. 3317–3322, 2005.<span class="Occurrences"><span class="Occurrence OccurrenceGS"><a target="_blank" rel="noopener" class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="http://scholar.google.com/scholar_lookup?title=Laser%20scan%20matching%20in%20polar%20coordinates%20with%20application%20to%20slam&amp;author=A.%20Diosi&amp;author=L.%20Kleeman&amp;pages=3317-3322&amp;publication_year=2005"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationNumber">[11]</div><div class="CitationContent" id="CR11">F. Lu and E. Milios, “Robot pose estimation in unknown environments by matching 2D range scans,” <em class="EmphasisTypeItalic ">Journal of Intelligence Robotics Systems</em>, vol. 18, no. 3, pp. 249–275, 1997.<span class="Occurrences"><span class="Occurrence OccurrenceDOI"><a class="gtm-reference" data-reference-type="CrossRef" target="_blank" rel="noopener" href="https://doi.org/10.1023/A%3A1007957421070"><span><span>CrossRef</span></span></a></span><span class="Occurrence OccurrenceGS"><a target="_blank" rel="noopener" class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="http://scholar.google.com/scholar_lookup?title=Robot%20pose%20estimation%20in%20unknown%20environments%20by%20matching%202D%20range%20scans&amp;author=F.%20Lu&amp;author=E.%20Milios&amp;journal=Journal%20of%20Intelligence%20Robotics%20Systems&amp;volume=18&amp;issue=3&amp;pages=249-275&amp;publication_year=1997"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationNumber">[12]</div><div class="CitationContent" id="CR12">F. Lu and E. Milios, “Globally consistent range scan alignment for environment mapping,” <em class="EmphasisTypeItalic ">Autonomous Robots</em>, vol. 4, no. 4, pp. 333–349, 1997.<span class="Occurrences"><span class="Occurrence OccurrenceDOI"><a class="gtm-reference" data-reference-type="CrossRef" target="_blank" rel="noopener" href="https://doi.org/10.1023/A%3A1008854305733"><span><span>CrossRef</span></span></a></span><span class="Occurrence OccurrenceGS"><a target="_blank" rel="noopener" class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="http://scholar.google.com/scholar_lookup?title=Globally%20consistent%20range%20scan%20alignment%20for%20environment%20mapping&amp;author=F.%20Lu&amp;author=E.%20Milios&amp;journal=Autonomous%20Robots&amp;volume=4&amp;issue=4&amp;pages=333-349&amp;publication_year=1997"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationNumber">[13]</div><div class="CitationContent" id="CR13">J. Gutmann and K. Konolige, “Incremental mapping of large cyclic environments,” <em class="EmphasisTypeItalic ">Proc. of the International Symposium on Computational Intelligence in Robotics and Automation</em>, pp. 318–325, 2000.<span class="Occurrences"><span class="Occurrence OccurrenceGS"><a target="_blank" rel="noopener" class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="http://scholar.google.com/scholar_lookup?title=Incremental%20mapping%20of%20large%20cyclic%20environments&amp;author=J.%20Gutmann&amp;author=K.%20Konolige&amp;pages=318-325&amp;publication_year=2000"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationNumber">[14]</div><div class="CitationContent" id="CR14">K. Granstrom, J. Callmer, F. Ramos, and J. Nieto, “Learning to detect loop closure from range data,” <em class="EmphasisTypeItalic ">Proc. of IEEE International Conference on Robotics and Automation</em>, pp. 15–22, 2009.<span class="Occurrences"><span class="Occurrence OccurrenceGS"><a target="_blank" rel="noopener" class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="http://scholar.google.com/scholar_lookup?title=Learning%20to%20detect%20loop%20closure%20from%20range%20data&amp;author=K.%20Granstrom&amp;author=J.%20Callmer&amp;author=F.%20Ramos&amp;author=J.%20Nieto&amp;pages=15-22&amp;publication_year=2009"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationNumber">[15]</div><div class="CitationContent" id="CR15">D. M. Mount and S. Arya, ANN: a library for approximated nearest neighbor searching [Online]. Available: <span class="ExternalRef"><a target="_blank" rel="noopener" href="http://www.cs.umd.edu/~mount/ANN/"><span class="RefSource">http://www.cs.umd.edu/~mount/ANN/</span></a></span>.<span class="Occurrences"></span></div></li><li class="Citation"><div class="CitationNumber">[16]</div><div class="CitationContent" id="CR16">J. Phillips, R. Liu, and C. Tomasi, “Outlier robust ICP for minimizing fractional RMSD,” <em class="EmphasisTypeItalic ">Proc. of the International Conference on 3-D Digital Imaging and Modeling</em>, pp. 427–434, 2007.<span class="Occurrences"><span class="Occurrence OccurrenceDOI"><a class="gtm-reference" data-reference-type="CrossRef" target="_blank" rel="noopener" href="https://doi.org/10.1109/3DIM.2007.39"><span><span>CrossRef</span></span></a></span><span class="Occurrence OccurrenceGS"><a target="_blank" rel="noopener" class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="http://scholar.google.com/scholar_lookup?title=Outlier%20robust%20ICP%20for%20minimizing%20fractional%20RMSD&amp;author=J.%20Phillips&amp;author=R.%20Liu&amp;author=C.%20Tomasi&amp;pages=427-434&amp;publication_year=2007"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationNumber">[17]</div><div class="CitationContent" id="CR17">R. Guo, F. Sun, and J. Yuan, “ICP Based on Polar Point Matching with Application to Graph-SLAM,” <em class="EmphasisTypeItalic ">Proc. of the International Conference on Mechatronics and Automation</em>, pp. 1122–1127, 2009.<span class="Occurrences"><span class="Occurrence OccurrenceGS"><a target="_blank" rel="noopener" class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="http://scholar.google.com/scholar_lookup?title=ICP%20Based%20on%20Polar%20Point%20Matching%20with%20Application%20to%20Graph-SLAM&amp;author=R.%20Guo&amp;author=F.%20Sun&amp;author=J.%20Yuan&amp;pages=1122-1127&amp;publication_year=2009"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationNumber">[18]</div><div class="CitationContent" id="CR18">The SLAM benchmarking dataset, <span class="ExternalRef"><a target="_blank" rel="noopener" href="http://kaspar.informatik.uni-freiburg.de/~slamEvaluation/datasets.php"><span class="RefSource">http://kaspar.informatik.uni-freiburg.de/~slamEvaluation/datasets.php</span></a></span>
+                        <span class="Occurrences"></span></div></li><li class="Citation"><div class="CitationNumber">[19]</div><div class="CitationContent" id="CR19">Robotics datasets, <span class="ExternalRef"><a target="_blank" rel="noopener" href="http://www.informatik.uni-freiburg.de/~stachnis/datasets.html"><span class="RefSource">http://www.informatik.uni-freiburg.de/~stachnis/datasets.html</span></a></span>
+                        <span class="Occurrences"></span></div></li></ol></div></section><section class="Section1 RenderAsSection1"><h2 class="Heading" id="copyrightInformation">Copyright information</h2><div class="ArticleCopyright content"><div class="ArticleCopyright">© Institute of Control, Robotics and Systems and The Korean Institute of Electrical Engineers and Springer-Verlag Berlin Heidelberg 2013</div></div></section><section id="authorsandaffiliations" class="Section1 RenderAsSection1"><h2 class="Heading">Authors and Affiliations</h2><div class="content authors-affiliations u-interface"><ul class="test-contributor-names"><li itemscope="" itemtype="http://schema.org/Person" class="u-mb-2 u-pt-4 u-pb-4"><span itemprop="name" class="authors-affiliations__name">Lei Zhang</span><ul class="authors-affiliations__indexes u-inline-list" data-role="AuthorsIndexes"><li data-affiliation="affiliation-1">1</li></ul></li><li itemscope="" itemtype="http://schema.org/Person" class="u-mb-2 u-pt-4 u-pb-4"><span itemprop="name" class="authors-affiliations__name">Sung-In Choi</span><ul class="authors-affiliations__indexes u-inline-list" data-role="AuthorsIndexes"><li data-affiliation="affiliation-2">2</li></ul></li><li itemscope="" itemtype="http://schema.org/Person" class="u-mb-2 u-pt-4 u-pb-4"><span itemprop="name" class="authors-affiliations__name">Soon-Yong Park</span><ul class="authors-affiliations__indexes u-inline-list" data-role="AuthorsIndexes"><li data-affiliation="affiliation-3">3</li></ul><span class="author-information"><span class="author-information__contact u-icon-before"><a href="mailto:sypark@knu.ac.kr" title="sypark@knu.ac.kr" itemprop="email" data-track="click" data-track-action="Email author" data-track-label="">Email author</a></span></span></li></ul><ol class="test-affiliations"><li class="affiliation" data-test="affiliation-1" data-affiliation-highlight="affiliation-1" itemscope="" itemtype="http://schema.org/Organization"><span class="affiliation__count">1.</span><span class="affiliation__item"><span itemprop="name" class="affiliation__name">Samsung Electronics Co.</span><span itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress" class="affiliation__address"><span itemprop="addressRegion" class="affiliation__city">Gyeonggi-do</span><span itemprop="addressCountry" class="affiliation__country">Korea</span></span></span></li><li class="affiliation" data-test="affiliation-2" data-affiliation-highlight="affiliation-2" itemscope="" itemtype="http://schema.org/Organization"><span class="affiliation__count">2.</span><span class="affiliation__item"><span itemprop="department" class="affiliation__department">Graduate School of Computer Science and Engineering</span><span itemprop="name" class="affiliation__name">Kyungpook National University</span><span itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress" class="affiliation__address"><span itemprop="addressRegion" class="affiliation__city">Daegu</span><span itemprop="addressCountry" class="affiliation__country">Korea</span></span></span></li><li class="affiliation" data-test="affiliation-3" data-affiliation-highlight="affiliation-3" itemscope="" itemtype="http://schema.org/Organization"><span class="affiliation__count">3.</span><span class="affiliation__item"><span itemprop="department" class="affiliation__department">School of Computer Science and Engineering</span><span itemprop="name" class="affiliation__name">Kyungpook National University</span><span itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress" class="affiliation__address"><span itemprop="addressRegion" class="affiliation__city">Daegu</span><span itemprop="addressCountry" class="affiliation__country">Korea</span></span></span></li></ol></div></section></div>
+                        </article>
+                        <aside class="section section--collapsible" id="AboutThisContent">
+    <h2 class="section__heading" id="aboutcontent">About this article</h2>
+    <div class="section__content bibliographic-information">
+        
+        <div class="crossmark__adjacent">
+            <dl class="citation-info u-highlight-target u-mb-16" id="citeas" tabindex="-1">
+    <dt class="test-cite-heading">
+        Cite this article as:
+    </dt>
+    <dd id="citethis-text">Zhang, L., Choi, SI. & Park, SY. Int. J. Control Autom. Syst. (2013) 11: 1001. https://doi.org/10.1007/s12555-012-0172-4</dd>
+</dl>
+                <ul class="bibliographic-information__list bibliographic-information__list--inline">
+        <li class="bibliographic-information__item">
+            <span class="bibliographic-information__title">Received</span>
+            <span class="bibliographic-information__value u-overflow-wrap">25 April 2012</span>
+        </li>
+        <li class="bibliographic-information__item">
+            <span class="bibliographic-information__title">Revised</span>
+            <span class="bibliographic-information__value u-overflow-wrap">15 April 2013</span>
+        </li>
+        <li class="bibliographic-information__item">
+            <span class="bibliographic-information__title">Accepted</span>
+            <span class="bibliographic-information__value u-overflow-wrap">19 June 2013</span>
+        </li>
+        <li class="bibliographic-information__item">
+            <span class="bibliographic-information__title">First Online</span>
+            <span class="bibliographic-information__value u-overflow-wrap">09 October 2013</span>
+        </li>
+        <li class="bibliographic-information__item">
+            <span class="bibliographic-information__title">DOI</span>
+            <span class="bibliographic-information__value u-overflow-wrap" id="doi-url">https://doi.org/10.1007/s12555-012-0172-4</span>
+        </li>
+            <li class="bibliographic-information__item">
+                <span class="bibliographic-information__title">Publisher Name</span>
+                <span class="bibliographic-information__value" id="publisher-name">Springer Berlin Heidelberg</span>
+            </li>
+            <li class="bibliographic-information__item">
+                <span class="bibliographic-information__title">Print ISSN</span>
+                <span class="bibliographic-information__value" id="print-issn">1598-6446</span>
+            </li>
+            <li class="bibliographic-information__item">
+                <span class="bibliographic-information__title">Online ISSN</span>
+                <span class="bibliographic-information__value" id="electronic-issn">2005-4092</span>
+            </li>
+
+        
+    </ul>
+
+            <ul class="bibliographic-information__list">
+        <li class="bibliographic-information__item">
+            <a id="about-journal" class="bibliographic-information__misc-links"
+               title="Visit Springer.com for information about this article&#39;s journal"
+               href="//www.springer.com/journal/12555/about">About this journal</a>
+        </li>
+        <li class="bibliographic-information__item">
+            <a id="reprintsandpermissions-link" target="_blank" rel="noopener" href="https://s100.copyright.com/AppDispatchServlet?publisherName&#x3D;SpringerNature&amp;orderBeanReset&#x3D;true&amp;orderSource&#x3D;SpringerLink&amp;copyright&#x3D;Institute+of+Control%2C+Robotics+and+Systems+and+The+Korean+Institute+of+Electrical+Engineers+and+Springer-Verlag+Berlin+Heidelberg&amp;author&#x3D;Lei+Zhang%2C+Sung-In+Choi%2C+Soon-Yong+Park&amp;issueNum&#x3D;5&amp;contentID&#x3D;10.1007%2Fs12555-012-0172-4&amp;endPage&#x3D;1008&amp;publicationDate&#x3D;2013&amp;startPage&#x3D;1001&amp;volumeNum&#x3D;11&amp;title&#x3D;Polar-Cartesian+Hybrid+Transforms%3A+A+novel+2D+range+scan+registration+algorithm&amp;imprint&#x3D;Institute+of+Control%2C+Robotics+and+Systems+and+The+Korean+Institute+of+Electrical+Engineers+and+Springer-Verlag+Berlin+Heidelberg&amp;publication&#x3D;1598-6446" title="Visit RightsLink for information about reusing this article" data-track="click" data-track-action="Reprints and Permissions" data-track-label="">Reprints and Permissions</a>
+        </li>
+</ul>
+
+
+
+        </div>
+      
+      
+          
+    </div>
+</aside>
+
+                        <div class="section section--collapsible uptodate-recommendations gtm-recommendations">
+    <h2 class="uptodate-recommendations__title section__heading gtm-recommendations__title" id="uptodaterecommendations">Personalised recommendations</h2>
+    <div class="section__content">
+        <div class="uptodate-recommendations__container">
+             <link rel="uptodate-inline" href="/springerlink-static/1421424694/css/recommendations.css"/>
+        </div>
+    </div>
+</div>
+                                <div id="doubleclick-native-ad" data-component="SpringerLink.GoogleAds" data-namespace="native"></div>
+
+                        
+
+    <div class="sticky-banner sticky-banner--buybox u-interface u-hide" data-component="SpringerLink.StickyBanner" data-namespace="hasLink">
+        <div class="sticky-banner__container">
+                <div class="citations" data-component="SV.Dropdown" data-namespace="citationsSticky">
+        <h3 class="u-h4" data-role="button-dropdown__title">
+    <span>Cite</span>
+    <span class="hide-text-small">article</span>
+</h3>
+<ul class="citations__content" data-role="button-dropdown__content">
+    <li>
+        <a href="#citeas" data-track="click" data-track-action="Cite as link" data-track-label="Cite dropdown">How to cite?</a>
+    </li>
+        <li>
+            <a href="//citation-needed.springer.com/v2/references/10.1007/s12555-012-0172-4?format&#x3D;refman&amp;flavour&#x3D;citation"
+               title="Download this article&#39;s citation as a .RIS file" data-track="click" data-track-action="Export citation" data-track-label="RIS">
+                <span class="citations__extension" data-gtmlabel="RIS">
+                    <svg class="u-vertical-align-absolute" width="12" height="14" viewBox="0 0 12 14" xmlns="http://www.w3.org/2000/svg"><path d="M7 7.269v-6.271c0-.551-.448-.998-1-.998-.556 0-1 .447-1 .998v6.271l-1.5-1.547c-.375-.387-1.01-.397-1.401-.006l.016-.016c-.397.397-.391 1.025-.001 1.416l3.178 3.178c.392.392 1.024.391 1.415 0l3.178-3.178c.392-.392.391-1.025-.001-1.416l.016.016c-.397-.397-1.018-.388-1.401.006l-1.5 1.547zm-7 5.731c0-.552.456-1 1.002-1h9.995c.554 0 1.002.444 1.002 1 0 .552-.456 1-1.002 1h-9.995c-.554 0-1.002-.444-1.002-1z" fill="#004aa7"/></svg>
+                    .RIS
+                </span>
+                <span class="citations__types">
+                        <span>
+                            Papers
+                        </span>
+                        <span>
+                            Reference Manager
+                        </span>
+                        <span>
+                            RefWorks
+                        </span>
+                        <span>
+                            Zotero
+                        </span>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="//citation-needed.springer.com/v2/references/10.1007/s12555-012-0172-4?format&#x3D;endnote&amp;flavour&#x3D;citation"
+               title="Download this article&#39;s citation as a .ENW file" data-track="click" data-track-action="Export citation" data-track-label="ENW">
+                <span class="citations__extension" data-gtmlabel="ENW">
+                    <svg class="u-vertical-align-absolute" width="12" height="14" viewBox="0 0 12 14" xmlns="http://www.w3.org/2000/svg"><path d="M7 7.269v-6.271c0-.551-.448-.998-1-.998-.556 0-1 .447-1 .998v6.271l-1.5-1.547c-.375-.387-1.01-.397-1.401-.006l.016-.016c-.397.397-.391 1.025-.001 1.416l3.178 3.178c.392.392 1.024.391 1.415 0l3.178-3.178c.392-.392.391-1.025-.001-1.416l.016.016c-.397-.397-1.018-.388-1.401.006l-1.5 1.547zm-7 5.731c0-.552.456-1 1.002-1h9.995c.554 0 1.002.444 1.002 1 0 .552-.456 1-1.002 1h-9.995c-.554 0-1.002-.444-1.002-1z" fill="#004aa7"/></svg>
+                    .ENW
+                </span>
+                <span class="citations__types">
+                        <span>
+                            EndNote
+                        </span>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="//citation-needed.springer.com/v2/references/10.1007/s12555-012-0172-4?format&#x3D;bibtex&amp;flavour&#x3D;citation"
+               title="Download this article&#39;s citation as a .BIB file" data-track="click" data-track-action="Export citation" data-track-label="BIB">
+                <span class="citations__extension" data-gtmlabel="BIB">
+                    <svg class="u-vertical-align-absolute" width="12" height="14" viewBox="0 0 12 14" xmlns="http://www.w3.org/2000/svg"><path d="M7 7.269v-6.271c0-.551-.448-.998-1-.998-.556 0-1 .447-1 .998v6.271l-1.5-1.547c-.375-.387-1.01-.397-1.401-.006l.016-.016c-.397.397-.391 1.025-.001 1.416l3.178 3.178c.392.392 1.024.391 1.415 0l3.178-3.178c.392-.392.391-1.025-.001-1.416l.016.016c-.397-.397-1.018-.388-1.401.006l-1.5 1.547zm-7 5.731c0-.552.456-1 1.002-1h9.995c.554 0 1.002.444 1.002 1 0 .552-.456 1-1.002 1h-9.995c-.554 0-1.002-.444-1.002-1z" fill="#004aa7"/></svg>
+                    .BIB
+                </span>
+                <span class="citations__types">
+                        <span>
+                            BibTeX
+                        </span>
+                        <span>
+                            JabRef
+                        </span>
+                        <span>
+                            Mendeley
+                        </span>
+                </span>
+            </a>
+        </li>
+</ul>
+    </div>
+
+                
+
+
+
+                <div class="sticky-banner__buybox-link sticky-banner__buybox-link--sticky">
+        <a href="#buy" class="gtm-buybox-anchor">
+            Buy options
+        </a>
+    </div>
+
+        </div>
+    </div>
+
+
+                    </div>
+                    <aside class="main-sidebar-right u-interface">
+                        <div data-role="sticky-wrapper">
+                            <div class="main-sidebar-right__content u-composite-layer" data-component="SpringerLink.StickySidebar">
+                                <div class="article-actions" id="article-actions">
+                                    <h2 class="u-screenreader-only" aria-hidden="true">Actions</h2>
+
+                                        <div id="buy">
+                                            
+<style type="text/css">
+    .buybox {
+        margin: 16px 0 0;
+        position: relative;
+    }
+    .buybox {
+        font-family: Source Sans Pro, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        font-size: 1.4rem;
+    }
+    .buybox {
+        zoom: 1;
+    }
+    .buybox:after,
+    .buybox:before {
+        content: '';
+        display: table;
+    }
+    .buybox:after {
+        clear: both;
+    }
+    /*---------------------------------*/
+    .buybox .buybox__header {
+        border: 1px solid #b3b3b3;
+        border-bottom: 0;
+        padding: 8px;
+        position: relative;
+        background-color: #f2f2f2;
+    }
+    .buybox__header .buybox__login {
+        font-family: Source Sans Pro, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        font-size: 1.4rem;
+        letter-spacing: .017em;
+        display: inline-block;
+        line-height: 1.2;
+        padding: 0;
+    }
+    .buybox__header .buybox__login:before {
+        position: absolute;
+        top: 50%;
+        -webkit-transform: perspective(1px) translateY(-50%);
+        transform: perspective(1px) translateY(-50%);
+        content: '\A';
+        width: 34px;
+        height: 34px;
+        left: 10px;
+    }
+    /*---------------------------------*/
+    .buybox .buybox__body {
+        padding: 0;
+        padding-bottom: 16px;
+        position: relative;
+        text-align: center;
+        background-color: #fcfcfc;
+        border: 1px solid #b3b3b3;
+    }
+    /******/
+    .buybox__body .buybox__section {
+        padding: 16px 12px 0 12px;
+        text-align: left;
+    }
+    .buybox__section .buybox__buttons {
+        text-align: center;
+        width: 100%;
+    }
+    /********** mycopy buybox specific **********/
+    .buybox.mycopy__buybox .buybox__body {
+        background-color: transparent;
+    }
+    .buybox.mycopy__buybox .buybox__section .buybox__buttons {
+        border-top: 0;
+        padding-top: 0;
+    }
+    /******/
+    .buybox__section:nth-child(2) .buybox__buttons {
+        border-top: 1px solid #b3b3b3;
+        padding-top: 20px;
+    }
+    .buybox__buttons .buybox__buy-button {
+        display: inline-block;
+        text-align: center;
+        margin-bottom: 5px;
+        padding: 6px 12px;
+        max-width: 180px
+    }
+    .buybox__buttons .buybox__price {
+        white-space: nowrap;
+        text-align: center;
+        font-size: larger;
+        padding-top: 6px;
+    }
+    .buybox__section .buybox__meta {
+        letter-spacing: 0;
+        padding-top: 12px;
+    }
+    .buybox__section .buybox__meta:only-of-type {
+        padding-top: 0;
+        position: relative;
+        bottom: 6px;
+    }
+    /********** mycopy buybox specific **********/
+    .buybox.mycopy__buybox .buybox__section .buybox__meta {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    /******/
+    .buybox__meta .buybox__product-title {
+        display: inline;
+        font-weight: bold;
+    }
+    .buybox__meta .buybox__list {
+        line-height: 1.3;
+    }
+    .buybox__meta .buybox__list li {
+        position: relative;
+        padding-left: 1em;
+        list-style: none;
+        margin-bottom: 5px;
+    }
+    .buybox__meta .buybox__list li:before {
+        font-size: 1em;
+        content: '\2022';
+        float: left;
+        position: relative;
+        top: .1em;
+        font-family: serif;
+        font-weight: 600;
+        text-align: center;
+        line-height: inherit;
+        color: #666;
+        width: auto;
+        margin-left: -1em;
+    }
+    .buybox__meta .buybox__list li:last-child {
+        margin-bottom: 0;
+    }
+    /********** chapter buybox specific **********/
+    .buybox.chapter__buybox .buybox__section .buybox__meta {
+        border-top: 1px solid #d3d3d3;
+        padding-top: 12px;
+    }
+    .buybox.chapter__buybox .buybox__section .buybox__buy-ebook {
+        margin-bottom: 12px;
+    }
+    /******/
+    /*---------------------------------*/
+    .buybox .buybox__footer {
+        border: 1px solid #b3b3b3;
+        border-top: 0;
+        padding: 8px;
+        position: relative;
+        border-style: dashed;
+        line-height: 1.3;
+    }
+    .buybox .deepdyve {
+        display: none;
+        text-align: left;
+        margin: 8px 12px 0 12px;
+        padding-top: 5px;
+        border-top: 1px solid #d3d3d3;
+    }
+    /*-----------------------------------------------------------------*/
+    @media screen and (min-width: 460px) and (max-width: 1074px) {
+        .buybox__body .buybox__section {
+            display: inline-block;
+            vertical-align: top;
+            padding: 12px 12px;
+            padding-bottom: 0;
+            text-align: left;
+            width: 48%;
+        }
+        .buybox__body .buybox__section {
+            padding-top: 16px;
+            padding-left: 0;
+        }
+        .buybox__section:nth-of-type(2) .buybox__meta {
+            border-left: 1px solid #d3d3d3;
+            padding-left: 28px;
+        }
+        .buybox__section:nth-of-type(2) .buybox__buttons {
+            border-top: 0;
+            padding-top: 0;
+            padding-left: 16px ;
+        }
+        .buybox__buttons .buybox__buy-button {
+        }
+        /********** article buybox specific **********/
+        .buybox.article__buybox .buybox__section:nth-of-type(2) {
+            margin-top: 16px;
+            padding-top: 0;
+        }
+        .buybox.article__buybox .buybox__section:nth-of-type(2) .buybox__meta {
+            margin-top: 40px;
+            padding-top: 0;
+            padding-bottom: 45px;
+        }
+        .buybox.article__buybox .buybox__section:nth-of-type(2) .buybox__meta:only-of-type {
+            margin-top: 8px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+        }
+        /********** mycopy buybox specific **********/
+        .buybox.mycopy__buybox .buybox__section:first-child {
+            width: 69%;
+            padding-left: 12px ;
+        }
+        .buybox.mycopy__buybox .buybox__section:last-child {
+            width: 29%;
+        }
+        /********** chapter buybox specific **********/
+        .buybox.chapter__buybox .buybox__body {
+            display: flex;
+            align-items: stretch;
+            padding-left: 12px;
+            padding-top: 12px;
+        }
+        .buybox.chapter__buybox .buybox__section .buybox__meta {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            border-top: 0;
+            padding-top: 0;
+        }
+        /******/
+    }
+    /*-----------------------------------------------------------------*/
+    @media screen and (max-width: 459px) {
+        /********** mycopy buybox specific **********/
+        .buybox.mycopy__buybox .buybox__body {
+            padding-bottom: 5px;
+        }
+        .buybox.mycopy__buybox .buybox__section:last-child {
+            text-align: center;
+            width: 100%;
+        }
+        .buybox.mycopy__buybox .buybox__buttons {
+            display: inline-block;
+            width: 150px ;
+        }
+        /******/
+    }
+    /*-----------------------------------------------------------------*/
+</style>
+
+<div class="buybox article__buybox" data-webtrekkTrackId="196033507532344" data-webtrekkContentId="SL-article">
+    <div class="buybox__header">
+        <span class="buybox__login">Log in to check access</span>
+    </div>
+    <div class="buybox__body">
+        
+
+
+
+
+
+
+
+<div class="buybox__section buybox__article">
+    <div class="buybox__buttons">
+        <form class="buybox__form buybox__article" action="https://checkout.springer.com/checkout/add?utm_source=springerlink&amp;utm_medium=referral&amp;utm_campaign=sl-buybox_articlePage_article" method="POST">
+            
+                <input type="hidden" name="type" value="article"/>
+            
+                <input type="hidden" name="doi" value="10.1007/s12555-012-0172-4"/>
+            
+                <input type="hidden" name="isxn" value="2005-4092"/>
+            
+                <input type="hidden" name="contenttitle" value="Polar-Cartesian Hybrid Transforms: A novel 2D range scan registration algorithm"/>
+            
+                <input type="hidden" name="copyrightyear" value="2013"/>
+            
+                <input type="hidden" name="year" value="2013"/>
+            
+                <input type="hidden" name="authors" value="Lei Zhang, Sung-In Choi, Soon-Yong Park"/>
+            
+                <input type="hidden" name="title" value="International Journal of Control, Automation and Systems"/>
+            
+                <input type="hidden" name="mac" value="5e334c35703d6cd9e723c1536bbd68c6"/>
+            
+                <input type="hidden" name="returnurl" value="http://link.springer.com/article/10.1007/s12555-012-0172-4"/>
+            
+            <button
+            class="buybox__buy-button c-button c-button--blue"
+            data-product-id="10.1007/s12555-012-0172-4_Polar-Cartesian Hybrid Transforms:"
+            data-tracking-category="ppv"
+            data-eCommerceParam_11="article-page"
+            data-gtm="buybox__buy-button">
+                <span class="buybox__buy" data-gtm="buybox__buy-button">Buy article (PDF)</span>
+            </button>
+            <div class="buybox__price" data-gtm="buybox__buy-button">
+                EUR&nbsp;42.29
+            </div>
+        </form>
+    </div>
+    <div class="buybox__meta">
+        <ul class="buybox__list">
+            <li>Unlimited access to the article</li>
+            <li>Instant PDF download</li>
+        </ul>
+    </div>
+</div>
+
+        
+
+
+
+
+
+
+    <div class="buybox__section">
+    </div>
+
+
+        <div id="deepdyve" class="deepdyve">
+    <a id="deepdyve-link" href="#" target="deepdyve" data-event="Article__rent_article">Rent this article via DeepDyve</a>
+</div>
+<script type="text/javascript">
+    function deepDyveResponse(data) {
+        if(data.status === "ok") {
+            document.getElementById("deepdyve").style.display = "inline-block";
+            document.getElementById("deepdyve-link").setAttribute("href", data.url);
+        }
+    }
+    var script = document.createElement('script');
+    script.src = "//www.deepdyve.com/rental-link?docId=10.1007/s12555-012-0172-4&journal=2005-4092&fieldName=journal_doi&affiliateId=springer&format=jsonp&callback=deepDyveResponse";
+    document.body.appendChild(script);
+</script>
+    </div>
+    <div class="buybox__footer">
+    <a class="js-buybox__inst-sub-link" data-gtm="buybox__inst-sub-link" href="https://www.springernature.com/gp/librarians/licensing/license-options?utm_source=springerlink&utm_medium=referral&utm_campaign=sl-buybox_articlePage_institutionalCustomers">
+        Learn about institutional subscriptions</a>
+</div>
+</div>
+
+<script>
+(function () {
+    var forEach = function (array, callback, scope) {
+        for (var i = 0; i < array.length; i++) {
+            callback.call(scope, i, array[i]);
+        }
+    };
+
+    var trackDomain = 'springergmbh01.webtrekk.net';
+    var domain = 'link.springer.com';
+    var loadEventSent = false;
+
+    var buyboxRoot = document.getElementsByClassName('buybox')[0];
+    var webtrekkTrackId = buyboxRoot.getAttribute('data-webtrekkTrackId');
+    var webtrekkContentId = buyboxRoot.getAttribute('data-webtrekkContentId');
+
+    function LinkTrack(webtrekkTrackId) {
+        if (!webtrekkTrackId) return;
+
+        var data = {
+            trackDomain: trackDomain,
+            trackId: webtrekkTrackId,
+            domain: domain,
+            contentId: 'springer_com.buybox',
+            customSessionParameter: {
+                2: getBusinessPartnerIds()
+            }
+        };
+
+        if (!window.webtrekkV3 && console) {
+            console.log('No webtrekk found.', data);
+            return;
+        }
+
+        return new webtrekkV3(data);
+    }
+
+    function Track(product, webtrekkTrackId, eCommerceParam_11, action) {
+        if (!product) return;
+
+        var data = {
+            trackDomain: trackDomain,
+            trackId: webtrekkTrackId,
+            domain: domain,
+            contentId: webtrekkContentId,
+            product: product.id,
+            productStatus: action,
+            productCategory: {
+                1: product.trackingCategory
+            },
+            customEcommerceParameter: {
+                9: domain,
+                11: eCommerceParam_11
+            },
+            customSessionParameter: {
+                2: getBusinessPartnerIds()
+            }
+        };
+
+        if (!window.webtrekkV3 && console) {
+            console.log('No webtrekk found.', data);
+            return;
+        }
+
+        return new webtrekkV3(data);
+    }
+
+    function track(trackingConfig) {
+        return function(payload) {
+            if (!trackingConfig) return
+            if (payload) {
+                trackingConfig.sendinfo(payload)
+            } else {
+                trackingConfig.sendinfo()
+            }
+            return true
+        }
+    }
+
+    function trackAddToCart(trackingConfig) {
+        return track(trackingConfig)()
+    }
+
+    function trackOnLoad(trackingConfig) {
+        if (loadEventSent) return;
+        loadEventSent = true;
+        return track(trackingConfig)()
+    }
+
+    function trackSubscription(trackingConfig) {
+        return track(trackingConfig)({linkId: 'inst. subscription info'})
+    }
+
+    function trackDeepDyve(trackingConfig) {
+        return track(trackingConfig)({linkId: 'Rent Article'})
+    }
+
+    function getBusinessPartnerIds() {
+        var businessPartnerIDs = [];
+        try {
+            var ids = window.dataLayer[0]["user"]["license"]["businessPartnerID"];
+            if(ids && ids.length) businessPartnerIDs = ids;
+        } catch(e) {}
+        return businessPartnerIDs.join(";");
+    }
+
+    var bindClickLinkHandle = function (link) {
+        if (!link) return;
+
+        link.addEventListener('click', function (event) {
+            trackSubscription(LinkTrack(webtrekkTrackId));
+        });
+    };
+
+    var bindLoadButtonHandle = function (button) {
+        if (!button) return;
+
+        var productId = button.getAttribute('data-product-id');
+        var trackingCategory = button.getAttribute('data-tracking-category');
+        var eCommerceParam_11 = button.getAttribute('data-eCommerceParam_11');
+
+        window.addEventListener('load', function (event) {
+            trackOnLoad(Track({
+                id: productId,
+                trackingCategory: trackingCategory
+            }, webtrekkTrackId, eCommerceParam_11, 'view'));
+        });
+    };
+
+    var bindClickButtonHandle = function (button) {
+        if (!button) return;
+
+        var productId = button.getAttribute('data-product-id');
+        var trackingCategory = button.getAttribute('data-tracking-category');
+        var eCommerceParam_11 = button.getAttribute('data-eCommerceParam_11');
+
+        button.addEventListener('click', function (event) {
+            trackAddToCart(Track({
+                id: productId,
+                trackingCategory: trackingCategory
+            }, webtrekkTrackId, eCommerceParam_11, 'add'));
+        });
+    };
+
+    var buyButtons = document.getElementsByClassName('buybox__buy-button');
+    forEach(buyButtons, function (index, button) {
+        bindLoadButtonHandle(button);
+        bindClickButtonHandle(button);
+    });
+
+    var sublinks = document.getElementsByClassName('js-buybox__inst-sub-link');
+    forEach(sublinks, function (index, link) {
+        bindClickLinkHandle(link);
+    });
+
+    var bindDeepDyveClickHandle = function (link) {
+        if (!link) return
+
+        link.addEventListener('click', function (event) {
+            trackDeepDyve(LinkTrack(webtrekkTrackId))
+        })
+    }
+
+    var deepDyveLink = document.getElementById('deepdyve-link')
+    bindDeepDyveClickHandle(deepDyveLink)
+})();
+</script>
+
+                                        </div>
+
+                                    <div class="u-js-hide u-js-show-two-col">
+                                        
+
+
+
+                                            <div class="citations" data-component="SV.Dropdown" data-namespace="citations">
+        <h3 class="u-h4" data-role="button-dropdown__title">
+    <span>Cite</span>
+    <span class="hide-text-small">article</span>
+</h3>
+<ul class="citations__content" data-role="button-dropdown__content">
+    <li>
+        <a href="#citeas" data-track="click" data-track-action="Cite as link" data-track-label="Cite dropdown">How to cite?</a>
+    </li>
+        <li>
+            <a href="//citation-needed.springer.com/v2/references/10.1007/s12555-012-0172-4?format&#x3D;refman&amp;flavour&#x3D;citation"
+               title="Download this article&#39;s citation as a .RIS file" data-track="click" data-track-action="Export citation" data-track-label="RIS">
+                <span class="citations__extension" data-gtmlabel="RIS">
+                    <svg class="u-vertical-align-absolute" width="12" height="14" viewBox="0 0 12 14" xmlns="http://www.w3.org/2000/svg"><path d="M7 7.269v-6.271c0-.551-.448-.998-1-.998-.556 0-1 .447-1 .998v6.271l-1.5-1.547c-.375-.387-1.01-.397-1.401-.006l.016-.016c-.397.397-.391 1.025-.001 1.416l3.178 3.178c.392.392 1.024.391 1.415 0l3.178-3.178c.392-.392.391-1.025-.001-1.416l.016.016c-.397-.397-1.018-.388-1.401.006l-1.5 1.547zm-7 5.731c0-.552.456-1 1.002-1h9.995c.554 0 1.002.444 1.002 1 0 .552-.456 1-1.002 1h-9.995c-.554 0-1.002-.444-1.002-1z" fill="#004aa7"/></svg>
+                    .RIS
+                </span>
+                <span class="citations__types">
+                        <span>
+                            Papers
+                        </span>
+                        <span>
+                            Reference Manager
+                        </span>
+                        <span>
+                            RefWorks
+                        </span>
+                        <span>
+                            Zotero
+                        </span>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="//citation-needed.springer.com/v2/references/10.1007/s12555-012-0172-4?format&#x3D;endnote&amp;flavour&#x3D;citation"
+               title="Download this article&#39;s citation as a .ENW file" data-track="click" data-track-action="Export citation" data-track-label="ENW">
+                <span class="citations__extension" data-gtmlabel="ENW">
+                    <svg class="u-vertical-align-absolute" width="12" height="14" viewBox="0 0 12 14" xmlns="http://www.w3.org/2000/svg"><path d="M7 7.269v-6.271c0-.551-.448-.998-1-.998-.556 0-1 .447-1 .998v6.271l-1.5-1.547c-.375-.387-1.01-.397-1.401-.006l.016-.016c-.397.397-.391 1.025-.001 1.416l3.178 3.178c.392.392 1.024.391 1.415 0l3.178-3.178c.392-.392.391-1.025-.001-1.416l.016.016c-.397-.397-1.018-.388-1.401.006l-1.5 1.547zm-7 5.731c0-.552.456-1 1.002-1h9.995c.554 0 1.002.444 1.002 1 0 .552-.456 1-1.002 1h-9.995c-.554 0-1.002-.444-1.002-1z" fill="#004aa7"/></svg>
+                    .ENW
+                </span>
+                <span class="citations__types">
+                        <span>
+                            EndNote
+                        </span>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="//citation-needed.springer.com/v2/references/10.1007/s12555-012-0172-4?format&#x3D;bibtex&amp;flavour&#x3D;citation"
+               title="Download this article&#39;s citation as a .BIB file" data-track="click" data-track-action="Export citation" data-track-label="BIB">
+                <span class="citations__extension" data-gtmlabel="BIB">
+                    <svg class="u-vertical-align-absolute" width="12" height="14" viewBox="0 0 12 14" xmlns="http://www.w3.org/2000/svg"><path d="M7 7.269v-6.271c0-.551-.448-.998-1-.998-.556 0-1 .447-1 .998v6.271l-1.5-1.547c-.375-.387-1.01-.397-1.401-.006l.016-.016c-.397.397-.391 1.025-.001 1.416l3.178 3.178c.392.392 1.024.391 1.415 0l3.178-3.178c.392-.392.391-1.025-.001-1.416l.016.016c-.397-.397-1.018-.388-1.401.006l-1.5 1.547zm-7 5.731c0-.552.456-1 1.002-1h9.995c.554 0 1.002.444 1.002 1 0 .552-.456 1-1.002 1h-9.995c-.554 0-1.002-.444-1.002-1z" fill="#004aa7"/></svg>
+                    .BIB
+                </span>
+                <span class="citations__types">
+                        <span>
+                            BibTeX
+                        </span>
+                        <span>
+                            JabRef
+                        </span>
+                        <span>
+                            Mendeley
+                        </span>
+                </span>
+            </a>
+        </li>
+</ul>
+    </div>
+
+                                            
+
+
+
+                                    </div>
+                                </div>
+                                
+
+                            </div>
+                                <div class="skyscraper-ad u-hide" data-component="SpringerLink.GoogleAds" data-namespace="skyscraper">
+        <div class="skyscraper-ad__wrapper">
+            <p class="skyscraper-ad__label">Advertisement</p>
+            <button class="skyscraper-ad__hide" title="Hide this advertisement" data-track="click" data-track-action="Hide advertisement" data-track-label="">Hide</button>
+            <div id="doubleclick-ad" class="skyscraper-ad__ad"></div>
+        </div>
+    </div>
+
+                        </div>
+                    </aside>
+                </div>
+            </main>
+                <footer class="footer u-interface">
+        <div class="footer__aside-wrapper">
+            <div class="footer__content">
+                <div class="footer__aside">
+                    <p class="footer__strapline">Over 10 million scientific documents at your fingertips</p>
+                                <div class="footer__edition" data-component="SV.EditionSwitcher">
+                                    <h3 class="u-hide" data-role="button-dropdown__title" data-btn-text="Switch between Academic &#38; Corporate Edition">Switch Edition</h3>
+                                    <ul data-role="button-dropdown__content">
+                                        <li  class="selected"><a href="/siteEdition/link?previousUrl=/article/10.1007%2Fs12555-012-0172-4&id=siteedition-academic-link" id="siteedition-academic-link">Academic Edition</a></li>
+                                        <li ><a href="/siteEdition/rd?previousUrl=/article/10.1007%2Fs12555-012-0172-4&id=siteedition-corporate-link" id="siteedition-corporate-link">Corporate Edition</a></li>
+                                    </ul>
+                                </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__content">
+            <ul class="footer__nav">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/impressum">Impressum</a>
+                </li>
+                <li>
+                    <a href="/termsandconditions">Legal information</a>
+                </li>
+                <li>
+                    <a href="/privacystatement">Privacy statement</a>
+                </li>
+                <li>
+                    <a href="/cookiepolicy">How we use cookies</a>
+                </li>
+                <li>
+                    <a href="/accessibility">Accessibility</a>
+                </li>
+                <li>
+                    <a id="contactus-footer-link" href="/contactus">Contact us</a>
+                </li>
+            </ul>
+            <a class="parent-logo"
+               target="_blank" rel="noopener"
+               href="//www.springernature.com"
+               title="Go to Springer Nature">
+                <span class="u-screenreader-only">Springer Nature</span>
+                <svg width="125" height="12" focusable="false" aria-hidden="true">
+                    <image width="125" height="12"
+                           src="/springerlink-static/1421424694/images/png/springernature.png"
+                           xmlns:xlink="http://www.w3.org/1999/xlink"
+                           xlink:href="/springerlink-static/1421424694/images/svg/springernature.svg">
+                    </image>
+                </svg>
+            </a>
+
+            <p class="footer__copyright">&copy; 2018 Springer Nature Switzerland AG. Part of <a target="_blank" rel="noopener" href="//www.springernature.com">Springer Nature</a>.</p>
+                <p class="footer__user-access-info">
+                    <span>Not logged in</span>
+                    <span>Not affiliated</span>
+                    <span>81.245.157.239</span>
+                </p>
+        </div>
+    </footer>
+
+        </div>
+        <script type="text/javascript">
+    (function() {
+        var linkEl = document.querySelector('.js-ctm');
+        var scriptsList = [];
+        var polyfillFeatures = '';
+
+        window.SpringerLink = window.SpringerLink || {};
+        window.SpringerLink.staticLocation = '/springerlink-static/1421424694';
+        window.eventTrackerInstance = null;
+
+        if (window.matchMedia && window.matchMedia(linkEl.media).matches) {
+            (function(h){h.className = h.className.replace('no-js', 'js')})(document.documentElement);
+
+            polyfillFeatures = 'default,fetch,Promise,Object.setPrototypeOf,Object.entries,Number.isInteger,MutationObserver,startsWith,Array.prototype.includes,Array.from,IntersectionObserver';
+
+            scriptsList = [
+                'https://cdn.polyfill.io/v2/polyfill.min.js?features=' + polyfillFeatures + '&flags=gated',
+                window.SpringerLink.staticLocation + '/js/main.js'
+            ];
+
+            scriptsList.forEach(function(script) {
+                var tag = document.createElement('script');
+                tag.async = false;
+                tag.src = script;
+
+                document.body.appendChild(tag);
+            });
+        }
+    })();
+</script>
+
+
+
+    <script type="text/javascript" id="googletag-push">
+        
+            var adSlot = '270604982/springerlink/12555/article';
+        
+
+        var definedSlots = [
+                {slot: [728, 90], containerName: 'doubleclick-leaderboard-ad'},
+                {slot: [160, 600], containerName: 'doubleclick-ad'},
+            {slot: [2, 2], containerName: 'doubleclick-native-ad'}
+        ];
+    </script>
+
+
+        
+        <span id="chat-widget" class="u-hide"></span>
+        
+    </body>
+</html>

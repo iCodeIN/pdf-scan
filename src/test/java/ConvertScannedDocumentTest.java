@@ -5,8 +5,8 @@ import com.itextpdf.kernel.pdf.canvas.parser.PdfCanvasProcessor;
 import com.itextpdf.kernel.pdf.canvas.parser.listener.SimpleTextExtractionStrategy;
 import com.js.canvas.pdf.ScannedPdfDocument;
 import com.js.tesseract.TesseractOpticalCharacterRecognitionEngine;
-import org.testng.Assert;
-import org.testng.annotations.Test;
+import org.junit.Assert;
+import org.junit.Test;
 
 import java.io.File;
 import java.io.IOException;
@@ -17,20 +17,26 @@ public class ConvertScannedDocumentTest {
     public void convert() throws IOException {
 
         // initialize tesseract
-        TesseractOpticalCharacterRecognitionEngine ocrEngine = new TesseractOpticalCharacterRecognitionEngine(new File("C:\\Users\\joris\\Downloads\\tessdata"), "eng");
+        TesseractOpticalCharacterRecognitionEngine ocrEngine = new TesseractOpticalCharacterRecognitionEngine(new File("/home/joris/Code/tessdata"), "eng");
 
-        // create document
-        ScannedPdfDocument pdfDocument = new ScannedPdfDocument(
-                new PdfReader(getClass().getClassLoader().getResourceAsStream("input_003.pdf")),
-                new PdfWriter(new File("output_document.pdf")),
-                ocrEngine
-        );
+        String[] documents = {"input_001.pdf", "input_002.pdf", "input_003.pdf", "input_004.pdf"};
 
-        // perform OCR
-        pdfDocument.doOCR(1);
+        for (String inputPDF : documents) {
 
-        // close
-        pdfDocument.close();
+            // create document
+            ScannedPdfDocument pdfDocument = new ScannedPdfDocument(
+                    new PdfReader(getClass().getClassLoader().getResourceAsStream(inputPDF)),
+                    new PdfWriter(new File("out_" + inputPDF)),
+                    ocrEngine
+            );
+
+            // perform OCR
+            pdfDocument.doOCR(1);
+
+            // close
+            pdfDocument.close();
+        }
+
     }
 
     @Test
