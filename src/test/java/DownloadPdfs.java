@@ -1,3 +1,8 @@
+import com.itextpdf.kernel.pdf.PdfDocument;
+import com.itextpdf.kernel.pdf.PdfReader;
+import com.itextpdf.kernel.pdf.PdfWriter;
+import com.itextpdf.kernel.utils.PageRange;
+import com.itextpdf.kernel.utils.PdfSplitter;
 import org.apache.commons.io.IOUtils;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpGet;
@@ -6,8 +11,6 @@ import org.apache.http.impl.client.HttpClientBuilder;
 
 import java.io.*;
 import java.net.URISyntaxException;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Random;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -26,7 +29,7 @@ public class DownloadPdfs {
         return "https://www.google.com/search?q=" + q + "+filetype:pdf&ei=iJqoXLKNMdDLwQL3rq6oDw&start=" + (page * 10) + "&sa=N&ved=0ahUKEwiy8YeAu7vhAhXQZVAKHXeXC_UQ8NMDCKkB&biw=1920&bih=916";
     }
 
-    public static List<String> fetchPdfURLs(String[] terms, int page) throws IOException, URISyntaxException {
+    public static void fetchPdfURLs(String[] terms, int page) throws IOException, URISyntaxException {
         CloseableHttpClient client = HttpClientBuilder.create().build();
         HttpGet request = new HttpGet(buildURL(terms, page));
 
@@ -46,53 +49,65 @@ public class DownloadPdfs {
         //
         String txt = result.toString();
 
-        List<String> urls = new ArrayList<>();
         Matcher matcher = Pattern.compile("href=\"([^\"]+)\"").matcher(txt);
         while (matcher.find()) {
             String url = matcher.group(1);
             if (url.endsWith(".pdf")) {
-                urls.add(url);
+
                 // copy
-                copyPdf(url);
+                File outputPDF = copyPdf(url);
+
+                // copy first page
+                copyFirstPage(outputPDF);
             }
         }
-
-        // return
-        return urls;
     }
 
-    private static void copyPdf(String url) throws URISyntaxException, IOException {
+    private static File copyPdf(String url) throws URISyntaxException, IOException {
         File out = new File("corpus");
         if (!out.exists())
             out.mkdir();
         out = new File(out, "document_" + out.listFiles().length + ".pdf");
         try {
             IOUtils.copy(new java.net.URI(url).toURL().openStream(), new FileOutputStream(out));
-        } catch (Exception ex) {
-        }
+        } catch (Exception ex) { }
+        return out;
     }
 
-    public static List<String> fetchPdfURLs(String[] terms) throws IOException, InterruptedException, URISyntaxException {
-        List<String> urls = new ArrayList<>();
+    private static File copyFirstPage(File inputFile) throws IOException {
+        String name = inputFile.getName().replaceAll("\\.pdf","") + "_single_page.pdf";
+        final File outputFile = new File(inputFile.getParentFile(), name);
+
+        try {
+            PdfDocument pdfDocument = new PdfDocument(new PdfReader(inputFile));
+            new PdfSplitter(pdfDocument) {
+                @Override
+                protected PdfWriter getNextPdfWriter(PageRange documentPageRange) {
+                    try {
+                        return new PdfWriter(outputFile);
+                    } catch (FileNotFoundException e) {
+                    }
+                    return null;
+                }
+            }.extractPageRange(new PageRange("1-1")).close();
+        }catch (Throwable ex){}
+
+        return outputFile;
+    }
+
+    public static void fetchPdfURLs(String[] terms) throws IOException, URISyntaxException {
         for (int i = 1; i < 20; i++) {
             // lookup
-            urls.addAll(fetchPdfURLs(terms, i));
+            fetchPdfURLs(terms, i);
             // sleep
-            Thread.sleep(5000 + RANDOM.nextInt(3) * 1000);
+            try {
+                Thread.sleep(5000 + RANDOM.nextInt(3) * 1000);
+            } catch (InterruptedException e) { }
         }
-        return urls;
     }
 
 
-    public static void main(String[] args) throws IOException, InterruptedException, URISyntaxException {
-        List<String> urls = fetchPdfURLs(new String[]{"leaflet"});
-
-        FileWriter fileWriter = new FileWriter(new File("example-pdfs.txt"));
-        for (String url : urls)
-            fileWriter.write(url + "\n");
-        fileWriter.flush();
-        fileWriter.close();
-
-
+    public static void main(String[] args) throws IOException, URISyntaxException {
+        fetchPdfURLs(new String[]{"safety","procedures","leaflet"});
     }
 }

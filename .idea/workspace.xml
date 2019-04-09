@@ -2,9 +2,562 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="561081a8-74cb-491b-ba7d-3e924f22b866" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/geometry/DropNarrowStripsModifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/geometry/DropNarrowStripsModifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/ocr/IOpticalCharacterRecognitionEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/ocr/IOpticalCharacterRecognitionEngine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ExtractTextTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ExtractTextTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_0.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_0.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_10.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_10.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_100.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_100.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_101.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_102.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_102.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_103.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_104.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_104.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_105.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_106.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_106.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_107.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_108.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_108.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_109.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_11.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_110.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_110.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_111.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_112.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_112.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_113.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_114.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_114.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_115.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_116.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_116.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_117.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_118.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_118.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_119.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_12.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_12.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_120.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_120.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_121.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_122.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_122.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_123.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_124.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_124.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_125.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_126.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_126.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_127.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_128.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_128.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_129.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_13.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_13.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_130.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_130.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_131.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_132.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_132.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_133.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_134.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_134.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_135.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_136.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_136.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_137.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_138.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_138.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_139.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_14.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_140.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_140.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_141.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_142.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_142.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_143.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_144.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_144.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_145.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_146.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_146.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_147.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_148.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_148.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_149.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_15.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_15.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_150.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_150.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_151.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_152.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_152.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_153.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_154.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_154.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_155.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_156.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_156.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_157.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_158.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_158.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_159.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_16.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_160.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_160.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_161.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_162.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_162.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_163.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_164.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_164.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_165.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_166.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_166.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_167.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_168.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_168.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_169.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_17.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_17.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_170.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_170.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_171.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_172.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_172.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_173.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_174.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_174.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_175.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_176.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_176.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_177.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_178.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_178.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_179.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_18.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_180.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_180.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_181.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_182.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_182.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_183.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_184.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_184.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_185.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_186.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_186.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_187.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_188.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_188.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_189.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_19.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_19.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_190.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_190.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_191.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_192.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_192.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_193.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_194.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_194.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_195.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_196.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_196.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_197.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_198.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_198.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_199.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_2.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_20.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_200.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_200.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_201.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_202.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_202.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_203.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_204.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_204.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_205.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_206.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_206.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_207.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_208.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_208.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_209.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_21.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_21.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_210.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_210.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_211.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_212.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_212.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_213.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_213.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_214.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_214.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_215.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_216.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_216.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_217.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_217.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_218.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_218.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_219.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_22.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_220.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_220.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_221.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_222.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_222.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_223.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_224.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_224.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_225.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_226.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_226.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_227.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_228.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_228.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_229.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_23.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_23.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_230.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_230.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_231.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_231.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_232.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_233.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_233.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_234.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_235.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_235.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_236.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_237.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_237.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_238.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_239.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_239.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_24.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_240.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_241.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_241.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_242.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_243.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_243.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_244.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_245.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_245.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_246.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_247.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_247.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_248.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_249.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_249.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_25.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_25.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_250.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_251.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_251.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_252.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_253.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_253.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_254.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_255.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_255.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_256.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_257.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_257.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_258.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_259.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_259.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_26.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_260.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_261.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_261.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_262.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_263.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_263.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_264.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_265.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_265.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_266.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_266.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_267.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_268.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_268.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_269.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_27.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_27.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_270.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_270.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_271.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_272.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_272.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_273.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_274.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_274.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_275.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_276.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_276.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_277.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_278.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_278.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_279.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_28.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_280.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_280.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_281.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_281.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_282.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_283.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_283.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_284.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_284.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_285.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_286.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_286.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_287.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_288.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_288.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_289.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_29.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_29.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_290.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_290.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_291.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_291.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_292.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_293.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_293.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_294.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_294.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_295.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_296.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_296.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_297.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_298.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_298.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_299.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_3.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_30.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_300.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_300.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_301.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_302.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_302.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_303.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_304.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_304.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_305.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_306.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_306.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_307.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_308.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_308.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_309.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_31.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_31.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_310.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_310.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_311.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_312.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_312.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_313.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_314.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_314.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_315.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_316.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_316.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_317.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_318.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_318.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_319.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_32.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_320.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_320.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_321.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_322.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_322.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_323.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_324.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_324.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_325.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_326.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_326.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_327.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_328.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_328.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_329.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_33.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_33.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_330.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_330.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_331.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_331.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_332.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_333.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_333.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_334.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_335.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_335.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_336.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_337.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_337.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_338.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_339.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_339.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_34.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_340.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_340.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_341.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_342.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_342.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_343.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_344.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_344.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_345.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_346.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_346.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_347.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_347.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_348.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_349.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_349.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_35.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_35.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_350.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_351.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_351.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_352.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_353.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_353.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_354.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_354.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_355.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_356.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_356.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_357.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_358.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_358.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_359.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_36.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_360.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_360.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_361.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_362.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_362.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_363.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_364.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_364.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_365.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_366.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_366.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_367.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_367.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_368.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_369.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_369.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_37.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_37.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_370.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_371.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_371.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_372.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_373.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_373.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_374.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_374.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_375.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_376.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_376.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_377.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_378.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_378.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_379.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_38.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_380.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_380.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_381.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_382.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_382.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_383.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_383.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_384.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_385.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_385.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_386.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_386.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_387.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_387.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_388.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_389.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_389.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_39.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_39.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_390.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_391.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_391.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_392.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_393.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_393.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_394.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_395.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_395.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_396.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_397.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_397.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_398.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_399.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_399.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_4.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_4.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_40.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_400.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_401.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_401.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_402.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_403.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_403.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_404.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_405.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_405.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_406.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_407.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_407.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_408.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_409.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_409.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_41.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_41.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_410.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_411.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_411.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_412.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_413.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_413.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_414.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_415.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_415.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_416.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_417.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_417.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_418.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_419.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_419.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_42.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_420.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_420.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_421.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_422.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_422.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_423.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_424.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_424.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_425.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_426.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_426.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_427.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_427.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_428.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_429.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_429.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_43.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_43.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_430.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_431.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_431.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_432.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_432.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_433.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_434.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_434.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_435.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_436.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_436.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_437.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_438.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_438.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_439.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_44.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_440.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_440.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_441.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_442.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_442.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_443.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_444.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_444.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_445.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_446.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_446.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_447.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_448.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_448.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_449.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_45.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_45.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_450.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_450.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_451.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_452.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_452.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_453.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_454.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_454.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_455.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_456.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_456.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_457.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_458.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_458.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_459.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_46.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_460.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_460.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_461.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_462.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_462.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_463.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_464.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_464.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_465.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_466.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_466.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_467.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_467.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_468.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_469.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_469.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_47.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_47.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_470.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_471.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_471.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_472.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_472.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_473.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_473.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_474.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_475.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_475.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_476.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_477.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_477.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_478.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_479.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_479.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_48.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_480.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_481.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_481.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_482.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_483.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_483.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_484.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_485.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_485.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_486.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_487.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_487.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_488.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_489.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_489.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_49.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_49.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_490.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_491.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_491.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_492.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_493.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_493.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_494.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_495.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_495.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_496.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_497.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_497.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_498.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_499.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_499.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_5.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_50.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_500.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_501.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_501.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_502.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_503.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_503.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_504.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_505.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_505.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_506.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_507.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_507.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_508.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_509.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_509.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_51.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_51.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_510.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_511.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_511.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_512.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_513.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_513.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_514.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_515.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_515.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_516.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_517.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_517.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_518.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_519.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_519.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_52.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_520.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_521.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_521.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_522.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_523.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_523.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_524.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_525.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_525.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_526.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_527.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_527.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_528.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_529.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_529.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_53.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_53.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_530.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_531.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_531.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_532.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_533.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_533.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_534.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_535.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_535.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_536.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_536.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_537.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_538.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_538.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_539.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_54.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_54.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_540.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_540.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_541.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_542.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_542.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_543.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_544.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_544.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_545.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_546.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_546.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_547.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_548.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_548.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_549.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_55.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_550.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_550.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_551.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_552.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_552.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_553.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_56.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_56.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_57.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_58.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_58.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_59.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_6.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_6.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_60.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_60.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_61.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_62.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_62.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_63.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_64.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_64.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_65.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_65.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_66.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_67.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_67.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_68.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_69.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_69.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_7.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_70.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_71.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_71.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_72.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_73.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_73.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_74.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_75.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_75.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_76.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_77.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_77.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_78.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_79.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_79.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_8.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_8.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_80.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_81.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_81.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_82.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_83.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_83.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_84.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_85.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_85.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_86.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_87.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_87.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_88.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_88.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_89.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_9.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_90.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_90.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_91.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_92.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_92.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_93.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_94.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_94.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_95.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_96.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_96.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_97.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_98.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/document_98.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/document_99.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/DownloadPdfs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DownloadPdfs.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,18 +573,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/font/LocalBaselineModifier.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="526">
-              <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/font/LocalFontSizeModifier.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
@@ -46,7 +587,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/geometry/DropNarrowStripsModifier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
+            <state relative-caret-position="75">
               <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -58,7 +599,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/geometry/DropOutOfBoundsAreasModifier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
+            <state relative-caret-position="135">
               <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -70,8 +611,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/ocr/OCREventModifier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="135">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -82,8 +623,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/font/GlobalFontSizeModifier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="60" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
+            <state relative-caret-position="915">
+              <caret line="70" selection-start-line="70" selection-end-line="70" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -94,7 +635,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/ModifiableGraphicsState.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
+            <state relative-caret-position="285">
               <caret line="24" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -106,8 +647,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/pdf/ScannedPdfDocument.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="111" lean-forward="true" selection-start-line="85" selection-start-column="7" selection-end-line="111" />
+            <state relative-caret-position="1305">
+              <caret line="111" selection-start-line="85" selection-start-column="7" selection-end-line="111" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ExtractTextTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="364">
+              <caret line="65" column="7" selection-start-line="65" selection-start-column="7" selection-end-line="65" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -116,10 +669,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ExtractTextTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/DownloadPdfs.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="57" selection-start-line="57" selection-end-line="57" />
+            <state relative-caret-position="408">
+              <caret line="110" column="64" selection-start-line="110" selection-start-column="64" selection-end-line="110" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -130,7 +683,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/js/tesseract/TesseractOpticalCharacterRecognitionEngine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
+            <state relative-caret-position="210">
               <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -205,7 +758,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/data/OCRTextRenderInfo.java" />
         <option value="$PROJECT_DIR$/src/test/resources/ground_truth_001.txt" />
         <option value="$PROJECT_DIR$/src/test/resources/ground_truth_002.txt" />
-        <option value="$PROJECT_DIR$/src/test/java/DownloadPdfs.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/text/IgnoreEmptyText.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/text/LocalUselessTextModifier.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/js/canvas/pdf/ScannedPdfDocument.java" />
@@ -221,6 +773,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/ocr/IOpticalCharacterRecognitionEngine.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/geometry/DropNarrowStripsModifier.java" />
         <option value="$PROJECT_DIR$/src/test/java/ExtractTextTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/DownloadPdfs.java" />
       </list>
     </option>
   </component>
@@ -243,8 +796,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -416,6 +967,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -442,7 +995,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ExtractTextTest.extractText">
+  <component name="RunManager" selected="Application.DownloadPdfs">
     <configuration name="DownloadPdfs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DownloadPdfs" />
       <module name="pdf-scan" />
@@ -497,15 +1050,15 @@
     <list>
       <item itemvalue="Application.DownloadPdfs" />
       <item itemvalue="JUnit.ConvertScannedDocumentTest.convert" />
+      <item itemvalue="JUnit.ExtractTextTest.extractText" />
       <item itemvalue="TestNG.ConvertScannedDocumentTest.convert" />
       <item itemvalue="TestNG.ConvertScannedDocumentTest.readConvertedDocument" />
-      <item itemvalue="JUnit.ExtractTextTest.extractText" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DownloadPdfs" />
         <item itemvalue="JUnit.ExtractTextTest.extractText" />
         <item itemvalue="JUnit.ConvertScannedDocumentTest.convert" />
-        <item itemvalue="Application.DownloadPdfs" />
         <item itemvalue="TestNG.ConvertScannedDocumentTest.convert" />
         <item itemvalue="TestNG.ConvertScannedDocumentTest.readConvertedDocument" />
       </list>
@@ -525,21 +1078,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ConvertScannedDocumentTest_convert - 2019.04.07 at 12h 30m 52s.xml">
-      <configuration name="ConvertScannedDocumentTest.convert" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ConvertScannedDocumentTest_convert - 2019.04.07 at 14h 25m 07s.xml">
-      <configuration name="ConvertScannedDocumentTest.convert" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ConvertScannedDocumentTest_convert - 2019.04.07 at 14h 29m 55s.xml">
-      <configuration name="ConvertScannedDocumentTest.convert" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ConvertScannedDocumentTest_convert - 2019.04.07 at 14h 31m 03s.xml">
-      <configuration name="ConvertScannedDocumentTest.convert" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ConvertScannedDocumentTest_convert - 2019.04.07 at 14h 32m 01s.xml">
-      <configuration name="ConvertScannedDocumentTest.convert" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ConvertScannedDocumentTest_convert - 2019.04.07 at 14h 37m 38s.xml">
       <configuration name="ConvertScannedDocumentTest.convert" configurationId="JUnit" />
     </history-entry>
@@ -555,12 +1093,26 @@
     <history-entry file="ConvertScannedDocumentTest_convert - 2019.04.07 at 19h 58m 40s.xml">
       <configuration name="ConvertScannedDocumentTest.convert" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ExtractTextTest_extractText - 2019.04.07 at 21h 18m 57s.xml">
+      <configuration name="ExtractTextTest.extractText" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ExtractTextTest_extractText - 2019.04.07 at 21h 19m 37s.xml">
+      <configuration name="ExtractTextTest.extractText" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ExtractTextTest_extractText - 2019.04.07 at 21h 20m 53s.xml">
+      <configuration name="ExtractTextTest.extractText" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ExtractTextTest_extractText - 2019.04.07 at 21h 22m 18s.xml">
+      <configuration name="ExtractTextTest.extractText" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ExtractTextTest_extractText - 2019.04.07 at 21h 22m 37s.xml">
+      <configuration name="ExtractTextTest.extractText" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="990" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28495198" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28815368" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -569,14 +1121,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32868758" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32868758" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32868758" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4506388" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="SonarLint" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.29036003" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.2891986" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32868758" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -601,13 +1153,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/DownloadPdfs.java</url>
-          <line>60</line>
-          <properties />
-          <option name="timeStamp" value="66" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/DownloadPdfs.java</url>
-          <line>49</line>
+          <line>51</line>
           <properties />
           <option name="timeStamp" value="67" />
         </line-breakpoint>
@@ -625,10 +1171,10 @@
           <option name="timeStamp" value="71" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/font/GlobalFontSizeModifier.java</url>
-          <line>70</line>
+          <url>file://$PROJECT_DIR$/src/test/java/ExtractTextTest.java</url>
+          <line>64</line>
           <properties />
-          <option name="timeStamp" value="75" />
+          <option name="timeStamp" value="76" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -871,16 +1417,6 @@ for(OCRTextRenderInfo i2 : line){
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/DownloadPdfs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="87" column="62" selection-start-line="87" selection-start-column="62" selection-end-line="87" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/ChainableEventListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1028,20 +1564,10 @@ for(OCRTextRenderInfo i2 : line){
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/font/GlobalFontSizeModifier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="60" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/font/LocalBaselineModifier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+        <state relative-caret-position="495">
+          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1060,7 +1586,7 @@ for(OCRTextRenderInfo i2 : line){
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/geometry/DropNarrowStripsModifier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
+        <state relative-caret-position="75">
           <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1070,7 +1596,7 @@ for(OCRTextRenderInfo i2 : line){
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/geometry/DropOutOfBoundsAreasModifier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
+        <state relative-caret-position="135">
           <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1080,8 +1606,18 @@ for(OCRTextRenderInfo i2 : line){
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/ocr/OCREventModifier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="135">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/parser/listener/font/GlobalFontSizeModifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="915">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1090,18 +1626,8 @@ for(OCRTextRenderInfo i2 : line){
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/ModifiableGraphicsState.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
+        <state relative-caret-position="285">
           <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/tesseract/TesseractOpticalCharacterRecognitionEngine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1110,8 +1636,18 @@ for(OCRTextRenderInfo i2 : line){
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/js/canvas/pdf/ScannedPdfDocument.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="111" lean-forward="true" selection-start-line="85" selection-start-column="7" selection-end-line="111" />
+        <state relative-caret-position="1305">
+          <caret line="111" selection-start-line="85" selection-start-column="7" selection-end-line="111" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/js/tesseract/TesseractOpticalCharacterRecognitionEngine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1120,8 +1656,18 @@ for(OCRTextRenderInfo i2 : line){
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ExtractTextTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        <state relative-caret-position="364">
+          <caret line="65" column="7" selection-start-line="65" selection-start-column="7" selection-end-line="65" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/DownloadPdfs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="110" column="64" selection-start-line="110" selection-start-column="64" selection-end-line="110" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

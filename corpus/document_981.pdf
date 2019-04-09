@@ -1,0 +1,33 @@
+<html>
+<head>
+</head>
+<body>
+<!-- Modify this according to your requirement -->
+<h3>
+  Redirecting to Download Ib Paper PDF after <span id="countdown">3</span> seconds
+</h3>
+<!-- JavaScript part -->
+<script type="text/javascript">
+    
+    // Total seconds to wait
+    var seconds = 3;
+    
+    function countdown() {
+        seconds = seconds - 1;
+        if (seconds < 0) {
+            // Chnage your redirection link here
+            window.location = "http://jrbuj.esy.es/out/ib-paper";
+        } else {
+            // Update remaining seconds
+            document.getElementById("countdown").innerHTML = seconds;
+            // Count down using javascript
+            window.setTimeout("countdown()", 1000);
+        }
+    }
+    
+    // Run countdown function
+    countdown();
+    
+</script>
+</body>
+</html>
